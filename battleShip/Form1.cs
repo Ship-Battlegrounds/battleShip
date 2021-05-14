@@ -12,6 +12,12 @@ namespace battleShip
 {
     public partial class Form1 : Form
     {
+
+        int tiros = 40;
+        int aciertos = 0;
+        int fallos = 0;
+
+        // Constructor
         public Form1()
         {
             InitializeComponent();
@@ -19,42 +25,32 @@ namespace battleShip
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-
+        private void Form1_Load(object sender, EventArgs e) {
+            lbl_TotalTiros.Text = tiros.ToString();
+            lbl_TotalAciertos.Text = aciertos.ToString();
+            lbl_TotalFallos.Text = fallos.ToString();
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
+        private void celda_Click(object sender, EventArgs e) {
             
-                PictureBox pictures = sender as PictureBox;
-                if (pictures != null)
-                {
-                    pictures.Tag = "B";
-                    pictures.Image = Properties.Resources.barco;
-                    //pictures.Image = Image.FromFile("./../../img/barco.jpg");
+            PictureBox pictures = sender as PictureBox;
+            if (pictures != null) {
+                pictures.Tag = "B";
+                pictures.Image = Properties.Resources.barco;
                     
-                    MessageBox.Show(pictures.Tag.ToString());
-                    
-                }
-            
+                MessageBox.Show(pictures.Tag.ToString());       
+            }   
         }
 
-        public void crearTablero ()
-        {
-            foreach (Control control in tableLayoutPanel1.Controls)
-            {
+        public void crearTablero () {
+            foreach (Control control in tableLayoutPanel1.Controls) {
                 PictureBox pictures = control as PictureBox;
-                if (pictures != null)
-                {
-                    pictures.Tag = 'A';
+                if (pictures != null) {
+                    pictures.Tag = "A";
                     pictures.Image = Properties.Resources.mar;
-                    //pictures.Image = Image.FromFile("./../../img/mar.jpg");
                 }
             }
         }
     }
-  
 }

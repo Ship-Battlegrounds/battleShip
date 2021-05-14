@@ -130,16 +130,16 @@ namespace battleShip
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_y1 = new System.Windows.Forms.Label();
+            this.lbl_y2 = new System.Windows.Forms.Label();
+            this.lbl_y3 = new System.Windows.Forms.Label();
+            this.lbl_y4 = new System.Windows.Forms.Label();
+            this.lbl_y5 = new System.Windows.Forms.Label();
+            this.lbl_y6 = new System.Windows.Forms.Label();
+            this.lbl_y7 = new System.Windows.Forms.Label();
+            this.lbl_y8 = new System.Windows.Forms.Label();
+            this.lbl_y9 = new System.Windows.Forms.Label();
+            this.lbl_y10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -150,6 +150,18 @@ namespace battleShip
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.lbl_Tiros = new System.Windows.Forms.Label();
+            this.lbl_Aciertos = new System.Windows.Forms.Label();
+            this.panel_Stats = new System.Windows.Forms.Panel();
+            this.lbl_Fallos = new System.Windows.Forms.Label();
+            this.lbl_TotalTiros = new System.Windows.Forms.Label();
+            this.lbl_TotalAciertos = new System.Windows.Forms.Label();
+            this.lbl_TotalFallos = new System.Windows.Forms.Label();
+            this.panel_Jugador = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_Jugador = new System.Windows.Forms.Label();
+            this.lbl_NombreJug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).BeginInit();
@@ -251,6 +263,8 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_Stats.SuspendLayout();
+            this.panel_Jugador.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -382,7 +396,6 @@ namespace battleShip
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(673, 447);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox100
             // 
@@ -391,7 +404,7 @@ namespace battleShip
             this.pictureBox100.Size = new System.Drawing.Size(61, 38);
             this.pictureBox100.TabIndex = 99;
             this.pictureBox100.TabStop = false;
-            this.pictureBox100.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox100.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox99
             // 
@@ -400,7 +413,7 @@ namespace battleShip
             this.pictureBox99.Size = new System.Drawing.Size(61, 38);
             this.pictureBox99.TabIndex = 98;
             this.pictureBox99.TabStop = false;
-            this.pictureBox99.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox99.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox98
             // 
@@ -409,7 +422,7 @@ namespace battleShip
             this.pictureBox98.Size = new System.Drawing.Size(61, 38);
             this.pictureBox98.TabIndex = 97;
             this.pictureBox98.TabStop = false;
-            this.pictureBox98.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox98.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox97
             // 
@@ -418,7 +431,7 @@ namespace battleShip
             this.pictureBox97.Size = new System.Drawing.Size(61, 38);
             this.pictureBox97.TabIndex = 96;
             this.pictureBox97.TabStop = false;
-            this.pictureBox97.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox97.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox96
             // 
@@ -427,7 +440,7 @@ namespace battleShip
             this.pictureBox96.Size = new System.Drawing.Size(61, 38);
             this.pictureBox96.TabIndex = 95;
             this.pictureBox96.TabStop = false;
-            this.pictureBox96.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox96.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox95
             // 
@@ -436,7 +449,7 @@ namespace battleShip
             this.pictureBox95.Size = new System.Drawing.Size(61, 38);
             this.pictureBox95.TabIndex = 94;
             this.pictureBox95.TabStop = false;
-            this.pictureBox95.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox95.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox94
             // 
@@ -445,7 +458,7 @@ namespace battleShip
             this.pictureBox94.Size = new System.Drawing.Size(61, 38);
             this.pictureBox94.TabIndex = 93;
             this.pictureBox94.TabStop = false;
-            this.pictureBox94.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox94.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox93
             // 
@@ -454,7 +467,7 @@ namespace battleShip
             this.pictureBox93.Size = new System.Drawing.Size(61, 38);
             this.pictureBox93.TabIndex = 92;
             this.pictureBox93.TabStop = false;
-            this.pictureBox93.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox93.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox92
             // 
@@ -463,7 +476,7 @@ namespace battleShip
             this.pictureBox92.Size = new System.Drawing.Size(61, 38);
             this.pictureBox92.TabIndex = 91;
             this.pictureBox92.TabStop = false;
-            this.pictureBox92.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox92.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox91
             // 
@@ -472,7 +485,7 @@ namespace battleShip
             this.pictureBox91.Size = new System.Drawing.Size(61, 38);
             this.pictureBox91.TabIndex = 90;
             this.pictureBox91.TabStop = false;
-            this.pictureBox91.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox91.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox90
             // 
@@ -481,7 +494,7 @@ namespace battleShip
             this.pictureBox90.Size = new System.Drawing.Size(61, 38);
             this.pictureBox90.TabIndex = 89;
             this.pictureBox90.TabStop = false;
-            this.pictureBox90.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox90.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox89
             // 
@@ -490,7 +503,7 @@ namespace battleShip
             this.pictureBox89.Size = new System.Drawing.Size(61, 38);
             this.pictureBox89.TabIndex = 88;
             this.pictureBox89.TabStop = false;
-            this.pictureBox89.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox89.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox88
             // 
@@ -499,7 +512,7 @@ namespace battleShip
             this.pictureBox88.Size = new System.Drawing.Size(61, 38);
             this.pictureBox88.TabIndex = 87;
             this.pictureBox88.TabStop = false;
-            this.pictureBox88.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox88.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox87
             // 
@@ -508,7 +521,7 @@ namespace battleShip
             this.pictureBox87.Size = new System.Drawing.Size(61, 38);
             this.pictureBox87.TabIndex = 86;
             this.pictureBox87.TabStop = false;
-            this.pictureBox87.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox87.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox86
             // 
@@ -517,7 +530,7 @@ namespace battleShip
             this.pictureBox86.Size = new System.Drawing.Size(61, 38);
             this.pictureBox86.TabIndex = 85;
             this.pictureBox86.TabStop = false;
-            this.pictureBox86.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox86.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox85
             // 
@@ -526,7 +539,7 @@ namespace battleShip
             this.pictureBox85.Size = new System.Drawing.Size(61, 38);
             this.pictureBox85.TabIndex = 84;
             this.pictureBox85.TabStop = false;
-            this.pictureBox85.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox85.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox84
             // 
@@ -535,7 +548,7 @@ namespace battleShip
             this.pictureBox84.Size = new System.Drawing.Size(61, 38);
             this.pictureBox84.TabIndex = 83;
             this.pictureBox84.TabStop = false;
-            this.pictureBox84.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox84.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox83
             // 
@@ -544,7 +557,7 @@ namespace battleShip
             this.pictureBox83.Size = new System.Drawing.Size(61, 38);
             this.pictureBox83.TabIndex = 82;
             this.pictureBox83.TabStop = false;
-            this.pictureBox83.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox83.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox82
             // 
@@ -553,7 +566,7 @@ namespace battleShip
             this.pictureBox82.Size = new System.Drawing.Size(61, 38);
             this.pictureBox82.TabIndex = 81;
             this.pictureBox82.TabStop = false;
-            this.pictureBox82.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox82.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox81
             // 
@@ -562,7 +575,7 @@ namespace battleShip
             this.pictureBox81.Size = new System.Drawing.Size(61, 38);
             this.pictureBox81.TabIndex = 80;
             this.pictureBox81.TabStop = false;
-            this.pictureBox81.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox81.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox80
             // 
@@ -571,7 +584,7 @@ namespace battleShip
             this.pictureBox80.Size = new System.Drawing.Size(61, 37);
             this.pictureBox80.TabIndex = 79;
             this.pictureBox80.TabStop = false;
-            this.pictureBox80.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox80.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox79
             // 
@@ -580,7 +593,7 @@ namespace battleShip
             this.pictureBox79.Size = new System.Drawing.Size(61, 37);
             this.pictureBox79.TabIndex = 78;
             this.pictureBox79.TabStop = false;
-            this.pictureBox79.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox79.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox78
             // 
@@ -589,7 +602,7 @@ namespace battleShip
             this.pictureBox78.Size = new System.Drawing.Size(61, 37);
             this.pictureBox78.TabIndex = 77;
             this.pictureBox78.TabStop = false;
-            this.pictureBox78.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox78.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox77
             // 
@@ -598,7 +611,7 @@ namespace battleShip
             this.pictureBox77.Size = new System.Drawing.Size(61, 37);
             this.pictureBox77.TabIndex = 76;
             this.pictureBox77.TabStop = false;
-            this.pictureBox77.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox77.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox76
             // 
@@ -607,7 +620,7 @@ namespace battleShip
             this.pictureBox76.Size = new System.Drawing.Size(61, 37);
             this.pictureBox76.TabIndex = 75;
             this.pictureBox76.TabStop = false;
-            this.pictureBox76.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox76.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox75
             // 
@@ -616,7 +629,7 @@ namespace battleShip
             this.pictureBox75.Size = new System.Drawing.Size(61, 37);
             this.pictureBox75.TabIndex = 74;
             this.pictureBox75.TabStop = false;
-            this.pictureBox75.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox75.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox74
             // 
@@ -625,7 +638,7 @@ namespace battleShip
             this.pictureBox74.Size = new System.Drawing.Size(61, 37);
             this.pictureBox74.TabIndex = 73;
             this.pictureBox74.TabStop = false;
-            this.pictureBox74.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox74.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox73
             // 
@@ -634,7 +647,7 @@ namespace battleShip
             this.pictureBox73.Size = new System.Drawing.Size(61, 37);
             this.pictureBox73.TabIndex = 72;
             this.pictureBox73.TabStop = false;
-            this.pictureBox73.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox73.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox72
             // 
@@ -643,7 +656,7 @@ namespace battleShip
             this.pictureBox72.Size = new System.Drawing.Size(61, 37);
             this.pictureBox72.TabIndex = 71;
             this.pictureBox72.TabStop = false;
-            this.pictureBox72.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox72.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox71
             // 
@@ -652,7 +665,7 @@ namespace battleShip
             this.pictureBox71.Size = new System.Drawing.Size(61, 37);
             this.pictureBox71.TabIndex = 70;
             this.pictureBox71.TabStop = false;
-            this.pictureBox71.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox71.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox70
             // 
@@ -661,7 +674,7 @@ namespace battleShip
             this.pictureBox70.Size = new System.Drawing.Size(61, 38);
             this.pictureBox70.TabIndex = 69;
             this.pictureBox70.TabStop = false;
-            this.pictureBox70.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox70.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox69
             // 
@@ -670,7 +683,7 @@ namespace battleShip
             this.pictureBox69.Size = new System.Drawing.Size(61, 38);
             this.pictureBox69.TabIndex = 68;
             this.pictureBox69.TabStop = false;
-            this.pictureBox69.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox69.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox68
             // 
@@ -679,7 +692,7 @@ namespace battleShip
             this.pictureBox68.Size = new System.Drawing.Size(61, 38);
             this.pictureBox68.TabIndex = 67;
             this.pictureBox68.TabStop = false;
-            this.pictureBox68.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox68.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox67
             // 
@@ -688,7 +701,7 @@ namespace battleShip
             this.pictureBox67.Size = new System.Drawing.Size(61, 38);
             this.pictureBox67.TabIndex = 66;
             this.pictureBox67.TabStop = false;
-            this.pictureBox67.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox67.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox66
             // 
@@ -697,7 +710,7 @@ namespace battleShip
             this.pictureBox66.Size = new System.Drawing.Size(61, 38);
             this.pictureBox66.TabIndex = 65;
             this.pictureBox66.TabStop = false;
-            this.pictureBox66.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox66.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox65
             // 
@@ -706,7 +719,7 @@ namespace battleShip
             this.pictureBox65.Size = new System.Drawing.Size(61, 38);
             this.pictureBox65.TabIndex = 64;
             this.pictureBox65.TabStop = false;
-            this.pictureBox65.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox65.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox64
             // 
@@ -715,7 +728,7 @@ namespace battleShip
             this.pictureBox64.Size = new System.Drawing.Size(61, 38);
             this.pictureBox64.TabIndex = 63;
             this.pictureBox64.TabStop = false;
-            this.pictureBox64.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox64.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox63
             // 
@@ -725,7 +738,7 @@ namespace battleShip
             this.pictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox63.TabIndex = 62;
             this.pictureBox63.TabStop = false;
-            this.pictureBox63.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox63.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox62
             // 
@@ -734,7 +747,7 @@ namespace battleShip
             this.pictureBox62.Size = new System.Drawing.Size(61, 38);
             this.pictureBox62.TabIndex = 61;
             this.pictureBox62.TabStop = false;
-            this.pictureBox62.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox62.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox61
             // 
@@ -743,7 +756,7 @@ namespace battleShip
             this.pictureBox61.Size = new System.Drawing.Size(61, 38);
             this.pictureBox61.TabIndex = 60;
             this.pictureBox61.TabStop = false;
-            this.pictureBox61.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox61.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox60
             // 
@@ -752,7 +765,7 @@ namespace battleShip
             this.pictureBox60.Size = new System.Drawing.Size(61, 38);
             this.pictureBox60.TabIndex = 59;
             this.pictureBox60.TabStop = false;
-            this.pictureBox60.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox60.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox59
             // 
@@ -761,7 +774,7 @@ namespace battleShip
             this.pictureBox59.Size = new System.Drawing.Size(61, 38);
             this.pictureBox59.TabIndex = 58;
             this.pictureBox59.TabStop = false;
-            this.pictureBox59.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox59.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox58
             // 
@@ -770,7 +783,7 @@ namespace battleShip
             this.pictureBox58.Size = new System.Drawing.Size(61, 38);
             this.pictureBox58.TabIndex = 57;
             this.pictureBox58.TabStop = false;
-            this.pictureBox58.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox58.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox57
             // 
@@ -779,7 +792,7 @@ namespace battleShip
             this.pictureBox57.Size = new System.Drawing.Size(61, 38);
             this.pictureBox57.TabIndex = 56;
             this.pictureBox57.TabStop = false;
-            this.pictureBox57.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox57.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox56
             // 
@@ -788,7 +801,7 @@ namespace battleShip
             this.pictureBox56.Size = new System.Drawing.Size(61, 38);
             this.pictureBox56.TabIndex = 55;
             this.pictureBox56.TabStop = false;
-            this.pictureBox56.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox56.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox55
             // 
@@ -797,7 +810,7 @@ namespace battleShip
             this.pictureBox55.Size = new System.Drawing.Size(61, 38);
             this.pictureBox55.TabIndex = 54;
             this.pictureBox55.TabStop = false;
-            this.pictureBox55.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox55.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox54
             // 
@@ -806,7 +819,7 @@ namespace battleShip
             this.pictureBox54.Size = new System.Drawing.Size(61, 38);
             this.pictureBox54.TabIndex = 53;
             this.pictureBox54.TabStop = false;
-            this.pictureBox54.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox54.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox53
             // 
@@ -815,7 +828,7 @@ namespace battleShip
             this.pictureBox53.Size = new System.Drawing.Size(61, 38);
             this.pictureBox53.TabIndex = 52;
             this.pictureBox53.TabStop = false;
-            this.pictureBox53.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox53.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox52
             // 
@@ -824,7 +837,7 @@ namespace battleShip
             this.pictureBox52.Size = new System.Drawing.Size(61, 38);
             this.pictureBox52.TabIndex = 51;
             this.pictureBox52.TabStop = false;
-            this.pictureBox52.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox52.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox51
             // 
@@ -833,7 +846,7 @@ namespace battleShip
             this.pictureBox51.Size = new System.Drawing.Size(61, 38);
             this.pictureBox51.TabIndex = 50;
             this.pictureBox51.TabStop = false;
-            this.pictureBox51.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox51.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox50
             // 
@@ -842,7 +855,7 @@ namespace battleShip
             this.pictureBox50.Size = new System.Drawing.Size(61, 38);
             this.pictureBox50.TabIndex = 49;
             this.pictureBox50.TabStop = false;
-            this.pictureBox50.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox50.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox49
             // 
@@ -851,7 +864,7 @@ namespace battleShip
             this.pictureBox49.Size = new System.Drawing.Size(61, 38);
             this.pictureBox49.TabIndex = 48;
             this.pictureBox49.TabStop = false;
-            this.pictureBox49.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox49.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox48
             // 
@@ -860,6 +873,7 @@ namespace battleShip
             this.pictureBox48.Size = new System.Drawing.Size(61, 38);
             this.pictureBox48.TabIndex = 47;
             this.pictureBox48.TabStop = false;
+            this.pictureBox48.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox47
             // 
@@ -868,7 +882,7 @@ namespace battleShip
             this.pictureBox47.Size = new System.Drawing.Size(61, 38);
             this.pictureBox47.TabIndex = 46;
             this.pictureBox47.TabStop = false;
-            this.pictureBox47.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox47.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox46
             // 
@@ -877,7 +891,7 @@ namespace battleShip
             this.pictureBox46.Size = new System.Drawing.Size(61, 38);
             this.pictureBox46.TabIndex = 45;
             this.pictureBox46.TabStop = false;
-            this.pictureBox46.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox46.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox45
             // 
@@ -886,7 +900,7 @@ namespace battleShip
             this.pictureBox45.Size = new System.Drawing.Size(61, 38);
             this.pictureBox45.TabIndex = 44;
             this.pictureBox45.TabStop = false;
-            this.pictureBox45.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox45.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox44
             // 
@@ -895,7 +909,7 @@ namespace battleShip
             this.pictureBox44.Size = new System.Drawing.Size(61, 38);
             this.pictureBox44.TabIndex = 43;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox44.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox43
             // 
@@ -904,7 +918,7 @@ namespace battleShip
             this.pictureBox43.Size = new System.Drawing.Size(61, 38);
             this.pictureBox43.TabIndex = 42;
             this.pictureBox43.TabStop = false;
-            this.pictureBox43.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox43.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox42
             // 
@@ -913,7 +927,7 @@ namespace battleShip
             this.pictureBox42.Size = new System.Drawing.Size(61, 38);
             this.pictureBox42.TabIndex = 41;
             this.pictureBox42.TabStop = false;
-            this.pictureBox42.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox42.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox41
             // 
@@ -922,7 +936,7 @@ namespace battleShip
             this.pictureBox41.Size = new System.Drawing.Size(61, 38);
             this.pictureBox41.TabIndex = 40;
             this.pictureBox41.TabStop = false;
-            this.pictureBox41.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox41.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox40
             // 
@@ -931,7 +945,7 @@ namespace battleShip
             this.pictureBox40.Size = new System.Drawing.Size(61, 38);
             this.pictureBox40.TabIndex = 39;
             this.pictureBox40.TabStop = false;
-            this.pictureBox40.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox40.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox39
             // 
@@ -940,7 +954,7 @@ namespace battleShip
             this.pictureBox39.Size = new System.Drawing.Size(61, 38);
             this.pictureBox39.TabIndex = 38;
             this.pictureBox39.TabStop = false;
-            this.pictureBox39.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox39.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox38
             // 
@@ -949,7 +963,7 @@ namespace battleShip
             this.pictureBox38.Size = new System.Drawing.Size(61, 38);
             this.pictureBox38.TabIndex = 37;
             this.pictureBox38.TabStop = false;
-            this.pictureBox38.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox38.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox37
             // 
@@ -958,7 +972,7 @@ namespace battleShip
             this.pictureBox37.Size = new System.Drawing.Size(61, 38);
             this.pictureBox37.TabIndex = 36;
             this.pictureBox37.TabStop = false;
-            this.pictureBox37.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox37.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox36
             // 
@@ -967,7 +981,7 @@ namespace battleShip
             this.pictureBox36.Size = new System.Drawing.Size(61, 38);
             this.pictureBox36.TabIndex = 35;
             this.pictureBox36.TabStop = false;
-            this.pictureBox36.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox36.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox35
             // 
@@ -976,7 +990,7 @@ namespace battleShip
             this.pictureBox35.Size = new System.Drawing.Size(61, 38);
             this.pictureBox35.TabIndex = 34;
             this.pictureBox35.TabStop = false;
-            this.pictureBox35.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox35.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox34
             // 
@@ -985,7 +999,7 @@ namespace battleShip
             this.pictureBox34.Size = new System.Drawing.Size(61, 38);
             this.pictureBox34.TabIndex = 33;
             this.pictureBox34.TabStop = false;
-            this.pictureBox34.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox34.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox33
             // 
@@ -994,7 +1008,7 @@ namespace battleShip
             this.pictureBox33.Size = new System.Drawing.Size(61, 38);
             this.pictureBox33.TabIndex = 32;
             this.pictureBox33.TabStop = false;
-            this.pictureBox33.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox33.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox32
             // 
@@ -1003,7 +1017,7 @@ namespace battleShip
             this.pictureBox32.Size = new System.Drawing.Size(61, 38);
             this.pictureBox32.TabIndex = 31;
             this.pictureBox32.TabStop = false;
-            this.pictureBox32.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox32.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox31
             // 
@@ -1012,7 +1026,7 @@ namespace battleShip
             this.pictureBox31.Size = new System.Drawing.Size(61, 38);
             this.pictureBox31.TabIndex = 30;
             this.pictureBox31.TabStop = false;
-            this.pictureBox31.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox31.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox30
             // 
@@ -1021,7 +1035,7 @@ namespace battleShip
             this.pictureBox30.Size = new System.Drawing.Size(61, 38);
             this.pictureBox30.TabIndex = 29;
             this.pictureBox30.TabStop = false;
-            this.pictureBox30.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox30.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox29
             // 
@@ -1030,6 +1044,7 @@ namespace battleShip
             this.pictureBox29.Size = new System.Drawing.Size(61, 38);
             this.pictureBox29.TabIndex = 28;
             this.pictureBox29.TabStop = false;
+            this.pictureBox29.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox28
             // 
@@ -1038,7 +1053,7 @@ namespace battleShip
             this.pictureBox28.Size = new System.Drawing.Size(61, 38);
             this.pictureBox28.TabIndex = 27;
             this.pictureBox28.TabStop = false;
-            this.pictureBox28.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox28.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox27
             // 
@@ -1047,7 +1062,7 @@ namespace battleShip
             this.pictureBox27.Size = new System.Drawing.Size(61, 38);
             this.pictureBox27.TabIndex = 26;
             this.pictureBox27.TabStop = false;
-            this.pictureBox27.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox27.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox26
             // 
@@ -1056,7 +1071,7 @@ namespace battleShip
             this.pictureBox26.Size = new System.Drawing.Size(61, 38);
             this.pictureBox26.TabIndex = 25;
             this.pictureBox26.TabStop = false;
-            this.pictureBox26.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox26.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox25
             // 
@@ -1065,7 +1080,7 @@ namespace battleShip
             this.pictureBox25.Size = new System.Drawing.Size(61, 38);
             this.pictureBox25.TabIndex = 24;
             this.pictureBox25.TabStop = false;
-            this.pictureBox25.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox25.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox24
             // 
@@ -1074,7 +1089,7 @@ namespace battleShip
             this.pictureBox24.Size = new System.Drawing.Size(61, 38);
             this.pictureBox24.TabIndex = 23;
             this.pictureBox24.TabStop = false;
-            this.pictureBox24.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox24.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox23
             // 
@@ -1083,7 +1098,7 @@ namespace battleShip
             this.pictureBox23.Size = new System.Drawing.Size(61, 38);
             this.pictureBox23.TabIndex = 22;
             this.pictureBox23.TabStop = false;
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox23.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox22
             // 
@@ -1092,7 +1107,7 @@ namespace battleShip
             this.pictureBox22.Size = new System.Drawing.Size(61, 38);
             this.pictureBox22.TabIndex = 21;
             this.pictureBox22.TabStop = false;
-            this.pictureBox22.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox22.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox21
             // 
@@ -1101,7 +1116,7 @@ namespace battleShip
             this.pictureBox21.Size = new System.Drawing.Size(61, 38);
             this.pictureBox21.TabIndex = 20;
             this.pictureBox21.TabStop = false;
-            this.pictureBox21.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox21.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox20
             // 
@@ -1110,7 +1125,7 @@ namespace battleShip
             this.pictureBox20.Size = new System.Drawing.Size(61, 38);
             this.pictureBox20.TabIndex = 19;
             this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox20.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox19
             // 
@@ -1119,7 +1134,7 @@ namespace battleShip
             this.pictureBox19.Size = new System.Drawing.Size(61, 38);
             this.pictureBox19.TabIndex = 18;
             this.pictureBox19.TabStop = false;
-            this.pictureBox19.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox19.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox18
             // 
@@ -1128,7 +1143,7 @@ namespace battleShip
             this.pictureBox18.Size = new System.Drawing.Size(61, 38);
             this.pictureBox18.TabIndex = 17;
             this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox18.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox17
             // 
@@ -1137,7 +1152,7 @@ namespace battleShip
             this.pictureBox17.Size = new System.Drawing.Size(61, 38);
             this.pictureBox17.TabIndex = 16;
             this.pictureBox17.TabStop = false;
-            this.pictureBox17.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox17.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox16
             // 
@@ -1146,7 +1161,7 @@ namespace battleShip
             this.pictureBox16.Size = new System.Drawing.Size(61, 38);
             this.pictureBox16.TabIndex = 15;
             this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox16.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox15
             // 
@@ -1155,7 +1170,7 @@ namespace battleShip
             this.pictureBox15.Size = new System.Drawing.Size(61, 38);
             this.pictureBox15.TabIndex = 14;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox15.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox14
             // 
@@ -1164,7 +1179,7 @@ namespace battleShip
             this.pictureBox14.Size = new System.Drawing.Size(61, 38);
             this.pictureBox14.TabIndex = 13;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox14.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox13
             // 
@@ -1173,7 +1188,7 @@ namespace battleShip
             this.pictureBox13.Size = new System.Drawing.Size(61, 38);
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox13.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox12
             // 
@@ -1182,7 +1197,7 @@ namespace battleShip
             this.pictureBox12.Size = new System.Drawing.Size(61, 38);
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox12.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox11
             // 
@@ -1191,7 +1206,7 @@ namespace battleShip
             this.pictureBox11.Size = new System.Drawing.Size(61, 38);
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox11.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox10
             // 
@@ -1200,7 +1215,7 @@ namespace battleShip
             this.pictureBox10.Size = new System.Drawing.Size(61, 37);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox10.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox9
             // 
@@ -1209,7 +1224,7 @@ namespace battleShip
             this.pictureBox9.Size = new System.Drawing.Size(61, 37);
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox9.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox8
             // 
@@ -1218,7 +1233,7 @@ namespace battleShip
             this.pictureBox8.Size = new System.Drawing.Size(61, 37);
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox8.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox7
             // 
@@ -1227,7 +1242,7 @@ namespace battleShip
             this.pictureBox7.Size = new System.Drawing.Size(61, 37);
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox7.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox6
             // 
@@ -1237,7 +1252,7 @@ namespace battleShip
             this.pictureBox6.Size = new System.Drawing.Size(61, 37);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox6.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox5
             // 
@@ -1247,7 +1262,7 @@ namespace battleShip
             this.pictureBox5.Size = new System.Drawing.Size(61, 37);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox5.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox4
             // 
@@ -1256,7 +1271,7 @@ namespace battleShip
             this.pictureBox4.Size = new System.Drawing.Size(61, 37);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox4.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox3
             // 
@@ -1266,7 +1281,7 @@ namespace battleShip
             this.pictureBox3.Size = new System.Drawing.Size(61, 37);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox2
             // 
@@ -1276,7 +1291,7 @@ namespace battleShip
             this.pictureBox2.Size = new System.Drawing.Size(61, 37);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.celda_Click);
             // 
             // pictureBox1
             // 
@@ -1286,97 +1301,97 @@ namespace battleShip
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.celda_Click);
             // 
-            // label1
+            // lbl_y1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "1";
+            this.lbl_y1.AutoSize = true;
+            this.lbl_y1.Location = new System.Drawing.Point(106, 53);
+            this.lbl_y1.Name = "lbl_y1";
+            this.lbl_y1.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y1.TabIndex = 1;
+            this.lbl_y1.Text = "1";
             // 
-            // label2
+            // lbl_y2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(181, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "2";
+            this.lbl_y2.AutoSize = true;
+            this.lbl_y2.Location = new System.Drawing.Point(181, 53);
+            this.lbl_y2.Name = "lbl_y2";
+            this.lbl_y2.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y2.TabIndex = 2;
+            this.lbl_y2.Text = "2";
             // 
-            // label3
+            // lbl_y3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(240, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "3";
+            this.lbl_y3.AutoSize = true;
+            this.lbl_y3.Location = new System.Drawing.Point(247, 53);
+            this.lbl_y3.Name = "lbl_y3";
+            this.lbl_y3.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y3.TabIndex = 3;
+            this.lbl_y3.Text = "3";
             // 
-            // label4
+            // lbl_y4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(303, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "4";
+            this.lbl_y4.AutoSize = true;
+            this.lbl_y4.Location = new System.Drawing.Point(316, 53);
+            this.lbl_y4.Name = "lbl_y4";
+            this.lbl_y4.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y4.TabIndex = 4;
+            this.lbl_y4.Text = "4";
             // 
-            // label5
+            // lbl_y5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(377, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "5";
+            this.lbl_y5.AutoSize = true;
+            this.lbl_y5.Location = new System.Drawing.Point(383, 53);
+            this.lbl_y5.Name = "lbl_y5";
+            this.lbl_y5.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y5.TabIndex = 5;
+            this.lbl_y5.Text = "5";
             // 
-            // label6
+            // lbl_y6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(440, 53);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "6";
+            this.lbl_y6.AutoSize = true;
+            this.lbl_y6.Location = new System.Drawing.Point(450, 53);
+            this.lbl_y6.Name = "lbl_y6";
+            this.lbl_y6.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y6.TabIndex = 6;
+            this.lbl_y6.Text = "6";
             // 
-            // label7
+            // lbl_y7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(500, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "7";
+            this.lbl_y7.AutoSize = true;
+            this.lbl_y7.Location = new System.Drawing.Point(518, 53);
+            this.lbl_y7.Name = "lbl_y7";
+            this.lbl_y7.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y7.TabIndex = 7;
+            this.lbl_y7.Text = "7";
             // 
-            // label8
+            // lbl_y8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(566, 53);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "8";
+            this.lbl_y8.AutoSize = true;
+            this.lbl_y8.Location = new System.Drawing.Point(585, 53);
+            this.lbl_y8.Name = "lbl_y8";
+            this.lbl_y8.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y8.TabIndex = 8;
+            this.lbl_y8.Text = "8";
             // 
-            // label9
+            // lbl_y9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(635, 53);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "9";
+            this.lbl_y9.AutoSize = true;
+            this.lbl_y9.Location = new System.Drawing.Point(652, 53);
+            this.lbl_y9.Name = "lbl_y9";
+            this.lbl_y9.Size = new System.Drawing.Size(13, 13);
+            this.lbl_y9.TabIndex = 9;
+            this.lbl_y9.Text = "9";
             // 
-            // label10
+            // lbl_y10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(703, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "10";
+            this.lbl_y10.AutoSize = true;
+            this.lbl_y10.Location = new System.Drawing.Point(717, 53);
+            this.lbl_y10.Name = "lbl_y10";
+            this.lbl_y10.Size = new System.Drawing.Size(19, 13);
+            this.lbl_y10.TabIndex = 10;
+            this.lbl_y10.Text = "10";
             // 
             // label11
             // 
@@ -1468,11 +1483,125 @@ namespace battleShip
             this.label20.TabIndex = 20;
             this.label20.Text = "J";
             // 
+            // lbl_Tiros
+            // 
+            this.lbl_Tiros.AutoSize = true;
+            this.lbl_Tiros.Location = new System.Drawing.Point(17, 11);
+            this.lbl_Tiros.Name = "lbl_Tiros";
+            this.lbl_Tiros.Size = new System.Drawing.Size(33, 13);
+            this.lbl_Tiros.TabIndex = 21;
+            this.lbl_Tiros.Text = "Tiros:";
+            // 
+            // lbl_Aciertos
+            // 
+            this.lbl_Aciertos.AutoSize = true;
+            this.lbl_Aciertos.Location = new System.Drawing.Point(17, 44);
+            this.lbl_Aciertos.Name = "lbl_Aciertos";
+            this.lbl_Aciertos.Size = new System.Drawing.Size(48, 13);
+            this.lbl_Aciertos.TabIndex = 22;
+            this.lbl_Aciertos.Text = "Aciertos:";
+            // 
+            // panel_Stats
+            // 
+            this.panel_Stats.BackColor = System.Drawing.Color.Silver;
+            this.panel_Stats.Controls.Add(this.lbl_TotalFallos);
+            this.panel_Stats.Controls.Add(this.lbl_TotalAciertos);
+            this.panel_Stats.Controls.Add(this.lbl_TotalTiros);
+            this.panel_Stats.Controls.Add(this.lbl_Fallos);
+            this.panel_Stats.Controls.Add(this.lbl_Tiros);
+            this.panel_Stats.Controls.Add(this.lbl_Aciertos);
+            this.panel_Stats.Location = new System.Drawing.Point(796, 206);
+            this.panel_Stats.Name = "panel_Stats";
+            this.panel_Stats.Size = new System.Drawing.Size(149, 100);
+            this.panel_Stats.TabIndex = 23;
+            // 
+            // lbl_Fallos
+            // 
+            this.lbl_Fallos.AutoSize = true;
+            this.lbl_Fallos.Location = new System.Drawing.Point(17, 71);
+            this.lbl_Fallos.Name = "lbl_Fallos";
+            this.lbl_Fallos.Size = new System.Drawing.Size(37, 13);
+            this.lbl_Fallos.TabIndex = 23;
+            this.lbl_Fallos.Text = "Fallos:";
+            // 
+            // lbl_TotalTiros
+            // 
+            this.lbl_TotalTiros.AutoSize = true;
+            this.lbl_TotalTiros.Location = new System.Drawing.Point(77, 11);
+            this.lbl_TotalTiros.Name = "lbl_TotalTiros";
+            this.lbl_TotalTiros.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalTiros.TabIndex = 24;
+            // 
+            // lbl_TotalAciertos
+            // 
+            this.lbl_TotalAciertos.AutoSize = true;
+            this.lbl_TotalAciertos.Location = new System.Drawing.Point(76, 44);
+            this.lbl_TotalAciertos.Name = "lbl_TotalAciertos";
+            this.lbl_TotalAciertos.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalAciertos.TabIndex = 25;
+            this.lbl_TotalAciertos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lbl_TotalFallos
+            // 
+            this.lbl_TotalFallos.AutoSize = true;
+            this.lbl_TotalFallos.Location = new System.Drawing.Point(77, 71);
+            this.lbl_TotalFallos.Name = "lbl_TotalFallos";
+            this.lbl_TotalFallos.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalFallos.TabIndex = 26;
+            // 
+            // panel_Jugador
+            // 
+            this.panel_Jugador.BackColor = System.Drawing.Color.Silver;
+            this.panel_Jugador.Controls.Add(this.lbl_NombreJug);
+            this.panel_Jugador.Controls.Add(this.label2);
+            this.panel_Jugador.Controls.Add(this.label3);
+            this.panel_Jugador.Controls.Add(this.lbl_Jugador);
+            this.panel_Jugador.Location = new System.Drawing.Point(796, 92);
+            this.panel_Jugador.Name = "panel_Jugador";
+            this.panel_Jugador.Size = new System.Drawing.Size(149, 100);
+            this.panel_Jugador.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(76, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 25;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(77, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 24;
+            // 
+            // lbl_Jugador
+            // 
+            this.lbl_Jugador.AutoSize = true;
+            this.lbl_Jugador.Location = new System.Drawing.Point(17, 11);
+            this.lbl_Jugador.Name = "lbl_Jugador";
+            this.lbl_Jugador.Size = new System.Drawing.Size(48, 13);
+            this.lbl_Jugador.TabIndex = 21;
+            this.lbl_Jugador.Text = "Jugador:";
+            // 
+            // lbl_NombreJug
+            // 
+            this.lbl_NombreJug.AutoSize = true;
+            this.lbl_NombreJug.Location = new System.Drawing.Point(17, 43);
+            this.lbl_NombreJug.Name = "lbl_NombreJug";
+            this.lbl_NombreJug.Size = new System.Drawing.Size(0, 13);
+            this.lbl_NombreJug.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 566);
+            this.ClientSize = new System.Drawing.Size(990, 566);
+            this.Controls.Add(this.panel_Jugador);
+            this.Controls.Add(this.panel_Stats);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -1483,16 +1612,16 @@ namespace battleShip
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_y10);
+            this.Controls.Add(this.lbl_y9);
+            this.Controls.Add(this.lbl_y8);
+            this.Controls.Add(this.lbl_y7);
+            this.Controls.Add(this.lbl_y6);
+            this.Controls.Add(this.lbl_y5);
+            this.Controls.Add(this.lbl_y4);
+            this.Controls.Add(this.lbl_y3);
+            this.Controls.Add(this.lbl_y2);
+            this.Controls.Add(this.lbl_y1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "BattleShip";
@@ -1598,6 +1727,10 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_Stats.ResumeLayout(false);
+            this.panel_Stats.PerformLayout();
+            this.panel_Jugador.ResumeLayout(false);
+            this.panel_Jugador.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1606,16 +1739,16 @@ namespace battleShip
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_y1;
+        private System.Windows.Forms.Label lbl_y2;
+        private System.Windows.Forms.Label lbl_y3;
+        private System.Windows.Forms.Label lbl_y4;
+        private System.Windows.Forms.Label lbl_y5;
+        private System.Windows.Forms.Label lbl_y6;
+        private System.Windows.Forms.Label lbl_y7;
+        private System.Windows.Forms.Label lbl_y8;
+        private System.Windows.Forms.Label lbl_y9;
+        private System.Windows.Forms.Label lbl_y10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1726,6 +1859,18 @@ namespace battleShip
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_Tiros;
+        private System.Windows.Forms.Label lbl_Aciertos;
+        private System.Windows.Forms.Panel panel_Stats;
+        private System.Windows.Forms.Label lbl_TotalFallos;
+        private System.Windows.Forms.Label lbl_TotalAciertos;
+        private System.Windows.Forms.Label lbl_TotalTiros;
+        private System.Windows.Forms.Label lbl_Fallos;
+        private System.Windows.Forms.Panel panel_Jugador;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_Jugador;
+        private System.Windows.Forms.Label lbl_NombreJug;
     }
 }
 
