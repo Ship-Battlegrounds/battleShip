@@ -32,8 +32,10 @@ namespace battleShip
                 PictureBox pictures = sender as PictureBox;
                 if (pictures != null)
                 {
-                    pictures.Image = Image.FromFile("./../../img/barco.jpg");
                     pictures.Tag = "B";
+                    pictures.Image = Properties.Resources.barco;
+                    //pictures.Image = Image.FromFile("./../../img/barco.jpg");
+                    
                     MessageBox.Show(pictures.Tag.ToString());
                     
                 }
@@ -48,7 +50,8 @@ namespace battleShip
                 if (pictures != null)
                 {
                     pictures.Tag = 'A';
-                    pictures.Image = Image.FromFile("./../../img/mar.jpg");
+                    pictures.Image = Properties.Resources.mar;
+                    //pictures.Image = Image.FromFile("./../../img/mar.jpg");
                 }
             }
         }
