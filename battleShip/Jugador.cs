@@ -25,6 +25,8 @@ namespace battleShip {
             return false;
         }
 
+
+
         // Setters & Getters
 
         public String Nombre { get => nombre; set => nombre = value; }
