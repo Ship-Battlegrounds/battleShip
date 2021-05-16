@@ -19,7 +19,11 @@ namespace battleShip {
 
         // Métodos
 
-
+        public bool comprobarDerrota ()
+        {
+            if (tiros == 0) return true;
+            return false;
+        }
 
         // Setters & Getters
 

@@ -10,6 +10,7 @@ namespace battleShip
     {
         private int tamaño;
         private String[] coordenadas;
+        private String name;
 
         // Métodos
 
@@ -28,5 +29,6 @@ namespace battleShip
 
         public int Tamaño { get => tamaño; set => tamaño = value; }
         public string[] Coordenadas { get => coordenadas; set => coordenadas = value; }
+        public string Name { get => name; set => name = value; }
     }
 }

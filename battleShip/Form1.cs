@@ -11,12 +11,16 @@ using System.Windows.Forms;
 namespace battleShip {
     public partial class Form1 : Form {
 
+
         Jugador j1 = new Jugador("Ricardo");
+        bool atacar;
+        List<Barco> barcos = new List<Barco> { };
 
         // Constructor
         public Form1() {
             InitializeComponent();
             crearTablero();
+            
             tableLayoutPanel1.BackgroundImage = Image.FromFile("./../../img/water.gif");
         }
 
@@ -31,13 +35,17 @@ namespace battleShip {
         private void celda_Click(object sender, EventArgs e) {
             
             PictureBox pictures = sender as PictureBox;
-            if (pictures != null) {
-                pictures.Tag = "B";
-                //pictures.Image = Properties.Resources.barco;
-                pictures.BackColor = Color.Transparent;
+            if (atacar)
+            {
+                if (pictures != null)
+                {
+                    pictures.Tag = "B";
                     
-                MessageBox.Show(pictures.Tag.ToString());       
-            }   
+                }
+            } else
+            {
+
+            }
         }
 
         public void crearTablero () {
@@ -49,6 +57,11 @@ namespace battleShip {
                     //pictures.Image = Properties.Resources.mar;
                 }
             }
+        }
+
+        private void btn_atacar_Click(object sender, EventArgs e)
+        {
+            atacar = true;
         }
     }
 }
