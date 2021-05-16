@@ -609,9 +609,13 @@ namespace battleShip
             this.tableLayoutPanel1.Controls.Add(this.pictureBox77, 6, 7);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox76, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox75, 4, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox74, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox73, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox72, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox71, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox70, 9, 6);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox69, 8, 6);
@@ -679,10 +683,6 @@ namespace battleShip
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 3, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(89, 76);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -1665,7 +1665,7 @@ namespace battleShip
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(138, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(205, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(60, 45);
             this.pictureBox4.TabIndex = 3;
@@ -1675,7 +1675,7 @@ namespace battleShip
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(71, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(138, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 45);
             this.pictureBox3.TabIndex = 2;
@@ -1685,7 +1685,7 @@ namespace battleShip
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(71, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 45);
             this.pictureBox2.TabIndex = 1;
@@ -1695,7 +1695,7 @@ namespace battleShip
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(205, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

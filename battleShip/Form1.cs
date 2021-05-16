@@ -113,7 +113,7 @@ namespace battleShip {
 
                         MessageBox.Show(pictures.Tag as String);
                         //pictures.Tag = lw_Barcos.SelectedItems[0];
-                        lw_Barcos.SelectedItems[0].Remove();
+                        //lw_Barcos.SelectedItems[0].Remove();
                     
                     } else {
                         MessageBox.Show("El rango de casillas seleccionado ya está ocupado o no es suficientemente grande");
@@ -132,20 +132,20 @@ namespace battleShip {
 
         public void crearTablero () {
 
-            int x = 0;
+            int x = 1;
             int y = 1;
-            foreach (Control control in tableLayoutPanel1.Controls) {
+            foreach (Control control in tableLayoutPanel1.Controls.Cast<Control>()
+                                                                .OrderBy(c => Int32.Parse(c.Name.Substring(10)))) {
                 PictureBox pictures = control as PictureBox;
                 if (pictures != null) {
                     pictures.BackColor = Color.Transparent;
 
-                    x++;
                     if (x == 11) {
                         x = 1;
                         y++;
                     }        
                     pictures.Tag = "A" + "#" + x + "#" + y;
-
+                    x++;
                 }
             }
         }
