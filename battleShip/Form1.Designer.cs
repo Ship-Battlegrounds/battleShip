@@ -164,7 +164,10 @@ namespace battleShip
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_atacar = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lw_Barcos = new System.Windows.Forms.ListView();
+            this.NombreBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TamañoBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_rotar = new System.Windows.Forms.Button();
             this.panel_Stats.SuspendLayout();
             this.panel_Jugador.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -363,7 +366,7 @@ namespace battleShip
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(34, 100);
+            this.label11.Location = new System.Drawing.Point(53, 92);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 11;
@@ -372,7 +375,7 @@ namespace battleShip
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(34, 146);
+            this.label12.Location = new System.Drawing.Point(53, 146);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 13);
             this.label12.TabIndex = 12;
@@ -381,7 +384,7 @@ namespace battleShip
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(35, 205);
+            this.label13.Location = new System.Drawing.Point(53, 205);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(14, 13);
             this.label13.TabIndex = 13;
@@ -390,7 +393,7 @@ namespace battleShip
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 251);
+            this.label14.Location = new System.Drawing.Point(52, 267);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 13);
             this.label14.TabIndex = 14;
@@ -399,7 +402,7 @@ namespace battleShip
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(34, 294);
+            this.label15.Location = new System.Drawing.Point(52, 314);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(14, 13);
             this.label15.TabIndex = 15;
@@ -408,7 +411,7 @@ namespace battleShip
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(34, 391);
+            this.label16.Location = new System.Drawing.Point(52, 423);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(15, 13);
             this.label16.TabIndex = 16;
@@ -417,7 +420,7 @@ namespace battleShip
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(33, 346);
+            this.label17.Location = new System.Drawing.Point(52, 366);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(13, 13);
             this.label17.TabIndex = 17;
@@ -426,7 +429,7 @@ namespace battleShip
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(34, 444);
+            this.label18.Location = new System.Drawing.Point(50, 477);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(15, 13);
             this.label18.TabIndex = 18;
@@ -435,7 +438,7 @@ namespace battleShip
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(33, 488);
+            this.label19.Location = new System.Drawing.Point(52, 534);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(10, 13);
             this.label19.TabIndex = 19;
@@ -444,7 +447,7 @@ namespace battleShip
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(34, 537);
+            this.label20.Location = new System.Drawing.Point(50, 589);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(12, 13);
             this.label20.TabIndex = 20;
@@ -471,6 +474,7 @@ namespace battleShip
             // panel_Stats
             // 
             this.panel_Stats.BackColor = System.Drawing.Color.Silver;
+            this.panel_Stats.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_Stats.Controls.Add(this.lbl_TotalFallos);
             this.panel_Stats.Controls.Add(this.lbl_TotalAciertos);
             this.panel_Stats.Controls.Add(this.lbl_TotalTiros);
@@ -519,6 +523,7 @@ namespace battleShip
             // panel_Jugador
             // 
             this.panel_Jugador.BackColor = System.Drawing.Color.Silver;
+            this.panel_Jugador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_Jugador.Controls.Add(this.lbl_NombreJug);
             this.panel_Jugador.Controls.Add(this.label2);
             this.panel_Jugador.Controls.Add(this.label3);
@@ -564,6 +569,7 @@ namespace battleShip
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackgroundImage = global::battleShip.Properties.Resources.mar;
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 10;
@@ -1699,7 +1705,8 @@ namespace battleShip
             // 
             // btn_atacar
             // 
-            this.btn_atacar.Location = new System.Drawing.Point(837, 298);
+            this.btn_atacar.Enabled = false;
+            this.btn_atacar.Location = new System.Drawing.Point(796, 297);
             this.btn_atacar.Name = "btn_atacar";
             this.btn_atacar.Size = new System.Drawing.Size(72, 45);
             this.btn_atacar.TabIndex = 28;
@@ -1707,20 +1714,46 @@ namespace battleShip
             this.btn_atacar.UseVisualStyleBackColor = true;
             this.btn_atacar.Click += new System.EventHandler(this.btn_atacar_Click);
             // 
-            // listBox1
+            // lw_Barcos
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(801, 400);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(133, 212);
-            this.listBox1.TabIndex = 29;
+            this.lw_Barcos.BackColor = System.Drawing.Color.DarkGray;
+            this.lw_Barcos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.NombreBarco,
+            this.TamañoBarco});
+            this.lw_Barcos.FullRowSelect = true;
+            this.lw_Barcos.HideSelection = false;
+            this.lw_Barcos.Location = new System.Drawing.Point(788, 366);
+            this.lw_Barcos.MultiSelect = false;
+            this.lw_Barcos.Name = "lw_Barcos";
+            this.lw_Barcos.Size = new System.Drawing.Size(184, 254);
+            this.lw_Barcos.TabIndex = 32;
+            this.lw_Barcos.UseCompatibleStateImageBehavior = false;
+            // 
+            // NombreBarco
+            // 
+            this.NombreBarco.Text = "Nombre";
+            this.NombreBarco.Width = 115;
+            // 
+            // TamañoBarco
+            // 
+            this.TamañoBarco.Text = "Tamaño";
+            // 
+            // btn_rotar
+            // 
+            this.btn_rotar.Location = new System.Drawing.Point(873, 297);
+            this.btn_rotar.Name = "btn_rotar";
+            this.btn_rotar.Size = new System.Drawing.Size(72, 45);
+            this.btn_rotar.TabIndex = 33;
+            this.btn_rotar.Text = "Rotar";
+            this.btn_rotar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 633);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btn_rotar);
+            this.Controls.Add(this.lw_Barcos);
             this.Controls.Add(this.btn_atacar);
             this.Controls.Add(this.panel_Jugador);
             this.Controls.Add(this.panel_Stats);
@@ -1995,7 +2028,10 @@ namespace battleShip
         private System.Windows.Forms.Label lbl_Jugador;
         private System.Windows.Forms.Label lbl_NombreJug;
         private System.Windows.Forms.Button btn_atacar;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListView lw_Barcos;
+        private System.Windows.Forms.ColumnHeader NombreBarco;
+        private System.Windows.Forms.ColumnHeader TamañoBarco;
+        private System.Windows.Forms.Button btn_rotar;
     }
 }
 

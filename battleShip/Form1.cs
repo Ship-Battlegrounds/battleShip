@@ -23,41 +23,50 @@ namespace battleShip {
             
             //Creación de los barcos
             //Porta aviones
-            Barco portaAviones = new Barco(4,"P");
+            Barco portaAviones = new Barco(4,"Portaaviones XRT");
 
             barcos.Add(portaAviones);
 
             //Submarinos
-            Barco submarino1 = new Barco(3,"S");
-            Barco submarino2 = new Barco(3,"S2");
+            Barco submarino1 = new Barco(3,"Submarino X1");
+            Barco submarino2 = new Barco(3,"Submarino X2");
 
             barcos.Add(submarino1);
             barcos.Add(submarino2);
 
             //Destructores
-            Barco destructor1 = new Barco(2,"D");
-            Barco destructor2 = new Barco(2, "D2");
-            Barco destructor3 = new Barco(2, "D3");
+            Barco destructor1 = new Barco(2,"Destructor R1");
+            Barco destructor2 = new Barco(2, "Destructor R2");
+            Barco destructor3 = new Barco(2, "Destructor R3");
 
             barcos.Add(destructor1);
             barcos.Add(destructor2);
             barcos.Add(destructor3);
 
-            //Fragatas
-            Barco fragata1 = new Barco(1, "F");
-            Barco fragata2 = new Barco(1, "F2");
-            Barco fragata3 = new Barco(1, "F3");
-            Barco fragata4 = new Barco(1, "F4");
+            // Fragatas
+            Barco fragata1 = new Barco(1, "Fragata T1");
+            Barco fragata2 = new Barco(1, "Fragata T2");
+            Barco fragata3 = new Barco(1, "Fragata T3");
+            Barco fragata4 = new Barco(1, "Fragata T4");
 
             barcos.Add(fragata1);
             barcos.Add(fragata2);
             barcos.Add(fragata3);
             barcos.Add(fragata4);
 
+            //barcos.ForEach((a) => MessageBox.Show(a.Name.ToString()));
 
-            barcos.ForEach((a) => MessageBox.Show(a.ToString()));
+            lw_Barcos.View = View.Details;
 
-            tableLayoutPanel1.BackgroundImage = Image.FromFile("./../../img/water.gif");
+            // Bucle para poblar la lista de barcos
+
+            foreach (Barco item in barcos) {
+                ListViewItem LVItem = new ListViewItem(item.Name);
+                lw_Barcos.Items.Add(LVItem);
+                LVItem.SubItems.Add(item.Tamaño.ToString());
+            }
+
+            lw_Barcos.Items[0].Selected = true;
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -65,36 +74,64 @@ namespace battleShip {
             lbl_TotalTiros.Text = j1.Tiros.ToString();
             lbl_TotalAciertos.Text = j1.Aciertos.ToString();
             lbl_TotalFallos.Text = j1.Fallos.ToString();
-
         }
+
+        //  Método al clickar la celda
 
         private void celda_Click(object sender, EventArgs e) {
             
             PictureBox pictures = sender as PictureBox;
-            if (atacar)
-            {
-                if (pictures != null)
-                {
+            if (atacar) {
+                if (pictures != null) {
 
-
-                }
-            } else
-            {
-                if (pictures != null)
-                {
-                    pictures.Tag = "B";
+                    // Codigo si la celda no ha sido comprobada
 
                 }
+                else {
+                    // Código si la celda ha sido comprobada ya de antes
+                }
+            }
+            else {
+                if (lw_Barcos.SelectedItems.Count == 1) {
+                    // Elimina de la lista el barco una vez colocado (falta añadir comprobaciones de celda)
+
+                    if (pictures.Tag.ToString() != "A" || pictures.Tag.ToString() != "B") {
+
+                        MessageBox.Show(pictures.Tag as String);
+                        //pictures.Tag = lw_Barcos.SelectedItems[0];
+                        lw_Barcos.SelectedItems[0].Remove();
+                    
+                    } else {
+                        MessageBox.Show("El rango de casillas seleccionado ya está ocupado o no es suficientemente grande");
+                    }     
+
+                    // Comprueba si la lista se ha vaciado
+
+                    if(lw_Barcos.Items.Count == 0) {
+                        btn_atacar.Enabled = true;
+                        btn_rotar.Enabled = false;
+                        lw_Barcos.Enabled = false;
+                    }
+                }               
             }
         }
 
         public void crearTablero () {
+
+            int x = 0;
+            int y = 1;
             foreach (Control control in tableLayoutPanel1.Controls) {
                 PictureBox pictures = control as PictureBox;
                 if (pictures != null) {
                     pictures.BackColor = Color.Transparent;
-                    pictures.Tag = "A";
-                    //pictures.Image = Properties.Resources.mar;
+
+                    x++;
+                    if (x == 11) {
+                        x = 1;
+                        y++;
+                    }        
+                    pictures.Tag = "A" + "#" + x + "#" + y;
+
                 }
             }
         }
