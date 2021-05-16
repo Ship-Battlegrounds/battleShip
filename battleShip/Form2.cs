@@ -19,10 +19,18 @@ namespace battleShip
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
-            Form1 Juego = new Form1();
-            Juego.Show();
+            Form1 f1 = new Form1();
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(Form1))
+                {
+                    frm.Show();
+                    break;
+                }
+            }
             this.Close();
-            
+
+
         }
 
         private void btnInstrucciones_Click(object sender, EventArgs e)

@@ -16,7 +16,10 @@ namespace battleShip
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Form2 start = new Form2();
+            start.ShowDialog();
+
+            Application.Run(new Form1());
         }
     }
 }
