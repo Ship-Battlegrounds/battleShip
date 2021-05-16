@@ -164,6 +164,7 @@ namespace battleShip
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_atacar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel_Stats.SuspendLayout();
             this.panel_Jugador.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -676,7 +677,7 @@ namespace battleShip
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 3, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(89, 89);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(89, 76);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -684,21 +685,21 @@ namespace battleShip
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.06711F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.689214F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.05484F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.71867F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.23018F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(673, 480);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 548);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox100
             // 
             this.pictureBox100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox100.Location = new System.Drawing.Point(607, 433);
+            this.pictureBox100.Location = new System.Drawing.Point(607, 493);
             this.pictureBox100.Name = "pictureBox100";
-            this.pictureBox100.Size = new System.Drawing.Size(62, 43);
+            this.pictureBox100.Size = new System.Drawing.Size(65, 51);
             this.pictureBox100.TabIndex = 99;
             this.pictureBox100.TabStop = false;
             this.pictureBox100.Click += new System.EventHandler(this.celda_Click);
@@ -706,9 +707,9 @@ namespace battleShip
             // pictureBox99
             // 
             this.pictureBox99.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox99.Location = new System.Drawing.Point(540, 433);
+            this.pictureBox99.Location = new System.Drawing.Point(540, 493);
             this.pictureBox99.Name = "pictureBox99";
-            this.pictureBox99.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox99.Size = new System.Drawing.Size(60, 51);
             this.pictureBox99.TabIndex = 98;
             this.pictureBox99.TabStop = false;
             this.pictureBox99.Click += new System.EventHandler(this.celda_Click);
@@ -716,9 +717,9 @@ namespace battleShip
             // pictureBox98
             // 
             this.pictureBox98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox98.Location = new System.Drawing.Point(473, 433);
+            this.pictureBox98.Location = new System.Drawing.Point(473, 493);
             this.pictureBox98.Name = "pictureBox98";
-            this.pictureBox98.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox98.Size = new System.Drawing.Size(60, 51);
             this.pictureBox98.TabIndex = 97;
             this.pictureBox98.TabStop = false;
             this.pictureBox98.Click += new System.EventHandler(this.celda_Click);
@@ -726,9 +727,9 @@ namespace battleShip
             // pictureBox97
             // 
             this.pictureBox97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox97.Location = new System.Drawing.Point(406, 433);
+            this.pictureBox97.Location = new System.Drawing.Point(406, 493);
             this.pictureBox97.Name = "pictureBox97";
-            this.pictureBox97.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox97.Size = new System.Drawing.Size(60, 51);
             this.pictureBox97.TabIndex = 96;
             this.pictureBox97.TabStop = false;
             this.pictureBox97.Click += new System.EventHandler(this.celda_Click);
@@ -736,9 +737,9 @@ namespace battleShip
             // pictureBox96
             // 
             this.pictureBox96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox96.Location = new System.Drawing.Point(339, 433);
+            this.pictureBox96.Location = new System.Drawing.Point(339, 493);
             this.pictureBox96.Name = "pictureBox96";
-            this.pictureBox96.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox96.Size = new System.Drawing.Size(60, 51);
             this.pictureBox96.TabIndex = 95;
             this.pictureBox96.TabStop = false;
             this.pictureBox96.Click += new System.EventHandler(this.celda_Click);
@@ -746,9 +747,9 @@ namespace battleShip
             // pictureBox95
             // 
             this.pictureBox95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox95.Location = new System.Drawing.Point(272, 433);
+            this.pictureBox95.Location = new System.Drawing.Point(272, 493);
             this.pictureBox95.Name = "pictureBox95";
-            this.pictureBox95.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox95.Size = new System.Drawing.Size(60, 51);
             this.pictureBox95.TabIndex = 94;
             this.pictureBox95.TabStop = false;
             this.pictureBox95.Click += new System.EventHandler(this.celda_Click);
@@ -756,9 +757,9 @@ namespace battleShip
             // pictureBox94
             // 
             this.pictureBox94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox94.Location = new System.Drawing.Point(205, 433);
+            this.pictureBox94.Location = new System.Drawing.Point(205, 493);
             this.pictureBox94.Name = "pictureBox94";
-            this.pictureBox94.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox94.Size = new System.Drawing.Size(60, 51);
             this.pictureBox94.TabIndex = 93;
             this.pictureBox94.TabStop = false;
             this.pictureBox94.Click += new System.EventHandler(this.celda_Click);
@@ -766,9 +767,9 @@ namespace battleShip
             // pictureBox93
             // 
             this.pictureBox93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox93.Location = new System.Drawing.Point(138, 433);
+            this.pictureBox93.Location = new System.Drawing.Point(138, 493);
             this.pictureBox93.Name = "pictureBox93";
-            this.pictureBox93.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox93.Size = new System.Drawing.Size(60, 51);
             this.pictureBox93.TabIndex = 92;
             this.pictureBox93.TabStop = false;
             this.pictureBox93.Click += new System.EventHandler(this.celda_Click);
@@ -776,9 +777,9 @@ namespace battleShip
             // pictureBox92
             // 
             this.pictureBox92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox92.Location = new System.Drawing.Point(71, 433);
+            this.pictureBox92.Location = new System.Drawing.Point(71, 493);
             this.pictureBox92.Name = "pictureBox92";
-            this.pictureBox92.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox92.Size = new System.Drawing.Size(60, 51);
             this.pictureBox92.TabIndex = 91;
             this.pictureBox92.TabStop = false;
             this.pictureBox92.Click += new System.EventHandler(this.celda_Click);
@@ -786,9 +787,9 @@ namespace battleShip
             // pictureBox91
             // 
             this.pictureBox91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox91.Location = new System.Drawing.Point(4, 433);
+            this.pictureBox91.Location = new System.Drawing.Point(4, 493);
             this.pictureBox91.Name = "pictureBox91";
-            this.pictureBox91.Size = new System.Drawing.Size(60, 43);
+            this.pictureBox91.Size = new System.Drawing.Size(60, 51);
             this.pictureBox91.TabIndex = 90;
             this.pictureBox91.TabStop = false;
             this.pictureBox91.Click += new System.EventHandler(this.celda_Click);
@@ -796,9 +797,9 @@ namespace battleShip
             // pictureBox90
             // 
             this.pictureBox90.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox90.Location = new System.Drawing.Point(607, 384);
+            this.pictureBox90.Location = new System.Drawing.Point(607, 437);
             this.pictureBox90.Name = "pictureBox90";
-            this.pictureBox90.Size = new System.Drawing.Size(62, 42);
+            this.pictureBox90.Size = new System.Drawing.Size(65, 49);
             this.pictureBox90.TabIndex = 89;
             this.pictureBox90.TabStop = false;
             this.pictureBox90.Click += new System.EventHandler(this.celda_Click);
@@ -806,9 +807,9 @@ namespace battleShip
             // pictureBox89
             // 
             this.pictureBox89.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox89.Location = new System.Drawing.Point(540, 384);
+            this.pictureBox89.Location = new System.Drawing.Point(540, 437);
             this.pictureBox89.Name = "pictureBox89";
-            this.pictureBox89.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox89.Size = new System.Drawing.Size(60, 49);
             this.pictureBox89.TabIndex = 88;
             this.pictureBox89.TabStop = false;
             this.pictureBox89.Click += new System.EventHandler(this.celda_Click);
@@ -816,9 +817,9 @@ namespace battleShip
             // pictureBox88
             // 
             this.pictureBox88.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox88.Location = new System.Drawing.Point(473, 384);
+            this.pictureBox88.Location = new System.Drawing.Point(473, 437);
             this.pictureBox88.Name = "pictureBox88";
-            this.pictureBox88.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox88.Size = new System.Drawing.Size(60, 49);
             this.pictureBox88.TabIndex = 87;
             this.pictureBox88.TabStop = false;
             this.pictureBox88.Click += new System.EventHandler(this.celda_Click);
@@ -826,9 +827,9 @@ namespace battleShip
             // pictureBox87
             // 
             this.pictureBox87.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox87.Location = new System.Drawing.Point(406, 384);
+            this.pictureBox87.Location = new System.Drawing.Point(406, 437);
             this.pictureBox87.Name = "pictureBox87";
-            this.pictureBox87.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox87.Size = new System.Drawing.Size(60, 49);
             this.pictureBox87.TabIndex = 86;
             this.pictureBox87.TabStop = false;
             this.pictureBox87.Click += new System.EventHandler(this.celda_Click);
@@ -836,9 +837,9 @@ namespace battleShip
             // pictureBox86
             // 
             this.pictureBox86.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox86.Location = new System.Drawing.Point(339, 384);
+            this.pictureBox86.Location = new System.Drawing.Point(339, 437);
             this.pictureBox86.Name = "pictureBox86";
-            this.pictureBox86.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox86.Size = new System.Drawing.Size(60, 49);
             this.pictureBox86.TabIndex = 85;
             this.pictureBox86.TabStop = false;
             this.pictureBox86.Click += new System.EventHandler(this.celda_Click);
@@ -846,9 +847,9 @@ namespace battleShip
             // pictureBox85
             // 
             this.pictureBox85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox85.Location = new System.Drawing.Point(272, 384);
+            this.pictureBox85.Location = new System.Drawing.Point(272, 437);
             this.pictureBox85.Name = "pictureBox85";
-            this.pictureBox85.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox85.Size = new System.Drawing.Size(60, 49);
             this.pictureBox85.TabIndex = 84;
             this.pictureBox85.TabStop = false;
             this.pictureBox85.Click += new System.EventHandler(this.celda_Click);
@@ -856,9 +857,9 @@ namespace battleShip
             // pictureBox84
             // 
             this.pictureBox84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox84.Location = new System.Drawing.Point(205, 384);
+            this.pictureBox84.Location = new System.Drawing.Point(205, 437);
             this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox84.Size = new System.Drawing.Size(60, 49);
             this.pictureBox84.TabIndex = 83;
             this.pictureBox84.TabStop = false;
             this.pictureBox84.Click += new System.EventHandler(this.celda_Click);
@@ -866,9 +867,9 @@ namespace battleShip
             // pictureBox83
             // 
             this.pictureBox83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox83.Location = new System.Drawing.Point(138, 384);
+            this.pictureBox83.Location = new System.Drawing.Point(138, 437);
             this.pictureBox83.Name = "pictureBox83";
-            this.pictureBox83.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox83.Size = new System.Drawing.Size(60, 49);
             this.pictureBox83.TabIndex = 82;
             this.pictureBox83.TabStop = false;
             this.pictureBox83.Click += new System.EventHandler(this.celda_Click);
@@ -876,9 +877,9 @@ namespace battleShip
             // pictureBox82
             // 
             this.pictureBox82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox82.Location = new System.Drawing.Point(71, 384);
+            this.pictureBox82.Location = new System.Drawing.Point(71, 437);
             this.pictureBox82.Name = "pictureBox82";
-            this.pictureBox82.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox82.Size = new System.Drawing.Size(60, 49);
             this.pictureBox82.TabIndex = 81;
             this.pictureBox82.TabStop = false;
             this.pictureBox82.Click += new System.EventHandler(this.celda_Click);
@@ -886,9 +887,9 @@ namespace battleShip
             // pictureBox81
             // 
             this.pictureBox81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox81.Location = new System.Drawing.Point(4, 384);
+            this.pictureBox81.Location = new System.Drawing.Point(4, 437);
             this.pictureBox81.Name = "pictureBox81";
-            this.pictureBox81.Size = new System.Drawing.Size(60, 42);
+            this.pictureBox81.Size = new System.Drawing.Size(60, 49);
             this.pictureBox81.TabIndex = 80;
             this.pictureBox81.TabStop = false;
             this.pictureBox81.Click += new System.EventHandler(this.celda_Click);
@@ -896,9 +897,9 @@ namespace battleShip
             // pictureBox80
             // 
             this.pictureBox80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox80.Location = new System.Drawing.Point(607, 338);
+            this.pictureBox80.Location = new System.Drawing.Point(607, 384);
             this.pictureBox80.Name = "pictureBox80";
-            this.pictureBox80.Size = new System.Drawing.Size(62, 39);
+            this.pictureBox80.Size = new System.Drawing.Size(65, 46);
             this.pictureBox80.TabIndex = 79;
             this.pictureBox80.TabStop = false;
             this.pictureBox80.Click += new System.EventHandler(this.celda_Click);
@@ -906,9 +907,9 @@ namespace battleShip
             // pictureBox79
             // 
             this.pictureBox79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox79.Location = new System.Drawing.Point(540, 338);
+            this.pictureBox79.Location = new System.Drawing.Point(540, 384);
             this.pictureBox79.Name = "pictureBox79";
-            this.pictureBox79.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox79.Size = new System.Drawing.Size(60, 46);
             this.pictureBox79.TabIndex = 78;
             this.pictureBox79.TabStop = false;
             this.pictureBox79.Click += new System.EventHandler(this.celda_Click);
@@ -916,9 +917,9 @@ namespace battleShip
             // pictureBox78
             // 
             this.pictureBox78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox78.Location = new System.Drawing.Point(473, 338);
+            this.pictureBox78.Location = new System.Drawing.Point(473, 384);
             this.pictureBox78.Name = "pictureBox78";
-            this.pictureBox78.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox78.Size = new System.Drawing.Size(60, 46);
             this.pictureBox78.TabIndex = 77;
             this.pictureBox78.TabStop = false;
             this.pictureBox78.Click += new System.EventHandler(this.celda_Click);
@@ -926,9 +927,9 @@ namespace battleShip
             // pictureBox77
             // 
             this.pictureBox77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox77.Location = new System.Drawing.Point(406, 338);
+            this.pictureBox77.Location = new System.Drawing.Point(406, 384);
             this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox77.Size = new System.Drawing.Size(60, 46);
             this.pictureBox77.TabIndex = 76;
             this.pictureBox77.TabStop = false;
             this.pictureBox77.Click += new System.EventHandler(this.celda_Click);
@@ -936,9 +937,9 @@ namespace battleShip
             // pictureBox76
             // 
             this.pictureBox76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox76.Location = new System.Drawing.Point(339, 338);
+            this.pictureBox76.Location = new System.Drawing.Point(339, 384);
             this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox76.Size = new System.Drawing.Size(60, 46);
             this.pictureBox76.TabIndex = 75;
             this.pictureBox76.TabStop = false;
             this.pictureBox76.Click += new System.EventHandler(this.celda_Click);
@@ -946,9 +947,9 @@ namespace battleShip
             // pictureBox75
             // 
             this.pictureBox75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox75.Location = new System.Drawing.Point(272, 338);
+            this.pictureBox75.Location = new System.Drawing.Point(272, 384);
             this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox75.Size = new System.Drawing.Size(60, 46);
             this.pictureBox75.TabIndex = 74;
             this.pictureBox75.TabStop = false;
             this.pictureBox75.Click += new System.EventHandler(this.celda_Click);
@@ -956,9 +957,9 @@ namespace battleShip
             // pictureBox74
             // 
             this.pictureBox74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox74.Location = new System.Drawing.Point(205, 338);
+            this.pictureBox74.Location = new System.Drawing.Point(205, 384);
             this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox74.Size = new System.Drawing.Size(60, 46);
             this.pictureBox74.TabIndex = 73;
             this.pictureBox74.TabStop = false;
             this.pictureBox74.Click += new System.EventHandler(this.celda_Click);
@@ -966,9 +967,9 @@ namespace battleShip
             // pictureBox73
             // 
             this.pictureBox73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox73.Location = new System.Drawing.Point(138, 338);
+            this.pictureBox73.Location = new System.Drawing.Point(138, 384);
             this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox73.Size = new System.Drawing.Size(60, 46);
             this.pictureBox73.TabIndex = 72;
             this.pictureBox73.TabStop = false;
             this.pictureBox73.Click += new System.EventHandler(this.celda_Click);
@@ -976,9 +977,9 @@ namespace battleShip
             // pictureBox72
             // 
             this.pictureBox72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox72.Location = new System.Drawing.Point(71, 338);
+            this.pictureBox72.Location = new System.Drawing.Point(71, 384);
             this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox72.Size = new System.Drawing.Size(60, 46);
             this.pictureBox72.TabIndex = 71;
             this.pictureBox72.TabStop = false;
             this.pictureBox72.Click += new System.EventHandler(this.celda_Click);
@@ -986,9 +987,9 @@ namespace battleShip
             // pictureBox71
             // 
             this.pictureBox71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox71.Location = new System.Drawing.Point(4, 338);
+            this.pictureBox71.Location = new System.Drawing.Point(4, 384);
             this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox71.Size = new System.Drawing.Size(60, 46);
             this.pictureBox71.TabIndex = 70;
             this.pictureBox71.TabStop = false;
             this.pictureBox71.Click += new System.EventHandler(this.celda_Click);
@@ -996,9 +997,9 @@ namespace battleShip
             // pictureBox70
             // 
             this.pictureBox70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox70.Location = new System.Drawing.Point(607, 290);
+            this.pictureBox70.Location = new System.Drawing.Point(607, 329);
             this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox70.Size = new System.Drawing.Size(65, 48);
             this.pictureBox70.TabIndex = 69;
             this.pictureBox70.TabStop = false;
             this.pictureBox70.Click += new System.EventHandler(this.celda_Click);
@@ -1006,9 +1007,9 @@ namespace battleShip
             // pictureBox69
             // 
             this.pictureBox69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox69.Location = new System.Drawing.Point(540, 290);
+            this.pictureBox69.Location = new System.Drawing.Point(540, 329);
             this.pictureBox69.Name = "pictureBox69";
-            this.pictureBox69.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox69.Size = new System.Drawing.Size(60, 48);
             this.pictureBox69.TabIndex = 68;
             this.pictureBox69.TabStop = false;
             this.pictureBox69.Click += new System.EventHandler(this.celda_Click);
@@ -1016,9 +1017,9 @@ namespace battleShip
             // pictureBox68
             // 
             this.pictureBox68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox68.Location = new System.Drawing.Point(473, 290);
+            this.pictureBox68.Location = new System.Drawing.Point(473, 329);
             this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox68.Size = new System.Drawing.Size(60, 48);
             this.pictureBox68.TabIndex = 67;
             this.pictureBox68.TabStop = false;
             this.pictureBox68.Click += new System.EventHandler(this.celda_Click);
@@ -1026,9 +1027,9 @@ namespace battleShip
             // pictureBox67
             // 
             this.pictureBox67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox67.Location = new System.Drawing.Point(406, 290);
+            this.pictureBox67.Location = new System.Drawing.Point(406, 329);
             this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox67.Size = new System.Drawing.Size(60, 48);
             this.pictureBox67.TabIndex = 66;
             this.pictureBox67.TabStop = false;
             this.pictureBox67.Click += new System.EventHandler(this.celda_Click);
@@ -1036,9 +1037,9 @@ namespace battleShip
             // pictureBox66
             // 
             this.pictureBox66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox66.Location = new System.Drawing.Point(339, 290);
+            this.pictureBox66.Location = new System.Drawing.Point(339, 329);
             this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox66.Size = new System.Drawing.Size(60, 48);
             this.pictureBox66.TabIndex = 65;
             this.pictureBox66.TabStop = false;
             this.pictureBox66.Click += new System.EventHandler(this.celda_Click);
@@ -1046,9 +1047,9 @@ namespace battleShip
             // pictureBox65
             // 
             this.pictureBox65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox65.Location = new System.Drawing.Point(272, 290);
+            this.pictureBox65.Location = new System.Drawing.Point(272, 329);
             this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox65.Size = new System.Drawing.Size(60, 48);
             this.pictureBox65.TabIndex = 64;
             this.pictureBox65.TabStop = false;
             this.pictureBox65.Click += new System.EventHandler(this.celda_Click);
@@ -1056,9 +1057,9 @@ namespace battleShip
             // pictureBox64
             // 
             this.pictureBox64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox64.Location = new System.Drawing.Point(205, 290);
+            this.pictureBox64.Location = new System.Drawing.Point(205, 329);
             this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox64.Size = new System.Drawing.Size(60, 48);
             this.pictureBox64.TabIndex = 63;
             this.pictureBox64.TabStop = false;
             this.pictureBox64.Click += new System.EventHandler(this.celda_Click);
@@ -1066,9 +1067,9 @@ namespace battleShip
             // pictureBox63
             // 
             this.pictureBox63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox63.Location = new System.Drawing.Point(138, 290);
+            this.pictureBox63.Location = new System.Drawing.Point(138, 329);
             this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox63.Size = new System.Drawing.Size(60, 48);
             this.pictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox63.TabIndex = 62;
             this.pictureBox63.TabStop = false;
@@ -1077,9 +1078,9 @@ namespace battleShip
             // pictureBox62
             // 
             this.pictureBox62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox62.Location = new System.Drawing.Point(71, 290);
+            this.pictureBox62.Location = new System.Drawing.Point(71, 329);
             this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox62.Size = new System.Drawing.Size(60, 48);
             this.pictureBox62.TabIndex = 61;
             this.pictureBox62.TabStop = false;
             this.pictureBox62.Click += new System.EventHandler(this.celda_Click);
@@ -1087,9 +1088,9 @@ namespace battleShip
             // pictureBox61
             // 
             this.pictureBox61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox61.Location = new System.Drawing.Point(4, 290);
+            this.pictureBox61.Location = new System.Drawing.Point(4, 329);
             this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox61.Size = new System.Drawing.Size(60, 48);
             this.pictureBox61.TabIndex = 60;
             this.pictureBox61.TabStop = false;
             this.pictureBox61.Click += new System.EventHandler(this.celda_Click);
@@ -1097,9 +1098,9 @@ namespace battleShip
             // pictureBox60
             // 
             this.pictureBox60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox60.Location = new System.Drawing.Point(607, 242);
+            this.pictureBox60.Location = new System.Drawing.Point(607, 274);
             this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox60.Size = new System.Drawing.Size(65, 48);
             this.pictureBox60.TabIndex = 59;
             this.pictureBox60.TabStop = false;
             this.pictureBox60.Click += new System.EventHandler(this.celda_Click);
@@ -1107,9 +1108,9 @@ namespace battleShip
             // pictureBox59
             // 
             this.pictureBox59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox59.Location = new System.Drawing.Point(540, 242);
+            this.pictureBox59.Location = new System.Drawing.Point(540, 274);
             this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox59.Size = new System.Drawing.Size(60, 48);
             this.pictureBox59.TabIndex = 58;
             this.pictureBox59.TabStop = false;
             this.pictureBox59.Click += new System.EventHandler(this.celda_Click);
@@ -1117,9 +1118,9 @@ namespace battleShip
             // pictureBox58
             // 
             this.pictureBox58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox58.Location = new System.Drawing.Point(473, 242);
+            this.pictureBox58.Location = new System.Drawing.Point(473, 274);
             this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox58.Size = new System.Drawing.Size(60, 48);
             this.pictureBox58.TabIndex = 57;
             this.pictureBox58.TabStop = false;
             this.pictureBox58.Click += new System.EventHandler(this.celda_Click);
@@ -1127,9 +1128,9 @@ namespace battleShip
             // pictureBox57
             // 
             this.pictureBox57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox57.Location = new System.Drawing.Point(406, 242);
+            this.pictureBox57.Location = new System.Drawing.Point(406, 274);
             this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox57.Size = new System.Drawing.Size(60, 48);
             this.pictureBox57.TabIndex = 56;
             this.pictureBox57.TabStop = false;
             this.pictureBox57.Click += new System.EventHandler(this.celda_Click);
@@ -1137,9 +1138,9 @@ namespace battleShip
             // pictureBox56
             // 
             this.pictureBox56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox56.Location = new System.Drawing.Point(339, 242);
+            this.pictureBox56.Location = new System.Drawing.Point(339, 274);
             this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox56.Size = new System.Drawing.Size(60, 48);
             this.pictureBox56.TabIndex = 55;
             this.pictureBox56.TabStop = false;
             this.pictureBox56.Click += new System.EventHandler(this.celda_Click);
@@ -1147,9 +1148,9 @@ namespace battleShip
             // pictureBox55
             // 
             this.pictureBox55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox55.Location = new System.Drawing.Point(272, 242);
+            this.pictureBox55.Location = new System.Drawing.Point(272, 274);
             this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox55.Size = new System.Drawing.Size(60, 48);
             this.pictureBox55.TabIndex = 54;
             this.pictureBox55.TabStop = false;
             this.pictureBox55.Click += new System.EventHandler(this.celda_Click);
@@ -1157,9 +1158,9 @@ namespace battleShip
             // pictureBox54
             // 
             this.pictureBox54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox54.Location = new System.Drawing.Point(205, 242);
+            this.pictureBox54.Location = new System.Drawing.Point(205, 274);
             this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox54.Size = new System.Drawing.Size(60, 48);
             this.pictureBox54.TabIndex = 53;
             this.pictureBox54.TabStop = false;
             this.pictureBox54.Click += new System.EventHandler(this.celda_Click);
@@ -1167,9 +1168,9 @@ namespace battleShip
             // pictureBox53
             // 
             this.pictureBox53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox53.Location = new System.Drawing.Point(138, 242);
+            this.pictureBox53.Location = new System.Drawing.Point(138, 274);
             this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox53.Size = new System.Drawing.Size(60, 48);
             this.pictureBox53.TabIndex = 52;
             this.pictureBox53.TabStop = false;
             this.pictureBox53.Click += new System.EventHandler(this.celda_Click);
@@ -1177,9 +1178,9 @@ namespace battleShip
             // pictureBox52
             // 
             this.pictureBox52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox52.Location = new System.Drawing.Point(71, 242);
+            this.pictureBox52.Location = new System.Drawing.Point(71, 274);
             this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox52.Size = new System.Drawing.Size(60, 48);
             this.pictureBox52.TabIndex = 51;
             this.pictureBox52.TabStop = false;
             this.pictureBox52.Click += new System.EventHandler(this.celda_Click);
@@ -1187,9 +1188,9 @@ namespace battleShip
             // pictureBox51
             // 
             this.pictureBox51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox51.Location = new System.Drawing.Point(4, 242);
+            this.pictureBox51.Location = new System.Drawing.Point(4, 274);
             this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox51.Size = new System.Drawing.Size(60, 48);
             this.pictureBox51.TabIndex = 50;
             this.pictureBox51.TabStop = false;
             this.pictureBox51.Click += new System.EventHandler(this.celda_Click);
@@ -1198,9 +1199,9 @@ namespace battleShip
             // 
             this.pictureBox50.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox50.Location = new System.Drawing.Point(607, 194);
+            this.pictureBox50.Location = new System.Drawing.Point(607, 221);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox50.Size = new System.Drawing.Size(65, 46);
             this.pictureBox50.TabIndex = 49;
             this.pictureBox50.TabStop = false;
             this.pictureBox50.Click += new System.EventHandler(this.celda_Click);
@@ -1208,9 +1209,9 @@ namespace battleShip
             // pictureBox49
             // 
             this.pictureBox49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox49.Location = new System.Drawing.Point(540, 194);
+            this.pictureBox49.Location = new System.Drawing.Point(540, 221);
             this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox49.Size = new System.Drawing.Size(60, 46);
             this.pictureBox49.TabIndex = 48;
             this.pictureBox49.TabStop = false;
             this.pictureBox49.Click += new System.EventHandler(this.celda_Click);
@@ -1218,9 +1219,9 @@ namespace battleShip
             // pictureBox48
             // 
             this.pictureBox48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox48.Location = new System.Drawing.Point(473, 194);
+            this.pictureBox48.Location = new System.Drawing.Point(473, 221);
             this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox48.Size = new System.Drawing.Size(60, 46);
             this.pictureBox48.TabIndex = 47;
             this.pictureBox48.TabStop = false;
             this.pictureBox48.Click += new System.EventHandler(this.celda_Click);
@@ -1228,9 +1229,9 @@ namespace battleShip
             // pictureBox47
             // 
             this.pictureBox47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox47.Location = new System.Drawing.Point(406, 194);
+            this.pictureBox47.Location = new System.Drawing.Point(406, 221);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox47.Size = new System.Drawing.Size(60, 46);
             this.pictureBox47.TabIndex = 46;
             this.pictureBox47.TabStop = false;
             this.pictureBox47.Click += new System.EventHandler(this.celda_Click);
@@ -1238,9 +1239,9 @@ namespace battleShip
             // pictureBox46
             // 
             this.pictureBox46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox46.Location = new System.Drawing.Point(339, 194);
+            this.pictureBox46.Location = new System.Drawing.Point(339, 221);
             this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox46.Size = new System.Drawing.Size(60, 46);
             this.pictureBox46.TabIndex = 45;
             this.pictureBox46.TabStop = false;
             this.pictureBox46.Click += new System.EventHandler(this.celda_Click);
@@ -1248,9 +1249,9 @@ namespace battleShip
             // pictureBox45
             // 
             this.pictureBox45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox45.Location = new System.Drawing.Point(272, 194);
+            this.pictureBox45.Location = new System.Drawing.Point(272, 221);
             this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox45.Size = new System.Drawing.Size(60, 46);
             this.pictureBox45.TabIndex = 44;
             this.pictureBox45.TabStop = false;
             this.pictureBox45.Click += new System.EventHandler(this.celda_Click);
@@ -1258,9 +1259,9 @@ namespace battleShip
             // pictureBox44
             // 
             this.pictureBox44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox44.Location = new System.Drawing.Point(205, 194);
+            this.pictureBox44.Location = new System.Drawing.Point(205, 221);
             this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox44.Size = new System.Drawing.Size(60, 46);
             this.pictureBox44.TabIndex = 43;
             this.pictureBox44.TabStop = false;
             this.pictureBox44.Click += new System.EventHandler(this.celda_Click);
@@ -1268,9 +1269,9 @@ namespace battleShip
             // pictureBox43
             // 
             this.pictureBox43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox43.Location = new System.Drawing.Point(138, 194);
+            this.pictureBox43.Location = new System.Drawing.Point(138, 221);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox43.Size = new System.Drawing.Size(60, 46);
             this.pictureBox43.TabIndex = 42;
             this.pictureBox43.TabStop = false;
             this.pictureBox43.Click += new System.EventHandler(this.celda_Click);
@@ -1278,9 +1279,9 @@ namespace battleShip
             // pictureBox42
             // 
             this.pictureBox42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox42.Location = new System.Drawing.Point(71, 194);
+            this.pictureBox42.Location = new System.Drawing.Point(71, 221);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox42.Size = new System.Drawing.Size(60, 46);
             this.pictureBox42.TabIndex = 41;
             this.pictureBox42.TabStop = false;
             this.pictureBox42.Click += new System.EventHandler(this.celda_Click);
@@ -1288,9 +1289,9 @@ namespace battleShip
             // pictureBox41
             // 
             this.pictureBox41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox41.Location = new System.Drawing.Point(4, 194);
+            this.pictureBox41.Location = new System.Drawing.Point(4, 221);
             this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox41.Size = new System.Drawing.Size(60, 46);
             this.pictureBox41.TabIndex = 40;
             this.pictureBox41.TabStop = false;
             this.pictureBox41.Click += new System.EventHandler(this.celda_Click);
@@ -1298,9 +1299,9 @@ namespace battleShip
             // pictureBox40
             // 
             this.pictureBox40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox40.Location = new System.Drawing.Point(607, 146);
+            this.pictureBox40.Location = new System.Drawing.Point(607, 166);
             this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox40.Size = new System.Drawing.Size(65, 48);
             this.pictureBox40.TabIndex = 39;
             this.pictureBox40.TabStop = false;
             this.pictureBox40.Click += new System.EventHandler(this.celda_Click);
@@ -1308,9 +1309,9 @@ namespace battleShip
             // pictureBox39
             // 
             this.pictureBox39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox39.Location = new System.Drawing.Point(540, 146);
+            this.pictureBox39.Location = new System.Drawing.Point(540, 166);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox39.Size = new System.Drawing.Size(60, 48);
             this.pictureBox39.TabIndex = 38;
             this.pictureBox39.TabStop = false;
             this.pictureBox39.Click += new System.EventHandler(this.celda_Click);
@@ -1318,9 +1319,9 @@ namespace battleShip
             // pictureBox38
             // 
             this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox38.Location = new System.Drawing.Point(473, 146);
+            this.pictureBox38.Location = new System.Drawing.Point(473, 166);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox38.Size = new System.Drawing.Size(60, 48);
             this.pictureBox38.TabIndex = 37;
             this.pictureBox38.TabStop = false;
             this.pictureBox38.Click += new System.EventHandler(this.celda_Click);
@@ -1328,9 +1329,9 @@ namespace battleShip
             // pictureBox37
             // 
             this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox37.Location = new System.Drawing.Point(406, 146);
+            this.pictureBox37.Location = new System.Drawing.Point(406, 166);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox37.Size = new System.Drawing.Size(60, 48);
             this.pictureBox37.TabIndex = 36;
             this.pictureBox37.TabStop = false;
             this.pictureBox37.Click += new System.EventHandler(this.celda_Click);
@@ -1338,9 +1339,9 @@ namespace battleShip
             // pictureBox36
             // 
             this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox36.Location = new System.Drawing.Point(339, 146);
+            this.pictureBox36.Location = new System.Drawing.Point(339, 166);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox36.Size = new System.Drawing.Size(60, 48);
             this.pictureBox36.TabIndex = 35;
             this.pictureBox36.TabStop = false;
             this.pictureBox36.Click += new System.EventHandler(this.celda_Click);
@@ -1348,9 +1349,9 @@ namespace battleShip
             // pictureBox35
             // 
             this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox35.Location = new System.Drawing.Point(272, 146);
+            this.pictureBox35.Location = new System.Drawing.Point(272, 166);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox35.Size = new System.Drawing.Size(60, 48);
             this.pictureBox35.TabIndex = 34;
             this.pictureBox35.TabStop = false;
             this.pictureBox35.Click += new System.EventHandler(this.celda_Click);
@@ -1358,9 +1359,9 @@ namespace battleShip
             // pictureBox34
             // 
             this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox34.Location = new System.Drawing.Point(205, 146);
+            this.pictureBox34.Location = new System.Drawing.Point(205, 166);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox34.Size = new System.Drawing.Size(60, 48);
             this.pictureBox34.TabIndex = 33;
             this.pictureBox34.TabStop = false;
             this.pictureBox34.Click += new System.EventHandler(this.celda_Click);
@@ -1368,9 +1369,9 @@ namespace battleShip
             // pictureBox33
             // 
             this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox33.Location = new System.Drawing.Point(138, 146);
+            this.pictureBox33.Location = new System.Drawing.Point(138, 166);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox33.Size = new System.Drawing.Size(60, 48);
             this.pictureBox33.TabIndex = 32;
             this.pictureBox33.TabStop = false;
             this.pictureBox33.Click += new System.EventHandler(this.celda_Click);
@@ -1378,9 +1379,9 @@ namespace battleShip
             // pictureBox32
             // 
             this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox32.Location = new System.Drawing.Point(71, 146);
+            this.pictureBox32.Location = new System.Drawing.Point(71, 166);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox32.Size = new System.Drawing.Size(60, 48);
             this.pictureBox32.TabIndex = 31;
             this.pictureBox32.TabStop = false;
             this.pictureBox32.Click += new System.EventHandler(this.celda_Click);
@@ -1388,9 +1389,9 @@ namespace battleShip
             // pictureBox31
             // 
             this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox31.Location = new System.Drawing.Point(4, 146);
+            this.pictureBox31.Location = new System.Drawing.Point(4, 166);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox31.Size = new System.Drawing.Size(60, 48);
             this.pictureBox31.TabIndex = 30;
             this.pictureBox31.TabStop = false;
             this.pictureBox31.Click += new System.EventHandler(this.celda_Click);
@@ -1398,9 +1399,9 @@ namespace battleShip
             // pictureBox30
             // 
             this.pictureBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox30.Location = new System.Drawing.Point(607, 98);
+            this.pictureBox30.Location = new System.Drawing.Point(607, 111);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox30.Size = new System.Drawing.Size(65, 48);
             this.pictureBox30.TabIndex = 29;
             this.pictureBox30.TabStop = false;
             this.pictureBox30.Click += new System.EventHandler(this.celda_Click);
@@ -1408,9 +1409,9 @@ namespace battleShip
             // pictureBox29
             // 
             this.pictureBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox29.Location = new System.Drawing.Point(540, 98);
+            this.pictureBox29.Location = new System.Drawing.Point(540, 111);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox29.Size = new System.Drawing.Size(60, 48);
             this.pictureBox29.TabIndex = 28;
             this.pictureBox29.TabStop = false;
             this.pictureBox29.Click += new System.EventHandler(this.celda_Click);
@@ -1418,9 +1419,9 @@ namespace battleShip
             // pictureBox28
             // 
             this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox28.Location = new System.Drawing.Point(473, 98);
+            this.pictureBox28.Location = new System.Drawing.Point(473, 111);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox28.Size = new System.Drawing.Size(60, 48);
             this.pictureBox28.TabIndex = 27;
             this.pictureBox28.TabStop = false;
             this.pictureBox28.Click += new System.EventHandler(this.celda_Click);
@@ -1428,9 +1429,9 @@ namespace battleShip
             // pictureBox27
             // 
             this.pictureBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox27.Location = new System.Drawing.Point(406, 98);
+            this.pictureBox27.Location = new System.Drawing.Point(406, 111);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox27.Size = new System.Drawing.Size(60, 48);
             this.pictureBox27.TabIndex = 26;
             this.pictureBox27.TabStop = false;
             this.pictureBox27.Click += new System.EventHandler(this.celda_Click);
@@ -1438,9 +1439,9 @@ namespace battleShip
             // pictureBox26
             // 
             this.pictureBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox26.Location = new System.Drawing.Point(339, 98);
+            this.pictureBox26.Location = new System.Drawing.Point(339, 111);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox26.Size = new System.Drawing.Size(60, 48);
             this.pictureBox26.TabIndex = 25;
             this.pictureBox26.TabStop = false;
             this.pictureBox26.Click += new System.EventHandler(this.celda_Click);
@@ -1448,9 +1449,9 @@ namespace battleShip
             // pictureBox25
             // 
             this.pictureBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox25.Location = new System.Drawing.Point(272, 98);
+            this.pictureBox25.Location = new System.Drawing.Point(272, 111);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox25.Size = new System.Drawing.Size(60, 48);
             this.pictureBox25.TabIndex = 24;
             this.pictureBox25.TabStop = false;
             this.pictureBox25.Click += new System.EventHandler(this.celda_Click);
@@ -1458,9 +1459,9 @@ namespace battleShip
             // pictureBox24
             // 
             this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox24.Location = new System.Drawing.Point(205, 98);
+            this.pictureBox24.Location = new System.Drawing.Point(205, 111);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox24.Size = new System.Drawing.Size(60, 48);
             this.pictureBox24.TabIndex = 23;
             this.pictureBox24.TabStop = false;
             this.pictureBox24.Click += new System.EventHandler(this.celda_Click);
@@ -1468,9 +1469,9 @@ namespace battleShip
             // pictureBox23
             // 
             this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox23.Location = new System.Drawing.Point(138, 98);
+            this.pictureBox23.Location = new System.Drawing.Point(138, 111);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox23.Size = new System.Drawing.Size(60, 48);
             this.pictureBox23.TabIndex = 22;
             this.pictureBox23.TabStop = false;
             this.pictureBox23.Click += new System.EventHandler(this.celda_Click);
@@ -1478,9 +1479,9 @@ namespace battleShip
             // pictureBox22
             // 
             this.pictureBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox22.Location = new System.Drawing.Point(71, 98);
+            this.pictureBox22.Location = new System.Drawing.Point(71, 111);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox22.Size = new System.Drawing.Size(60, 48);
             this.pictureBox22.TabIndex = 21;
             this.pictureBox22.TabStop = false;
             this.pictureBox22.Click += new System.EventHandler(this.celda_Click);
@@ -1488,9 +1489,9 @@ namespace battleShip
             // pictureBox21
             // 
             this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox21.Location = new System.Drawing.Point(4, 98);
+            this.pictureBox21.Location = new System.Drawing.Point(4, 111);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox21.Size = new System.Drawing.Size(60, 48);
             this.pictureBox21.TabIndex = 20;
             this.pictureBox21.TabStop = false;
             this.pictureBox21.Click += new System.EventHandler(this.celda_Click);
@@ -1498,9 +1499,9 @@ namespace battleShip
             // pictureBox20
             // 
             this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox20.Location = new System.Drawing.Point(607, 50);
+            this.pictureBox20.Location = new System.Drawing.Point(607, 56);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(62, 41);
+            this.pictureBox20.Size = new System.Drawing.Size(65, 48);
             this.pictureBox20.TabIndex = 19;
             this.pictureBox20.TabStop = false;
             this.pictureBox20.Click += new System.EventHandler(this.celda_Click);
@@ -1508,9 +1509,9 @@ namespace battleShip
             // pictureBox19
             // 
             this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox19.Location = new System.Drawing.Point(540, 50);
+            this.pictureBox19.Location = new System.Drawing.Point(540, 56);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox19.Size = new System.Drawing.Size(60, 48);
             this.pictureBox19.TabIndex = 18;
             this.pictureBox19.TabStop = false;
             this.pictureBox19.Click += new System.EventHandler(this.celda_Click);
@@ -1518,9 +1519,9 @@ namespace battleShip
             // pictureBox18
             // 
             this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox18.Location = new System.Drawing.Point(473, 50);
+            this.pictureBox18.Location = new System.Drawing.Point(473, 56);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox18.Size = new System.Drawing.Size(60, 48);
             this.pictureBox18.TabIndex = 17;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.Click += new System.EventHandler(this.celda_Click);
@@ -1528,9 +1529,9 @@ namespace battleShip
             // pictureBox17
             // 
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(406, 50);
+            this.pictureBox17.Location = new System.Drawing.Point(406, 56);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox17.Size = new System.Drawing.Size(60, 48);
             this.pictureBox17.TabIndex = 16;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.Click += new System.EventHandler(this.celda_Click);
@@ -1538,9 +1539,9 @@ namespace battleShip
             // pictureBox16
             // 
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(339, 50);
+            this.pictureBox16.Location = new System.Drawing.Point(339, 56);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox16.Size = new System.Drawing.Size(60, 48);
             this.pictureBox16.TabIndex = 15;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Click += new System.EventHandler(this.celda_Click);
@@ -1548,9 +1549,9 @@ namespace battleShip
             // pictureBox15
             // 
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(272, 50);
+            this.pictureBox15.Location = new System.Drawing.Point(272, 56);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox15.Size = new System.Drawing.Size(60, 48);
             this.pictureBox15.TabIndex = 14;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Click += new System.EventHandler(this.celda_Click);
@@ -1558,9 +1559,9 @@ namespace battleShip
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(205, 50);
+            this.pictureBox14.Location = new System.Drawing.Point(205, 56);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox14.Size = new System.Drawing.Size(60, 48);
             this.pictureBox14.TabIndex = 13;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Click += new System.EventHandler(this.celda_Click);
@@ -1568,9 +1569,9 @@ namespace battleShip
             // pictureBox13
             // 
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Location = new System.Drawing.Point(138, 50);
+            this.pictureBox13.Location = new System.Drawing.Point(138, 56);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox13.Size = new System.Drawing.Size(60, 48);
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.celda_Click);
@@ -1578,9 +1579,9 @@ namespace battleShip
             // pictureBox12
             // 
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Location = new System.Drawing.Point(71, 50);
+            this.pictureBox12.Location = new System.Drawing.Point(71, 56);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox12.Size = new System.Drawing.Size(60, 48);
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Click += new System.EventHandler(this.celda_Click);
@@ -1588,9 +1589,9 @@ namespace battleShip
             // pictureBox11
             // 
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(4, 50);
+            this.pictureBox11.Location = new System.Drawing.Point(4, 56);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(60, 41);
+            this.pictureBox11.Size = new System.Drawing.Size(60, 48);
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.celda_Click);
@@ -1600,7 +1601,7 @@ namespace battleShip
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Location = new System.Drawing.Point(607, 4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(62, 39);
+            this.pictureBox10.Size = new System.Drawing.Size(65, 45);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.celda_Click);
@@ -1610,7 +1611,7 @@ namespace battleShip
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Location = new System.Drawing.Point(540, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox9.Size = new System.Drawing.Size(60, 45);
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.celda_Click);
@@ -1620,7 +1621,7 @@ namespace battleShip
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Location = new System.Drawing.Point(473, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox8.Size = new System.Drawing.Size(60, 45);
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.celda_Click);
@@ -1630,7 +1631,7 @@ namespace battleShip
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Location = new System.Drawing.Point(406, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox7.Size = new System.Drawing.Size(60, 45);
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.celda_Click);
@@ -1640,7 +1641,7 @@ namespace battleShip
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Location = new System.Drawing.Point(339, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox6.Size = new System.Drawing.Size(60, 45);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.celda_Click);
@@ -1650,7 +1651,7 @@ namespace battleShip
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(272, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox5.Size = new System.Drawing.Size(60, 45);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.celda_Click);
@@ -1660,7 +1661,7 @@ namespace battleShip
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Location = new System.Drawing.Point(138, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(60, 45);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.celda_Click);
@@ -1670,7 +1671,7 @@ namespace battleShip
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(71, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(60, 45);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.celda_Click);
@@ -1680,7 +1681,7 @@ namespace battleShip
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(60, 45);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.celda_Click);
@@ -1690,7 +1691,7 @@ namespace battleShip
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(205, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(60, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -1698,19 +1699,28 @@ namespace battleShip
             // 
             // btn_atacar
             // 
-            this.btn_atacar.Location = new System.Drawing.Point(796, 359);
+            this.btn_atacar.Location = new System.Drawing.Point(837, 298);
             this.btn_atacar.Name = "btn_atacar";
-            this.btn_atacar.Size = new System.Drawing.Size(144, 77);
+            this.btn_atacar.Size = new System.Drawing.Size(72, 45);
             this.btn_atacar.TabIndex = 28;
             this.btn_atacar.Text = "Atacar";
             this.btn_atacar.UseVisualStyleBackColor = true;
             this.btn_atacar.Click += new System.EventHandler(this.btn_atacar_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(801, 400);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(133, 212);
+            this.listBox1.TabIndex = 29;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 633);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btn_atacar);
             this.Controls.Add(this.panel_Jugador);
             this.Controls.Add(this.panel_Stats);
@@ -1985,6 +1995,7 @@ namespace battleShip
         private System.Windows.Forms.Label lbl_Jugador;
         private System.Windows.Forms.Label lbl_NombreJug;
         private System.Windows.Forms.Button btn_atacar;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

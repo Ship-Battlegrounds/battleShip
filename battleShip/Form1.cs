@@ -21,6 +21,42 @@ namespace battleShip {
             InitializeComponent();
             crearTablero();
             
+            //Creación de los barcos
+            //Porta aviones
+            Barco portaAviones = new Barco(4,"P");
+
+            barcos.Add(portaAviones);
+
+            //Submarinos
+            Barco submarino1 = new Barco(3,"S");
+            Barco submarino2 = new Barco(3,"S2");
+
+            barcos.Add(submarino1);
+            barcos.Add(submarino2);
+
+            //Destructores
+            Barco destructor1 = new Barco(2,"D");
+            Barco destructor2 = new Barco(2, "D2");
+            Barco destructor3 = new Barco(2, "D3");
+
+            barcos.Add(destructor1);
+            barcos.Add(destructor2);
+            barcos.Add(destructor3);
+
+            //Fragatas
+            Barco fragata1 = new Barco(1, "F");
+            Barco fragata2 = new Barco(1, "F2");
+            Barco fragata3 = new Barco(1, "F3");
+            Barco fragata4 = new Barco(1, "F4");
+
+            barcos.Add(fragata1);
+            barcos.Add(fragata2);
+            barcos.Add(fragata3);
+            barcos.Add(fragata4);
+
+
+            barcos.ForEach((a) => MessageBox.Show(a.ToString()));
+
             tableLayoutPanel1.BackgroundImage = Image.FromFile("./../../img/water.gif");
         }
 
@@ -39,12 +75,16 @@ namespace battleShip {
             {
                 if (pictures != null)
                 {
-                    pictures.Tag = "B";
-                    
+
+
                 }
             } else
             {
+                if (pictures != null)
+                {
+                    pictures.Tag = "B";
 
+                }
             }
         }
 
