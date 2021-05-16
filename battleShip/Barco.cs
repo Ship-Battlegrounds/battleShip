@@ -12,6 +12,13 @@ namespace battleShip
         private String[] coordenadas;
         private String name;
 
+        //Constructores
+        public Barco (int size, String name)
+        {
+            Tamaño = size;
+            Name = name;
+        }
+
         // Métodos
 
         private Boolean isHit(String coordenadas)
