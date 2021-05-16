@@ -6,11 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WMPLib;
 using System.Windows.Forms;
 
 namespace battleShip {
     public partial class Form1 : Form {
 
+        WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
+        WindowsMediaPlayer disparar = new WindowsMediaPlayer();
+        WindowsMediaPlayer acertar = new WindowsMediaPlayer();
+        WindowsMediaPlayer fallar = new WindowsMediaPlayer();
 
         Jugador j1 = new Jugador("Ricardo");
         bool atacar;
@@ -20,7 +25,15 @@ namespace battleShip {
         public Form1() {
             InitializeComponent();
             crearTablero();
-            
+
+            //Inicializar música
+            mainMusic.URL = "mainWellerman.mp3";
+            mainMusic.settings.volume = 10;
+            mainMusic.settings.setMode("loop", true);
+
+
+
+
             //Creación de los barcos
             //Porta aviones
             Barco portaAviones = new Barco(4,"P");
@@ -55,7 +68,7 @@ namespace battleShip {
             barcos.Add(fragata4);
 
 
-            barcos.ForEach((a) => MessageBox.Show(a.ToString()));
+           //barcos.ForEach((a) => MessageBox.Show(a.ToString()));
 
             tableLayoutPanel1.BackgroundImage = Image.FromFile("./../../img/water.gif");
         }
