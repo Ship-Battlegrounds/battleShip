@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace battleShip {
-    class Barco {
+namespace battleShip
+{
+    class Barco
+    {
         private int tamaño;
         private String[] coordenadas;
 
         // Métodos
 
-        private Boolean isHit(String coordenadas) { 
+        private Boolean isHit(String coordenadas)
+        {
             Boolean hit = false;
 
-                if (this.Coordenadas.Contains(coordenadas)) {
+            if (this.Coordenadas.Contains(coordenadas))
+            {
                 hit = true;
-                }
+            }
             return hit;
         }
 
