@@ -17,6 +17,7 @@ namespace battleShip {
         public Form1() {
             InitializeComponent();
             crearTablero();
+            tableLayoutPanel1.BackgroundImage = Image.FromFile("./../../img/water.gif");
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -32,7 +33,8 @@ namespace battleShip {
             PictureBox pictures = sender as PictureBox;
             if (pictures != null) {
                 pictures.Tag = "B";
-                pictures.Image = Properties.Resources.barco;
+                //pictures.Image = Properties.Resources.barco;
+                pictures.BackColor = Color.Transparent;
                     
                 MessageBox.Show(pictures.Tag.ToString());       
             }   
@@ -42,8 +44,9 @@ namespace battleShip {
             foreach (Control control in tableLayoutPanel1.Controls) {
                 PictureBox pictures = control as PictureBox;
                 if (pictures != null) {
+                    pictures.BackColor = Color.Transparent;
                     pictures.Tag = "A";
-                    pictures.Image = Properties.Resources.mar;
+                    //pictures.Image = Properties.Resources.mar;
                 }
             }
         }
