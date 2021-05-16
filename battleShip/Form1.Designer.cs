@@ -29,6 +29,7 @@ namespace battleShip
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_y1 = new System.Windows.Forms.Label();
             this.lbl_y2 = new System.Windows.Forms.Label();
             this.lbl_y3 = new System.Windows.Forms.Label();
@@ -1626,6 +1627,7 @@ namespace battleShip
             this.Controls.Add(this.lbl_y2);
             this.Controls.Add(this.lbl_y1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BattleShip";
             this.Load += new System.EventHandler(this.Form1_Load);
