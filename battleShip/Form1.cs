@@ -19,6 +19,7 @@ namespace battleShip {
 
         Jugador j1 = new Jugador("Ricardo");
         bool atacar;
+        bool isVertical = true;
         List<Barco> barcos = new List<Barco> { };
 
         // Constructor
@@ -104,29 +105,58 @@ namespace battleShip {
                 else {
                     // Código si la celda ha sido comprobada ya de antes
                 }
-            }
-            else {
+            } else {
                 if (lw_Barcos.SelectedItems.Count == 1) {
-                    // Elimina de la lista el barco una vez colocado (falta añadir comprobaciones de celda)
 
-                    if (pictures.Tag.ToString() != "A" || pictures.Tag.ToString() != "B") {
+                    // Comprueba si la casilla es agua para poder situar un barco
 
-                        MessageBox.Show(pictures.Tag as String);
-                        //pictures.Tag = lw_Barcos.SelectedItems[0];
-                        //lw_Barcos.SelectedItems[0].Remove();
+                    if (pictures.Tag.ToString().Split('#')[0] == "A") {
+
+                        int tamaño = Convert.ToInt32(lw_Barcos.SelectedItems[0].SubItems[1].Text); // Selecciona el tamaño del barco de la lista
+
+                        if (!isVertical) {
+
+                            int espacio = Convert.ToInt32(pictures.Tag.ToString().Split('#')[1]);
+                            bool hayEspacio = (espacio + tamaño) < 12; // Devuelve true si hay espacio para los barcos
+
+                            // Comprueba si hay espacio horizontal suficiente, y si lo hay, elimina al barco de la lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
+
+                            if (hayEspacio) {
+                                pictures.Tag = "B#" + pictures.Tag.ToString().Split('#')[1] + pictures.Tag.ToString().Split('#')[2] + lw_Barcos.SelectedItems[0].Text;
+                                lw_Barcos.SelectedItems[0].Remove();
+                                MessageBox.Show(pictures.Tag.ToString());
+                            } else
+                                MessageBox.Show("No hay espacio horizontal para este barco en las casillas seleccionadas");
+
+                        } else if (isVertical){
+
+                            MessageBox.Show("\nEspacio: " + pictures.Tag.ToString().Split('#')[2] + " \nTamaño: " + lw_Barcos.SelectedItems[0].SubItems[1].Text);
+                            int espacio = Convert.ToInt32(pictures.Tag.ToString().Split('#')[2]);
+                            bool hayEspacio = (espacio + tamaño < 12); // Devuelve true si hay espacio para los barcos
+
+                            // Comprueba si hay espacio vertical suficiente, y si lo hay, elimina al barco d ela lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
+
+                            if (hayEspacio) {
+                               
+                                pictures.Tag = "B#" + pictures.Tag.ToString().Split('#')[1] + pictures.Tag.ToString().Split('#')[2] + lw_Barcos.SelectedItems[0].Text;
+                                lw_Barcos.SelectedItems[0].Remove();
+                                MessageBox.Show(pictures.Tag.ToString());
+                            
+                            } else {
+                                MessageBox.Show("No hay suficiente espacio vertical para este barco en las casillas seleccionadas");
+                            }
+                        }
+                    }
+                } else
+                    MessageBox.Show("El rango de casillas seleccionado ya está ocupado");
                     
-                    } else {
-                        MessageBox.Show("El rango de casillas seleccionado ya está ocupado o no es suficientemente grande");
-                    }     
+                // Comprueba si la lista se ha vaciado
 
-                    // Comprueba si la lista se ha vaciado
-
-                    if(lw_Barcos.Items.Count == 0) {
+                if (lw_Barcos.Items.Count == 0) {
                         btn_atacar.Enabled = true;
                         btn_rotar.Enabled = false;
                         lw_Barcos.Enabled = false;
-                    }
-                }               
+                }             
             }
         }
 
@@ -150,9 +180,16 @@ namespace battleShip {
             }
         }
 
-        private void btn_atacar_Click(object sender, EventArgs e)
-        {
+        private void btn_atacar_Click(object sender, EventArgs e) {
             atacar = true;
+        }
+
+        private void btn_rotar_Click(object sender, EventArgs e) {
+            if (isVertical)
+                isVertical = false;
+            else
+                isVertical = true;
+
         }
     }
 }

@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace battleShip
-{
-    class Barco
-    {
+namespace battleShip {
+    class Barco {
         private int tamaño;
         private String[] coordenadas;
         private String name;
