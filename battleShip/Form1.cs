@@ -26,7 +26,6 @@ namespace battleShip {
         public Form1() {
             InitializeComponent();
             crearTablero();
-            //this.Cursor = new Cursor("./../../icons/mira.ico");
             //Inicializar música
 
             /*

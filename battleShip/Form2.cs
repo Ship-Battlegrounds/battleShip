@@ -22,8 +22,10 @@ namespace battleShip
             mainMusic.settings.volume = 20;
             mainMusic.settings.setMode("loop", true);
 
+            //Aplicar cursor
+            //this.Cursor = new Cursor("./../../icons/mira.ico");
         }
-
+      
         private void btnJugar_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
