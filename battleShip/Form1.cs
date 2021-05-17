@@ -21,17 +21,19 @@ namespace battleShip {
         bool atacar;
         bool isVertical = true;
         List<Barco> barcos = new List<Barco> { };
-
+        
+        
         // Constructor
         public Form1() {
             InitializeComponent();
             crearTablero();
-
             //Inicializar música
-            mainMusic.URL = "mainWellerman.mp3";
-            mainMusic.settings.volume = 10;
-            mainMusic.settings.setMode("loop", true);
 
+            /*
+             mainMusic.URL = "mainWellerman.mp3";
+             mainMusic.settings.volume = 10;
+             mainMusic.settings.setMode("loop", true);
+            */
 
 
 
