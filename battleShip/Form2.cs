@@ -6,15 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WMPLib;
+
 using System.Windows.Forms;
 
 namespace battleShip
 {
     public partial class Form2 : Form
     {
+        WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
         public Form2()
         {
             InitializeComponent();
+            mainMusic.URL = "mainWellerman.mp3";
+            mainMusic.settings.volume = 20;
+            mainMusic.settings.setMode("loop", true);
+
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
@@ -28,6 +35,7 @@ namespace battleShip
                     break;
                 }
             }
+            mainMusic.controls.stop();
             this.Close();
 
 
@@ -35,12 +43,13 @@ namespace battleShip
 
         private void btnInstrucciones_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Destruye los barcos wey");
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

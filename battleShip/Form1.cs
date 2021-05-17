@@ -20,17 +20,20 @@ namespace battleShip {
         Jugador j1 = new Jugador("Ricardo");
         bool atacar;
         List<Barco> barcos = new List<Barco> { };
-
+        
+        
         // Constructor
         public Form1() {
             InitializeComponent();
             crearTablero();
-
+            //this.Cursor = new Cursor("./../../icons/mira.ico");
             //Inicializar música
-            mainMusic.URL = "mainWellerman.mp3";
-            mainMusic.settings.volume = 10;
-            mainMusic.settings.setMode("loop", true);
 
+            /*
+             mainMusic.URL = "mainWellerman.mp3";
+             mainMusic.settings.volume = 10;
+             mainMusic.settings.setMode("loop", true);
+            */
 
 
 
