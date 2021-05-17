@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,13 +10,9 @@ using WMPLib;
 
 using System.Windows.Forms;
 
-namespace battleShip
-{
-    public partial class Form2 : Form
-    {
-        WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
-        public Form2()
-        {
+namespace battleShip {
+    public partial class Form2 : Form {
+        public Form2() {
             InitializeComponent();
             mainMusic.URL = "mainWellerman.mp3";
             mainMusic.settings.volume = 20;
@@ -26,31 +22,28 @@ namespace battleShip
             //this.Cursor = new Cursor("./../../icons/mira.ico");
         }
       
-        private void btnJugar_Click(object sender, EventArgs e)
-        {
+        private void btnJugar_Click(object sender, EventArgs e) {
+
+            /*
             Form1 f1 = new Form1();
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (frm.GetType() == typeof(Form1))
-                {
+            f1.Show();
+            foreach (Form frm in Application.OpenForms) {
+                if (frm.GetType() == typeof(Form1)) {
                     frm.Show();
                     break;
                 }
             }
+            */
             mainMusic.controls.stop();
             this.Close();
-
-
         }
-
-        private void btnInstrucciones_Click(object sender, EventArgs e)
-        {
+      
+        private void btnInstrucciones_Click(object sender, EventArgs e) {
             Form3 f3 = new Form3();
             f3.ShowDialog();
         }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
+      
+        private void btnSalir_Click(object sender, EventArgs e) {
             Application.Exit();
         }
     }
