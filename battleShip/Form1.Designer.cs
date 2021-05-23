@@ -1780,7 +1780,7 @@ namespace battleShip
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "BattleShip";
+            this.Text = "Hundir La Flota";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel_Stats.ResumeLayout(false);
             this.panel_Stats.PerformLayout();

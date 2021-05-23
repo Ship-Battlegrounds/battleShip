@@ -119,5 +119,11 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fondoMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fondoMenu2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
