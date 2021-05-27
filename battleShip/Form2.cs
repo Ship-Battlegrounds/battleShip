@@ -12,11 +12,13 @@ using System.Windows.Forms;
 
 namespace battleShip {
     public partial class Form2 : Form {
+        WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
+
         public Form2() {
             InitializeComponent();
-            mainMusic.URL = "mainWellerman.mp3";
-            mainMusic.settings.volume = 20;
-            mainMusic.settings.setMode("loop", true);
+              mainMusic.URL = "mainWellerman.mp3";
+              mainMusic.settings.volume = 20;
+              mainMusic.settings.setMode("loop", true);
 
             //Aplicar cursor
             //this.Cursor = new Cursor("./../../icons/mira.ico");
