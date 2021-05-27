@@ -72,7 +72,7 @@ namespace battleShip {
             String[] tagPicture = pictures.Tag.ToString().Split('#');
 
             // for (int i = 0; i < tagPicture.Length; i++) MessageBox.Show(tagPicture[i]);            
-            MessageBox.Show(pictures.Tag.ToString());
+            //MessageBox.Show(pictures.Tag.ToString());
            
             if (atacar) {
                 if (pictures != null) {
@@ -94,16 +94,18 @@ namespace battleShip {
 
                         if (!isVertical) {
 
+                            // Comprueba si hay espacio horizontal suficiente, y si lo hay, elimina al barco de la lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
+                            asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
+                            
+                            /*
                             int espacio = Convert.ToInt32(tagPicture[1]);
                             bool hayEspacio = (espacio + tamaño) < 12; // Devuelve true si hay espacio para los barcos
 
-                            // Comprueba si hay espacio horizontal suficiente, y si lo hay, elimina al barco de la lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
 
                             if (hayEspacio) {
 
                                 //Asigna el barco a todas las posiciones
                                 
-                                asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
 
                                 // pictures.Tag = "B#" + tagPicture[1] + tagPicture[2] + lw_Barcos.SelectedItems[0].Text;
                               //  lw_Barcos.SelectedItems[0].Remove();
@@ -112,21 +114,21 @@ namespace battleShip {
                             {
                                 //MessageBox.Show("No hay espacio horizontal para este barco en las casillas seleccionadas");
 
-                            }
+                            }*/
 
                         } else if (isVertical){
+                            // Comprueba si hay espacio vertical suficiente, y si lo hay, elimina al barco d ela lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
+                            asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
 
                             //MessageBox.Show("\nEspacio: " + pictures.Tag.ToString().Split('#')[2] + " \nTamaño: " + lw_Barcos.SelectedItems[0].SubItems[1].Text);
-                            int espacio = Convert.ToInt32(tagPicture[2]);
+                           /* int espacio = Convert.ToInt32(tagPicture[2]);
                             bool hayEspacio = (espacio + tamaño < 12); // Devuelve true si hay espacio para los barcos
 
-                            // Comprueba si hay espacio vertical suficiente, y si lo hay, elimina al barco d ela lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
-
+                           
                             if (hayEspacio) {
 
                                 //Asigna el barco a todas las posiciones
 
-                                asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), espacio);
 
                                 // pictures.Tag = "B#" + tagPicture[1] + tagPicture[2] + lw_Barcos.SelectedItems[0].Text;
 
@@ -134,7 +136,7 @@ namespace battleShip {
                             
                             } else {
                      //           MessageBox.Show("No hay suficiente espacio vertical para este barco en las casillas seleccionadas");
-                            }
+                            }*/
                         }
                     }/**/ else
                     {
@@ -295,8 +297,15 @@ namespace battleShip {
 
         public bool comprobarSiCabeElBarco(List<int> valores, int valorX, int valorY)
         {
+            int tamaño = Convert.ToInt32(lw_Barcos.SelectedItems[0].SubItems[1].Text);
+
             if (isVertical)
             {
+                if ((valorY + tamaño) > 11)
+                {
+                    MessageBox.Show("El barco no cabe verticalmente, se sale de la pantalla");
+                    return false;
+                }
                 foreach (Control control in tableLayoutPanel1.Controls)
                 {
                     PictureBox picture = control as PictureBox;
@@ -318,13 +327,20 @@ namespace battleShip {
             }
             else
             {
+                //Comprobar si se sale por los lados
+                if ((valorX + tamaño) > 11)
+                {
+                    MessageBox.Show("El barco no cabe horizontalmente, se sale de la pantalla");
+                    return false;
+                }
+
                 foreach (Control control in tableLayoutPanel1.Controls)
                 {
                     PictureBox picture = control as PictureBox;
                     String[] tagPicture = picture.Tag.ToString().Split('#');
                     if (picture != null)
                     {
-
+                        //Comprobar si hay otros barcos
                         for (int i = 0; i < valores.Count; i++)
                         {
                             if (Convert.ToInt32(tagPicture[1]) == valores[i] && Convert.ToInt32(tagPicture[2]) == valorY && tagPicture[0] != "A")

@@ -20,5 +20,10 @@ namespace battleShip
             label4.Text = "Los barcos pueden colocarse junto a los bordes de la cuadrícula o junto a otros barcos, pero sin llegar a tocarse.";
             label5.Text = "Finalmente, gana el jugador que destruya todos los barcos antes de usar los 25 tiros.";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
