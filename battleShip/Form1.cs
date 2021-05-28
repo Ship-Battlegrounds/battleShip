@@ -38,9 +38,6 @@ namespace battleShip {
             */
             crearBarcos();
 
-
-           
-
             //barcos.ForEach((a) => MessageBox.Show(a.Name.ToString()));
 
             // Bucle para poblar la lista de barcos

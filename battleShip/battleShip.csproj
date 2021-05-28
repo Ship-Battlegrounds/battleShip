@@ -152,5 +152,20 @@
   <ItemGroup>
     <None Include="img\fondobarcos.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_seccion_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_seccion_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_completo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
