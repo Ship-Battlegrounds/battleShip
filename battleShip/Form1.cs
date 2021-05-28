@@ -70,17 +70,56 @@ namespace battleShip {
             
             PictureBox pictures = sender as PictureBox;
             String[] tagPicture = pictures.Tag.ToString().Split('#');
+            Barco eliminar = null;
+            if (pictures == null) return;
            
             if (atacar) {
-                if (pictures != null) {
-
-                    // Codigo si la celda no ha sido comprobada
+                if (tagPicture[0] == "A")
+                {
+                    MessageBox.Show("Has fallado");
+                    j1.Tiros--;
+                    j1.Fallos++;
+                    lbl_TotalFallos.Text = j1.Fallos.ToString();
+                    lbl_TotalTiros.Text = j1.Tiros.ToString();
                     return;
                 }
-                else {
-                    // Código si la celda ha sido comprobada ya de antes
+
+                if ("Dado" == tagPicture[3])
+                {
+                    MessageBox.Show("Hay ya has disparado, no vale");
+                    return;
                 }
-            } else {
+
+                barcos.ForEach(a => {
+                    if (a.Name == tagPicture[0])
+                    {
+                        a.Tamaño--;
+                        pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
+                        pictures.Image = Image.FromFile("./../../img/defeat.jpg");
+
+                        j1.Aciertos++;
+                        lbl_TotalAciertos.Text = j1.Aciertos.ToString();
+                    }
+                    
+                    if( a.Tamaño == 0)
+                    {
+                        MessageBox.Show("Se ha destruido un barco");
+                        foreach (Control control in tableLayoutPanel1.Controls)
+                        {
+                            PictureBox picture = control as PictureBox;
+                            String[] tagPicture2 = picture.Tag.ToString().Split('#');
+                           
+                            if (picture == null) return;
+                            if (a.Name == tagPicture2[0]) picture.Image = Image.FromFile("./../../img/win.gif");
+                            
+                        }
+                        eliminar = a;
+                    }
+                });
+                barcos.Remove(eliminar);
+
+            }
+            else {
                 if (lw_Barcos.SelectedItems.Count == 1) {
 
                     // Comprueba si la casilla es agua para poder situar un barco
@@ -130,7 +169,7 @@ namespace battleShip {
                         x = 1;
                         y++;
                     }
-                    pictures.Tag = "A" + "#" + x + "#" + y;
+                    pictures.Tag = "A" + "#" + x + "#" + y + "#" + "normal";
                     x++;
                 }
             }
@@ -138,6 +177,15 @@ namespace battleShip {
 
         private void btn_atacar_Click(object sender, EventArgs e) {
             atacar = true;
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                PictureBox picture = control as PictureBox;
+                if (picture != null)
+                {
+                    picture.Image = Image.FromFile("./../../img/mar.jpg");                    
+                }
+            }
+            btn_atacar.Enabled = false;
         }
 
         private void btn_rotar_Click(object sender, EventArgs e) {
@@ -212,7 +260,7 @@ namespace battleShip {
                         {
                             if (Convert.ToInt32(tagPicture[2]) == valoresY[i] && Convert.ToInt32(tagPicture[1]) == valorX)
                             {
-                                picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2];
+                                picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
                                 Image img = Image.FromFile("../../img/barco.jpg");
                                 picture.Image = img;
                             }
@@ -244,7 +292,7 @@ namespace battleShip {
                         {
                             if (Convert.ToInt32(tagPicture[1]) == valoresX[i] && Convert.ToInt32(tagPicture[2]) == valorY)
                             {
-                                picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2];
+                                picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
                                 Image img = Image.FromFile("../../img/barco.jpg");
                                 picture.Image = img;
                             }
@@ -315,6 +363,9 @@ namespace battleShip {
             }
         }
 
+        public void  asignarBarcosDestruidos() { 
+
+        }
 
 
        

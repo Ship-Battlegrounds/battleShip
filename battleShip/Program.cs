@@ -19,6 +19,9 @@ namespace battleShip
             Form2 start = new Form2();
             start.ShowDialog();
 
+           /* Form1 main = new Form1();
+            main.ShowDialog();*/
+
             Application.Run(new Form1());
         }
     }
