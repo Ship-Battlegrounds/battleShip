@@ -70,9 +70,6 @@ namespace battleShip {
             
             PictureBox pictures = sender as PictureBox;
             String[] tagPicture = pictures.Tag.ToString().Split('#');
-
-            // for (int i = 0; i < tagPicture.Length; i++) MessageBox.Show(tagPicture[i]);            
-            //MessageBox.Show(pictures.Tag.ToString());
            
             if (atacar) {
                 if (pictures != null) {
@@ -97,48 +94,12 @@ namespace battleShip {
                             // Comprueba si hay espacio horizontal suficiente, y si lo hay, elimina al barco de la lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
                             asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
                             
-                            /*
-                            int espacio = Convert.ToInt32(tagPicture[1]);
-                            bool hayEspacio = (espacio + tamaño) < 12; // Devuelve true si hay espacio para los barcos
-
-
-                            if (hayEspacio) {
-
-                                //Asigna el barco a todas las posiciones
-                                
-
-                                // pictures.Tag = "B#" + tagPicture[1] + tagPicture[2] + lw_Barcos.SelectedItems[0].Text;
-                              //  lw_Barcos.SelectedItems[0].Remove();
-                              //  MessageBox.Show(pictures.Tag.ToString());
-                            } else
-                            {
-                                //MessageBox.Show("No hay espacio horizontal para este barco en las casillas seleccionadas");
-
-                            }*/
 
                         } else if (isVertical){
                             // Comprueba si hay espacio vertical suficiente, y si lo hay, elimina al barco d ela lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
                             asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
-
-                            //MessageBox.Show("\nEspacio: " + pictures.Tag.ToString().Split('#')[2] + " \nTamaño: " + lw_Barcos.SelectedItems[0].SubItems[1].Text);
-                           /* int espacio = Convert.ToInt32(tagPicture[2]);
-                            bool hayEspacio = (espacio + tamaño < 12); // Devuelve true si hay espacio para los barcos
-
-                           
-                            if (hayEspacio) {
-
-                                //Asigna el barco a todas las posiciones
-
-
-                                // pictures.Tag = "B#" + tagPicture[1] + tagPicture[2] + lw_Barcos.SelectedItems[0].Text;
-
-                                //lw_Barcos.SelectedItems[0].Remove();
-                            
-                            } else {
-                     //           MessageBox.Show("No hay suficiente espacio vertical para este barco en las casillas seleccionadas");
-                            }*/
                         }
-                    }/**/ else
+                    } else
                     {
                          MessageBox.Show("El rango de casillas seleccionado ya está ocupado");
 
@@ -169,7 +130,6 @@ namespace battleShip {
                         x = 1;
                         y++;
                     }
-                    //String[] arr = { "A", x.ToString(), y.ToString() };
                     pictures.Tag = "A" + "#" + x + "#" + y;
                     x++;
                 }
