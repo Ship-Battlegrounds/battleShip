@@ -81,6 +81,11 @@ namespace battleShip {
                     j1.Fallos++;
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
+                    if (j1.Tiros == 0)
+                    {
+                        Form4 f4 = new Form4();
+                        f4.ShowDialog();
+                    }
                     return;
                 }
 
@@ -89,6 +94,7 @@ namespace battleShip {
                     MessageBox.Show("Hay ya has disparado, no vale");
                     return;
                 }
+                int countTemp = 1;
 
                 barcos.ForEach(a => {
                     if (a.Name == tagPicture[0])
@@ -110,14 +116,31 @@ namespace battleShip {
                             String[] tagPicture2 = picture.Tag.ToString().Split('#');
                            
                             if (picture == null) return;
-                            if (a.Name == tagPicture2[0]) picture.Image = Image.FromFile("./../../img/win.gif");
-                            
+                            if (a.Name == tagPicture2[0])
+                            {
+
+                                //Este if es innecesario completamente solamente esta hasta que dispongamos 
+                                //de todos los sprites.
+
+                                if (a.Name == "Portaaviones XRT") {
+
+                                    picture.Image = Image.FromFile(a.Img + countTemp + ".png");
+                                    countTemp++;
+                                } else
+                                {
+                                    picture.Image = Image.FromFile(a.Img);
+                                }
+                            }
                         }
                         eliminar = a;
                     }
                 });
                 barcos.Remove(eliminar);
-
+                if (barcos.Count == 0)
+                {
+                    Form5 f5 = new Form5();
+                    f5.ShowDialog();
+                }
             }
             else {
                 if (lw_Barcos.SelectedItems.Count == 1) {
@@ -200,31 +223,31 @@ namespace battleShip {
         {
             //Creación de los barcos
             //Porta aviones
-            Barco portaAviones = new Barco(4, "Portaaviones XRT");
+            Barco portaAviones = new Barco(4, "Portaaviones XRT", "./../../img/spritesBarcos/Portaaviones/portaaviones");
 
             barcos.Add(portaAviones);
 
             //Submarinos
-            Barco submarino1 = new Barco(3, "Submarino X1");
-            Barco submarino2 = new Barco(3, "Submarino X2");
+            Barco submarino1 = new Barco(3, "Submarino X1", "../../img/barco.jpg");
+            Barco submarino2 = new Barco(3, "Submarino X2", "../../img/barco.jpg");
 
             barcos.Add(submarino1);
             barcos.Add(submarino2);
 
             //Destructores
-            Barco destructor1 = new Barco(2, "Destructor R1");
-            Barco destructor2 = new Barco(2, "Destructor R2");
-            Barco destructor3 = new Barco(2, "Destructor R3");
+            Barco destructor1 = new Barco(2, "Destructor R1", "../../img/barco.jpg");
+            Barco destructor2 = new Barco(2, "Destructor R2", "../../img/barco.jpg");
+            Barco destructor3 = new Barco(2, "Destructor R3", "../../img/barco.jpg");
 
             barcos.Add(destructor1);
             barcos.Add(destructor2);
             barcos.Add(destructor3);
 
             // Fragatas
-            Barco fragata1 = new Barco(1, "Fragata T1");
-            Barco fragata2 = new Barco(1, "Fragata T2");
-            Barco fragata3 = new Barco(1, "Fragata T3");
-            Barco fragata4 = new Barco(1, "Fragata T4");
+            Barco fragata1 = new Barco(1, "Fragata T1", "../../img/barco.jpg");
+            Barco fragata2 = new Barco(1, "Fragata T2", "../../img/barco.jpg");
+            Barco fragata3 = new Barco(1, "Fragata T3", "../../img/barco.jpg");
+            Barco fragata4 = new Barco(1, "Fragata T4", "../../img/barco.jpg");
 
             barcos.Add(fragata1);
             barcos.Add(fragata2);
@@ -234,9 +257,11 @@ namespace battleShip {
 
         public void asignarElBarco(String nombre, int tamaño, int valorX, int valorY)
         {
-            
+
             //Sacar todas las posisciones de x que necesitamos
             // valoresY.Add(tamaño);
+            int counTemp = 1;
+
             if (isVertical)
             {
                 List<int> valoresY = new List<int> { };
@@ -256,13 +281,26 @@ namespace battleShip {
                     String[] tagPicture = picture.Tag.ToString().Split('#');
                     if (picture != null)
                     {
+
                         for (int i = 0; i < valoresY.Count; i++)
                         {
                             if (Convert.ToInt32(tagPicture[2]) == valoresY[i] && Convert.ToInt32(tagPicture[1]) == valorX)
                             {
                                 picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
-                                Image img = Image.FromFile("../../img/barco.jpg");
-                                picture.Image = img;
+
+                                switch (tamaño)
+                                {
+                                    case 4:
+
+                                        String text = "./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png";
+                                        picture.Image = Image.FromFile(text);
+                                        counTemp++;
+                                        break;
+                                    default:
+                                         Image img = Image.FromFile("../../img/barco.jpg");
+                                         picture.Image = img;
+                                        break;
+                                }
                             }
                         }
                     }
