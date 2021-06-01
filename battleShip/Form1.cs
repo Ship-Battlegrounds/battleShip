@@ -74,6 +74,13 @@ namespace battleShip {
             if (pictures == null) return;
            
             if (atacar) {
+
+                if ("Dado" == tagPicture[3])
+                {
+                    MessageBox.Show("Ahí ya has disparado. Casilla no válida.");
+                    return;
+                }
+
                 if (tagPicture[0] == "A")
                 {
                     MessageBox.Show("Has fallado");
@@ -81,6 +88,7 @@ namespace battleShip {
                     j1.Fallos++;
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
+                    pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
                     if (j1.Tiros == 0)
                     {
                         Form4 f4 = new Form4();
@@ -89,11 +97,7 @@ namespace battleShip {
                     return;
                 }
 
-                if ("Dado" == tagPicture[3])
-                {
-                    MessageBox.Show("Hay ya has disparado, no vale");
-                    return;
-                }
+                
                 int countTemp = 1;
 
                 barcos.ForEach(a => {
