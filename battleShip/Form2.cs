@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace battleShip {
     public partial class Form2 : Form {
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
-        //static bool cerrado = false;
+      //  public static bool cerrado = false;
 
         public Form2() {
             InitializeComponent();
@@ -47,24 +47,14 @@ namespace battleShip {
         }
       
         private void btnSalir_Click(object sender, EventArgs e) {
-            //cerrado = true;
+          //  cerrado = true;
             Application.Exit();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-          //  cerrado = true;
-            //Application.Exit();
+            //cerrado = true;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -22,7 +22,8 @@ namespace battleShip
            /* Form1 main = new Form1();
             main.ShowDialog();*/
 
-            Application.Run(new Form1());
+          //  if (!Form2.cerrado)
+             Application.Run(new Form1());  
         }
     }
 }

@@ -1977,6 +1977,7 @@ namespace battleShip
             this.Controls.Add(this.lbl_y2);
             this.Controls.Add(this.lbl_y1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BattleShip";

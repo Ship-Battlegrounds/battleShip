@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WMPLib;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace battleShip {
     public partial class Form1 : Form {
@@ -127,9 +128,10 @@ namespace battleShip {
                                 //de todos los sprites.
 
                                 if (a.Name == "Portaaviones XRT") {
-
                                     picture.Image = Image.FromFile(a.Img + countTemp + ".png");
                                     countTemp++;
+                                                                                        
+                               
                                 } else
                                 {
                                     picture.Image = Image.FromFile(a.Img);
@@ -335,8 +337,20 @@ namespace battleShip {
                             if (Convert.ToInt32(tagPicture[1]) == valoresX[i] && Convert.ToInt32(tagPicture[2]) == valorY)
                             {
                                 picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
-                                Image img = Image.FromFile("../../img/barco.jpg");
-                                picture.Image = img;
+                                switch (tamaño)
+                                {
+                                    case 4:
+
+                                        Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
+                                        portaaviones.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                        picture.Image = portaaviones;
+                                        counTemp++;
+                                        break;
+                                    default:
+                                        Image img = Image.FromFile("../../img/barco.jpg");
+                                        picture.Image = img;
+                                        break;
+                                }
                             }
                         }
                     }
