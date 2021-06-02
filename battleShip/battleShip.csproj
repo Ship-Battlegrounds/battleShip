@@ -167,5 +167,65 @@
   <ItemGroup>
     <None Include="img\Sprites barcos\Portaaviones\portaaviones_completo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_completo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_seccion_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Fragata\fragata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Destructor\destructor_completo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Destructor\destructor_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Destructor\destructor_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_completo_destruido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_destruido_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_destruido_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_destruido_seccion_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Portaaviones\portaaviones_destruido_seccion_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_destruido_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_destruido_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_destruido_seccion_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Submarino\submarino_destruido_completo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Destructor\destructor_destruido_seccion_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Destructor\destructor_destruido_seccion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Sprites barcos\Fragata\fragata_destruida.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

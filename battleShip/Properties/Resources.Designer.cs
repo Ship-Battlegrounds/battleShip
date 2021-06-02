@@ -73,9 +73,89 @@ namespace battleShip.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap destructor_completo {
+            get {
+                object obj = ResourceManager.GetObject("destructor_completo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap destructor_completo1 {
+            get {
+                object obj = ResourceManager.GetObject("destructor_completo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap destructor_destruido_seccion_1 {
+            get {
+                object obj = ResourceManager.GetObject("destructor_destruido_seccion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap destructor_destruido_seccion_2 {
+            get {
+                object obj = ResourceManager.GetObject("destructor_destruido_seccion_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap destructor_seccion_1 {
+            get {
+                object obj = ResourceManager.GetObject("destructor_seccion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap destructor_seccion_2 {
+            get {
+                object obj = ResourceManager.GetObject("destructor_seccion_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondobarcos {
             get {
                 object obj = ResourceManager.GetObject("fondobarcos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fragata {
+            get {
+                object obj = ResourceManager.GetObject("fragata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fragata_destruida {
+            get {
+                object obj = ResourceManager.GetObject("fragata_destruida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +186,56 @@ namespace battleShip.Properties {
         internal static System.Drawing.Bitmap portaaviones_completo {
             get {
                 object obj = ResourceManager.GetObject("portaaviones_completo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portaaviones_completo_destruido {
+            get {
+                object obj = ResourceManager.GetObject("portaaviones_completo_destruido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portaaviones_destruido_seccion_1 {
+            get {
+                object obj = ResourceManager.GetObject("portaaviones_destruido_seccion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portaaviones_destruido_seccion_2 {
+            get {
+                object obj = ResourceManager.GetObject("portaaviones_destruido_seccion_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portaaviones_destruido_seccion_3 {
+            get {
+                object obj = ResourceManager.GetObject("portaaviones_destruido_seccion_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portaaviones_destruido_seccion_4 {
+            get {
+                object obj = ResourceManager.GetObject("portaaviones_destruido_seccion_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +276,86 @@ namespace battleShip.Properties {
         internal static System.Drawing.Bitmap portaaviones_seccion_4 {
             get {
                 object obj = ResourceManager.GetObject("portaaviones_seccion_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_completo {
+            get {
+                object obj = ResourceManager.GetObject("submarino_completo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_destruido_completo {
+            get {
+                object obj = ResourceManager.GetObject("submarino_destruido_completo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_destruido_seccion_1 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_destruido_seccion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_destruido_seccion_2 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_destruido_seccion_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_destruido_seccion_3 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_destruido_seccion_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_seccion_1 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_seccion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_seccion_2 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_seccion_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submarino_seccion_3 {
+            get {
+                object obj = ResourceManager.GetObject("submarino_seccion_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
