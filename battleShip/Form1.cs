@@ -90,11 +90,7 @@ namespace battleShip {
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
                     pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
-                    if (j1.Tiros == 0)
-                    {
-                        Form4 f4 = new Form4();
-                        f4.ShowDialog();
-                    }
+                    comprobarPartida();
                     return;
                 }
 
@@ -142,11 +138,7 @@ namespace battleShip {
                     }
                 });
                 barcos.Remove(eliminar);
-                if (barcos.Count == 0)
-                {
-                    Form5 f5 = new Form5();
-                    f5.ShowDialog();
-                }
+                comprobarPartida();
             }
             else {
                 if (lw_Barcos.SelectedItems.Count == 1) {
@@ -419,11 +411,29 @@ namespace battleShip {
             }
         }
 
-        public void  asignarBarcosDestruidos() { 
+        public void asignarBarcosDestruidos() { 
 
         }
 
 
-       
+        //Comprueba si ha perdido, o ganado.
+        public void comprobarPartida()
+        {
+            if (barcos.Count == 0)
+            {
+                Form5 f5 = new Form5();
+                f5.Show();
+            }
+            if (j1.comprobarDerrota())
+            {
+                Form4 f4 = new Form4();
+                f4.Show();
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form2.ProveedorForm2.Form2.Show();
+        }
     }
 }
