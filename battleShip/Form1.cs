@@ -11,9 +11,11 @@ using System.Windows.Forms;
 using System.Drawing;
 
 namespace battleShip {
-    public partial class Form1 : Form {
+    public partial class Form1 : Form
+    {
 
         //Pruebas
+        String text = "";
 
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
         WindowsMediaPlayer disparar = new WindowsMediaPlayer();
@@ -24,10 +26,11 @@ namespace battleShip {
         bool atacar;
         bool isVertical = true;
         List<Barco> barcos = new List<Barco> { };
-        
-        
+
+
         // Constructor
-        public Form1() {
+        public Form1()
+        {
             InitializeComponent();
             crearTablero();
             //Inicializar música
@@ -40,7 +43,7 @@ namespace battleShip {
             crearBarcos();
 
 
-           
+
 
             //barcos.ForEach((a) => MessageBox.Show(a.Name.ToString()));
 
@@ -49,7 +52,8 @@ namespace battleShip {
 
             lw_Barcos.View = View.Details;
 
-            foreach (Barco item in barcos) {
+            foreach (Barco item in barcos)
+            {
                 ListViewItem LVItem = new ListViewItem(item.Name);
                 lw_Barcos.Items.Add(LVItem);
                 LVItem.SubItems.Add(item.Tamaño.ToString());
@@ -58,7 +62,8 @@ namespace battleShip {
             lw_Barcos.Items[0].Selected = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        private void Form1_Load(object sender, EventArgs e)
+        {
             lbl_NombreJug.Text = j1.Nombre;
             lbl_TotalTiros.Text = j1.Tiros.ToString();
             lbl_TotalAciertos.Text = j1.Aciertos.ToString();
@@ -67,14 +72,16 @@ namespace battleShip {
 
         //  Método al clickar la celda
 
-        private void celda_Click(object sender, EventArgs e) {
-            
+        private void celda_Click(object sender, EventArgs e)
+        {
+
             PictureBox pictures = sender as PictureBox;
             String[] tagPicture = pictures.Tag.ToString().Split('#');
             Barco eliminar = null;
             if (pictures == null) return;
-           
-            if (atacar) {
+
+            if (atacar)
+            {
 
                 if ("Dado" == tagPicture[3])
                 {
@@ -98,10 +105,11 @@ namespace battleShip {
                     return;
                 }
 
-                
+
                 int countTemp = 1;
 
-                barcos.ForEach(a => {
+                barcos.ForEach(a =>
+                {
                     if (a.Name == tagPicture[0])
                     {
                         a.Tamaño--;
@@ -111,15 +119,15 @@ namespace battleShip {
                         j1.Aciertos++;
                         lbl_TotalAciertos.Text = j1.Aciertos.ToString();
                     }
-                    
-                    if( a.Tamaño == 0)
+
+                    if (a.Tamaño == 0)
                     {
                         MessageBox.Show("Se ha destruido un barco");
                         foreach (Control control in tableLayoutPanel1.Controls)
                         {
                             PictureBox picture = control as PictureBox;
                             String[] tagPicture2 = picture.Tag.ToString().Split('#');
-                           
+
                             if (picture == null) return;
                             if (a.Name == tagPicture2[0])
                             {
@@ -127,12 +135,14 @@ namespace battleShip {
                                 //Este if es innecesario completamente solamente esta hasta que dispongamos 
                                 //de todos los sprites.
 
-                                if (a.Name == "Portaaviones XRT") {
+                                if (a.Name == "Portaaviones XRT")
+                                {
                                     picture.Image = Image.FromFile(a.Img + countTemp + ".png");
                                     countTemp++;
-                                                                                        
-                               
-                                } else
+
+
+                                }
+                                else
                                 {
                                     picture.Image = Image.FromFile(a.Img);
                                 }
@@ -148,53 +158,65 @@ namespace battleShip {
                     f5.ShowDialog();
                 }
             }
-            else {
-                if (lw_Barcos.SelectedItems.Count == 1) {
+            else
+            {
+                if (lw_Barcos.SelectedItems.Count == 1)
+                {
 
                     // Comprueba si la casilla es agua para poder situar un barco
 
-                    if (tagPicture[0] == "A") {
+                    if (tagPicture[0] == "A")
+                    {
 
                         int tamaño = Convert.ToInt32(lw_Barcos.SelectedItems[0].SubItems[1].Text); // Selecciona el tamaño del barco de la lista
 
-                        if (!isVertical) {
+                        if (!isVertical)
+                        {
 
                             // Comprueba si hay espacio horizontal suficiente, y si lo hay, elimina al barco de la lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
                             asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
-                            
 
-                        } else if (isVertical){
+
+                        }
+                        else if (isVertical)
+                        {
                             // Comprueba si hay espacio vertical suficiente, y si lo hay, elimina al barco d ela lista (Falta añadir barco al tablero. De momento solo añade la primera parte)
                             asignarElBarco(lw_Barcos.SelectedItems[0].Text, tamaño, Convert.ToInt32(tagPicture[1]), Convert.ToInt32(tagPicture[2]));
                         }
-                    } else
+                    }
+                    else
                     {
-                         MessageBox.Show("El rango de casillas seleccionado ya está ocupado");
+                        MessageBox.Show("El rango de casillas seleccionado ya está ocupado");
 
                     }
-                } 
+                }
 
-                    // Comprueba si la lista se ha vaciado
+                // Comprueba si la lista se ha vaciado
 
-                if (lw_Barcos.Items.Count == 0) {
-                        btn_atacar.Enabled = true;
-                        btn_rotar.Enabled = false;
-                        lw_Barcos.Enabled = false;
-                }             
+                if (lw_Barcos.Items.Count == 0)
+                {
+                    btn_atacar.Enabled = true;
+                    btn_rotar.Enabled = false;
+                    lw_Barcos.Enabled = false;
+                }
             }
         }
 
-        public void crearTablero () {
+        public void crearTablero()
+        {
 
             int x = 1;
             int y = 1;
             foreach (Control control in tableLayoutPanel1.Controls.Cast<Control>()
-                                                                .OrderBy(c => Int32.Parse(c.Name.Substring(10)))) {
+                                                                .OrderBy(c => Int32.Parse(c.Name.Substring(10))))
+            {
                 PictureBox pictures = control as PictureBox;
-                if (pictures != null) {
+                if (pictures != null)
+                {
                     pictures.BackColor = Color.Transparent;
 
-                    if (x == 11) {
+                    if (x == 11)
+                    {
                         x = 1;
                         y++;
                     }
@@ -204,20 +226,22 @@ namespace battleShip {
             }
         }
 
-        private void btn_atacar_Click(object sender, EventArgs e) {
+        private void btn_atacar_Click(object sender, EventArgs e)
+        {
             atacar = true;
             foreach (Control control in tableLayoutPanel1.Controls)
             {
                 PictureBox picture = control as PictureBox;
                 if (picture != null)
                 {
-                    picture.Image = Image.FromFile("./../../img/mar.jpg");                    
+                    picture.Image = Image.FromFile("./../../img/mar.jpg");
                 }
             }
             btn_atacar.Enabled = false;
         }
 
-        private void btn_rotar_Click(object sender, EventArgs e) {
+        private void btn_rotar_Click(object sender, EventArgs e)
+        {
             if (isVertical)
                 isVertical = false;
             else
@@ -279,7 +303,7 @@ namespace battleShip {
 
                 //Comprobar si cabe el barco
                 if (!comprobarSiCabeElBarco(valoresY, valorX, valorY)) return;
-                
+
 
                 foreach (Control control in tableLayoutPanel1.Controls)
                 {
@@ -293,18 +317,36 @@ namespace battleShip {
                             if (Convert.ToInt32(tagPicture[2]) == valoresY[i] && Convert.ToInt32(tagPicture[1]) == valorX)
                             {
                                 picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
-
+                                String text = "";
                                 switch (tamaño)
                                 {
+                                    case 1:
+
+                                        text = "./../../img/spritesBarcos/Fragata/fragata.png";
+                                        picture.Image = Image.FromFile(text);
+                                        counTemp++;
+                                        break;
+                                    case 2:
+
+                                        text = "./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png";
+                                        picture.Image = Image.FromFile(text);
+                                        counTemp++;
+                                        break;
+                                    case 3:
+
+                                        text = "./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png";
+                                        picture.Image = Image.FromFile(text);
+                                        counTemp++;
+                                        break;
                                     case 4:
 
-                                        String text = "./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png";
+                                        text = "./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png";
                                         picture.Image = Image.FromFile(text);
                                         counTemp++;
                                         break;
                                     default:
-                                         Image img = Image.FromFile("../../img/barco.jpg");
-                                         picture.Image = img;
+                                        Image img = Image.FromFile("../../img/barco.jpg");
+                                        picture.Image = img;
                                         break;
                                 }
                             }
@@ -339,6 +381,28 @@ namespace battleShip {
                                 picture.Tag = nombre + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "normal";
                                 switch (tamaño)
                                 {
+                                    case 1:
+
+                                        Bitmap fragata = new Bitmap("./../../img/spritesBarcos/Fragata/fragata.png");
+                                        fragata.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                        picture.Image = fragata;
+                                        counTemp++;
+                                        break;
+
+                                    case 2:
+
+                                        Bitmap submarino = new Bitmap("./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png");
+                                        submarino.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                        picture.Image = submarino;
+                                        counTemp++;
+                                        break;
+                                    case 3:
+
+                                        Bitmap destructor = new Bitmap("./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png");
+                                        destructor.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                        picture.Image = destructor;
+                                        counTemp++;
+                                        break;
                                     case 4:
 
                                         Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
@@ -347,6 +411,7 @@ namespace battleShip {
                                         counTemp++;
                                         break;
                                     default:
+
                                         Image img = Image.FromFile("../../img/barco.jpg");
                                         picture.Image = img;
                                         break;
@@ -376,7 +441,7 @@ namespace battleShip {
                     String[] tagPicture = picture.Tag.ToString().Split('#');
                     if (picture != null)
                     {
-                        
+
                         for (int i = 0; i < valores.Count; i++)
                         {
                             if (Convert.ToInt32(tagPicture[2]) == valores[i] && Convert.ToInt32(tagPicture[1]) == valorX && tagPicture[0] != "A")
@@ -419,11 +484,161 @@ namespace battleShip {
             }
         }
 
-        public void  asignarBarcosDestruidos() { 
+        public void asignarBarcosDestruidos()
+        {
 
         }
 
+      
+        private void pictureBox4_MouseEnter(object sender, EventArgs e)
+        {
+            if (lw_Barcos.SelectedItems.Count == 0) return;
 
-       
+            PictureBox pictures = sender as PictureBox;            
+            int counTemp = 1;
+            int tamaño = Convert.ToInt32(lw_Barcos.SelectedItems[0].SubItems[1].Text); // Selecciona el tamaño del barco de la lista
+            String[] tagSelectedPicture = pictures.Tag.ToString().Split('#');
+            int valorY = int.Parse(tagSelectedPicture[2]);
+            int valorX = int.Parse(tagSelectedPicture[1]);
+
+            if (isVertical)
+            {
+                //Comprobar si se sale de la pantalla
+                if (valorY + tamaño > 11) return;
+
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+                    for (int i = 0; i < tamaño; i++) if (Convert.ToInt32(tagPicture[2]) == valorY + 1 && Convert.ToInt32(tagPicture[1]) == valorX && tagPicture[0] != "A") return;
+                }
+
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+
+                    //Comprobar si cabe el barco
+                    for (int i = 0; i < tamaño; i++) if (Convert.ToInt32(tagPicture[2]) == valorY + i && Convert.ToInt32(tagPicture[1]) == valorX && tagPicture[0] != "A") return;
+
+                    //Asignar imágenes
+                    for (int i = 0; i < tamaño; i++)
+                        {
+                        if (Convert.ToInt32(tagPicture[2]) == (valorY + i) && Convert.ToInt32(tagPicture[1]) == valorX)
+                            {
+                            switch (tamaño)
+                            {
+                                case 1:
+
+                                    text = "./../../img/spritesBarcos/Fragata/fragata.png";
+                                    picture.Image = Image.FromFile(text);
+                                    counTemp++;
+                                    break;
+                                case 2:
+                                    
+                                    text = "./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png";
+                                    picture.Image = Image.FromFile(text);
+                                    counTemp++;
+                                    break;
+                                case 3:
+
+                                    text = "./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png";
+                                    picture.Image = Image.FromFile(text);
+                                    counTemp++;
+                                    break;
+                                case 4:
+
+                                    text = "./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png";
+                                    picture.Image = Image.FromFile(text);
+                                    counTemp++;
+                                    break;
+                                default:
+                                    Image img = Image.FromFile("../../img/barco.jpg");
+                                    picture.Image = img;
+                                    break;
+                            }
+                        }   
+                    }
+                }
+            }
+            else
+            {
+                //Comprobar si cabe el barco
+                if (valorX + tamaño > 11) return;
+
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+                    for (int i = 0; i < tamaño; i++) if (Convert.ToInt32(tagPicture[2]) == valorY && Convert.ToInt32(tagPicture[1]) == valorX + i && tagPicture[0] != "A") return;
+                }
+                  
+
+                    foreach (Control control in tableLayoutPanel1.Controls)
+                    {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+
+                    //Asignar imágen
+                    for (int i = 0; i < tamaño; i++)
+                     {
+                        if (Convert.ToInt32(tagPicture[1]) == (valorX + i) && Convert.ToInt32(tagPicture[2]) == valorY)
+                        {
+                            switch (tamaño)
+                            {
+                                case 1:
+
+                                    Bitmap fragata = new Bitmap("./../../img/spritesBarcos/Fragata/fragata.png");
+                                    fragata.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.Image = fragata;
+                                    counTemp++;
+                                    break;
+
+                                case 2:
+
+                                    Bitmap submarino = new Bitmap("./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png");
+                                    submarino.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.Image = submarino;
+                                    counTemp++;
+                                    break;
+                                case 3:
+
+                                    Bitmap destructor = new Bitmap("./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png");
+                                    destructor.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.Image = destructor;
+                                    counTemp++;
+                                    break;
+                                case 4:
+
+                                    Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
+                                    portaaviones.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.Image = portaaviones;
+                                    counTemp++;
+                                    break;
+                                default:
+
+                                    Image img = Image.FromFile("../../img/barco.jpg");
+                                    picture.Image = img;
+                                    break;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+
+
+        private void pictureBox100_MouseLeave(object sender, EventArgs e)
+        {
+          
+
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                PictureBox picture = control as PictureBox;
+                String[] tagPicture = picture.Tag.ToString().Split('#');
+                if (tagPicture[0].Equals("A")) picture.Image = null;
+            }
+        }
     }
 }
