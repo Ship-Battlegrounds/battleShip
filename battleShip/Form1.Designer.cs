@@ -63,21 +63,16 @@ namespace battleShip
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_Jugador = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_atacar = new System.Windows.Forms.Button();
-            this.lw_Barcos = new System.Windows.Forms.ListView();
-            this.NombreBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.TamañoBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btn_rotar = new System.Windows.Forms.Button();
-            this.pictureBox91 = new System.Windows.Forms.PictureBox();
-            this.pictureBox92 = new System.Windows.Forms.PictureBox();
-            this.pictureBox93 = new System.Windows.Forms.PictureBox();
-            this.pictureBox94 = new System.Windows.Forms.PictureBox();
-            this.pictureBox95 = new System.Windows.Forms.PictureBox();
-            this.pictureBox96 = new System.Windows.Forms.PictureBox();
-            this.pictureBox97 = new System.Windows.Forms.PictureBox();
-            this.pictureBox98 = new System.Windows.Forms.PictureBox();
-            this.pictureBox99 = new System.Windows.Forms.PictureBox();
             this.pictureBox100 = new System.Windows.Forms.PictureBox();
+            this.pictureBox99 = new System.Windows.Forms.PictureBox();
+            this.pictureBox98 = new System.Windows.Forms.PictureBox();
+            this.pictureBox97 = new System.Windows.Forms.PictureBox();
+            this.pictureBox96 = new System.Windows.Forms.PictureBox();
+            this.pictureBox95 = new System.Windows.Forms.PictureBox();
+            this.pictureBox94 = new System.Windows.Forms.PictureBox();
+            this.pictureBox93 = new System.Windows.Forms.PictureBox();
+            this.pictureBox92 = new System.Windows.Forms.PictureBox();
+            this.pictureBox91 = new System.Windows.Forms.PictureBox();
             this.pictureBox90 = new System.Windows.Forms.PictureBox();
             this.pictureBox89 = new System.Windows.Forms.PictureBox();
             this.pictureBox88 = new System.Windows.Forms.PictureBox();
@@ -88,16 +83,20 @@ namespace battleShip
             this.pictureBox83 = new System.Windows.Forms.PictureBox();
             this.pictureBox82 = new System.Windows.Forms.PictureBox();
             this.pictureBox81 = new System.Windows.Forms.PictureBox();
-            this.pictureBox71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.pictureBox73 = new System.Windows.Forms.PictureBox();
-            this.pictureBox74 = new System.Windows.Forms.PictureBox();
-            this.pictureBox75 = new System.Windows.Forms.PictureBox();
-            this.pictureBox76 = new System.Windows.Forms.PictureBox();
-            this.pictureBox77 = new System.Windows.Forms.PictureBox();
-            this.pictureBox78 = new System.Windows.Forms.PictureBox();
-            this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
+            this.pictureBox79 = new System.Windows.Forms.PictureBox();
+            this.pictureBox78 = new System.Windows.Forms.PictureBox();
+            this.pictureBox77 = new System.Windows.Forms.PictureBox();
+            this.pictureBox76 = new System.Windows.Forms.PictureBox();
+            this.pictureBox75 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox74 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox73 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox72 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox71 = new System.Windows.Forms.PictureBox();
             this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.pictureBox69 = new System.Windows.Forms.PictureBox();
             this.pictureBox68 = new System.Windows.Forms.PictureBox();
@@ -108,16 +107,16 @@ namespace battleShip
             this.pictureBox63 = new System.Windows.Forms.PictureBox();
             this.pictureBox62 = new System.Windows.Forms.PictureBox();
             this.pictureBox61 = new System.Windows.Forms.PictureBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox60 = new System.Windows.Forms.PictureBox();
+            this.pictureBox59 = new System.Windows.Forms.PictureBox();
+            this.pictureBox58 = new System.Windows.Forms.PictureBox();
+            this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox58 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox59 = new System.Windows.Forms.PictureBox();
-            this.pictureBox60 = new System.Windows.Forms.PictureBox();
+            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.pictureBox52 = new System.Windows.Forms.PictureBox();
+            this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
@@ -128,16 +127,16 @@ namespace battleShip
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -148,39 +147,40 @@ namespace battleShip
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.btn_atacar = new System.Windows.Forms.Button();
+            this.lw_Barcos = new System.Windows.Forms.ListView();
+            this.NombreBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TamañoBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_rotar = new System.Windows.Forms.Button();
             this.panel_Stats.SuspendLayout();
             this.panel_Jugador.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
@@ -191,16 +191,20 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
@@ -211,16 +215,16 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
@@ -231,16 +235,16 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -251,26 +255,22 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_y1
@@ -699,170 +699,20 @@ namespace battleShip
             this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 548);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // btn_atacar
+            // pictureBox100
             // 
-            this.btn_atacar.Enabled = false;
-            this.btn_atacar.Location = new System.Drawing.Point(796, 297);
-            this.btn_atacar.Name = "btn_atacar";
-            this.btn_atacar.Size = new System.Drawing.Size(72, 45);
-            this.btn_atacar.TabIndex = 28;
-            this.btn_atacar.Text = "Atacar";
-            this.btn_atacar.UseVisualStyleBackColor = true;
-            this.btn_atacar.Click += new System.EventHandler(this.btn_atacar_Click);
-            // 
-            // lw_Barcos
-            // 
-            this.lw_Barcos.BackColor = System.Drawing.Color.DarkGray;
-            this.lw_Barcos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.NombreBarco,
-            this.TamañoBarco});
-            this.lw_Barcos.FullRowSelect = true;
-            this.lw_Barcos.HideSelection = false;
-            this.lw_Barcos.Location = new System.Drawing.Point(788, 366);
-            this.lw_Barcos.MultiSelect = false;
-            this.lw_Barcos.Name = "lw_Barcos";
-            this.lw_Barcos.Size = new System.Drawing.Size(184, 254);
-            this.lw_Barcos.TabIndex = 32;
-            this.lw_Barcos.UseCompatibleStateImageBehavior = false;
-            // 
-            // NombreBarco
-            // 
-            this.NombreBarco.Text = "Nombre";
-            this.NombreBarco.Width = 115;
-            // 
-            // TamañoBarco
-            // 
-            this.TamañoBarco.Text = "Tamaño";
-            // 
-            // btn_rotar
-            // 
-            this.btn_rotar.Location = new System.Drawing.Point(873, 297);
-            this.btn_rotar.Name = "btn_rotar";
-            this.btn_rotar.Size = new System.Drawing.Size(72, 45);
-            this.btn_rotar.TabIndex = 33;
-            this.btn_rotar.Text = "Rotar";
-            this.btn_rotar.UseVisualStyleBackColor = true;
-            this.btn_rotar.Click += new System.EventHandler(this.btn_rotar_Click);
-            // 
-            // pictureBox91
-            // 
-            this.pictureBox91.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.BackgroundImage")));
-            this.pictureBox91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox91.Location = new System.Drawing.Point(1, 490);
-            this.pictureBox91.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox91.Name = "pictureBox91";
-            this.pictureBox91.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox91.TabIndex = 90;
-            this.pictureBox91.TabStop = false;
-            this.pictureBox91.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox91.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox91.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox92
-            // 
-            this.pictureBox92.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox92.BackgroundImage")));
-            this.pictureBox92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox92.Location = new System.Drawing.Point(68, 490);
-            this.pictureBox92.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox92.Name = "pictureBox92";
-            this.pictureBox92.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox92.TabIndex = 91;
-            this.pictureBox92.TabStop = false;
-            this.pictureBox92.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox92.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox92.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox93
-            // 
-            this.pictureBox93.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox93.BackgroundImage")));
-            this.pictureBox93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox93.Location = new System.Drawing.Point(135, 490);
-            this.pictureBox93.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox93.Name = "pictureBox93";
-            this.pictureBox93.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox93.TabIndex = 92;
-            this.pictureBox93.TabStop = false;
-            this.pictureBox93.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox93.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox93.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox94
-            // 
-            this.pictureBox94.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox94.BackgroundImage")));
-            this.pictureBox94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox94.Location = new System.Drawing.Point(202, 490);
-            this.pictureBox94.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox94.Name = "pictureBox94";
-            this.pictureBox94.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox94.TabIndex = 93;
-            this.pictureBox94.TabStop = false;
-            this.pictureBox94.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox94.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox94.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox95
-            // 
-            this.pictureBox95.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox95.BackgroundImage")));
-            this.pictureBox95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox95.Location = new System.Drawing.Point(269, 490);
-            this.pictureBox95.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox95.Name = "pictureBox95";
-            this.pictureBox95.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox95.TabIndex = 94;
-            this.pictureBox95.TabStop = false;
-            this.pictureBox95.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox95.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox95.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox96
-            // 
-            this.pictureBox96.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox96.BackgroundImage")));
-            this.pictureBox96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox96.Location = new System.Drawing.Point(336, 490);
-            this.pictureBox96.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox96.Name = "pictureBox96";
-            this.pictureBox96.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox96.TabIndex = 95;
-            this.pictureBox96.TabStop = false;
-            this.pictureBox96.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox96.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox96.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox97
-            // 
-            this.pictureBox97.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox97.BackgroundImage")));
-            this.pictureBox97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox97.Location = new System.Drawing.Point(403, 490);
-            this.pictureBox97.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox97.Name = "pictureBox97";
-            this.pictureBox97.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox97.TabIndex = 96;
-            this.pictureBox97.TabStop = false;
-            this.pictureBox97.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox97.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox97.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox98
-            // 
-            this.pictureBox98.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox98.BackgroundImage")));
-            this.pictureBox98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox98.Location = new System.Drawing.Point(470, 490);
-            this.pictureBox98.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox98.Name = "pictureBox98";
-            this.pictureBox98.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox98.TabIndex = 97;
-            this.pictureBox98.TabStop = false;
-            this.pictureBox98.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox98.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox98.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox100.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox100.BackgroundImage")));
+            this.pictureBox100.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox100.Location = new System.Drawing.Point(604, 490);
+            this.pictureBox100.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox100.Name = "pictureBox100";
+            this.pictureBox100.Size = new System.Drawing.Size(71, 57);
+            this.pictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox100.TabIndex = 99;
+            this.pictureBox100.TabStop = false;
+            this.pictureBox100.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox100.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox100.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox99
             // 
@@ -879,20 +729,125 @@ namespace battleShip
             this.pictureBox99.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox99.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox100
+            // pictureBox98
             // 
-            this.pictureBox100.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox100.BackgroundImage")));
-            this.pictureBox100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox100.Location = new System.Drawing.Point(604, 490);
-            this.pictureBox100.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox100.Name = "pictureBox100";
-            this.pictureBox100.Size = new System.Drawing.Size(71, 57);
-            this.pictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox100.TabIndex = 99;
-            this.pictureBox100.TabStop = false;
-            this.pictureBox100.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox100.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox100.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox98.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox98.BackgroundImage")));
+            this.pictureBox98.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox98.Location = new System.Drawing.Point(470, 490);
+            this.pictureBox98.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox98.Name = "pictureBox98";
+            this.pictureBox98.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox98.TabIndex = 97;
+            this.pictureBox98.TabStop = false;
+            this.pictureBox98.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox98.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox98.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox97
+            // 
+            this.pictureBox97.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox97.BackgroundImage")));
+            this.pictureBox97.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox97.Location = new System.Drawing.Point(403, 490);
+            this.pictureBox97.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox97.Name = "pictureBox97";
+            this.pictureBox97.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox97.TabIndex = 96;
+            this.pictureBox97.TabStop = false;
+            this.pictureBox97.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox97.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox97.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox96
+            // 
+            this.pictureBox96.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox96.BackgroundImage")));
+            this.pictureBox96.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox96.Location = new System.Drawing.Point(336, 490);
+            this.pictureBox96.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox96.Name = "pictureBox96";
+            this.pictureBox96.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox96.TabIndex = 95;
+            this.pictureBox96.TabStop = false;
+            this.pictureBox96.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox96.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox96.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox95
+            // 
+            this.pictureBox95.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox95.BackgroundImage")));
+            this.pictureBox95.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox95.Location = new System.Drawing.Point(269, 490);
+            this.pictureBox95.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox95.Name = "pictureBox95";
+            this.pictureBox95.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox95.TabIndex = 94;
+            this.pictureBox95.TabStop = false;
+            this.pictureBox95.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox95.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox95.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox94
+            // 
+            this.pictureBox94.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox94.BackgroundImage")));
+            this.pictureBox94.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox94.Location = new System.Drawing.Point(202, 490);
+            this.pictureBox94.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox94.Name = "pictureBox94";
+            this.pictureBox94.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox94.TabIndex = 93;
+            this.pictureBox94.TabStop = false;
+            this.pictureBox94.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox94.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox94.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox93
+            // 
+            this.pictureBox93.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox93.BackgroundImage")));
+            this.pictureBox93.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox93.Location = new System.Drawing.Point(135, 490);
+            this.pictureBox93.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox93.Name = "pictureBox93";
+            this.pictureBox93.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox93.TabIndex = 92;
+            this.pictureBox93.TabStop = false;
+            this.pictureBox93.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox93.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox93.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox92
+            // 
+            this.pictureBox92.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox92.BackgroundImage")));
+            this.pictureBox92.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox92.Location = new System.Drawing.Point(68, 490);
+            this.pictureBox92.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox92.Name = "pictureBox92";
+            this.pictureBox92.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox92.TabIndex = 91;
+            this.pictureBox92.TabStop = false;
+            this.pictureBox92.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox92.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox92.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox91
+            // 
+            this.pictureBox91.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.BackgroundImage")));
+            this.pictureBox91.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox91.Location = new System.Drawing.Point(1, 490);
+            this.pictureBox91.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox91.Name = "pictureBox91";
+            this.pictureBox91.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox91.TabIndex = 90;
+            this.pictureBox91.TabStop = false;
+            this.pictureBox91.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox91.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox91.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox90
             // 
@@ -952,6 +907,7 @@ namespace battleShip
             this.pictureBox87.TabStop = false;
             this.pictureBox87.Click += new System.EventHandler(this.celda_Click);
             this.pictureBox87.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox87.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox86
             // 
@@ -1043,125 +999,20 @@ namespace battleShip
             this.pictureBox81.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox81.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox71
+            // pictureBox80
             // 
-            this.pictureBox71.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox71.BackgroundImage")));
-            this.pictureBox71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox71.Location = new System.Drawing.Point(1, 381);
-            this.pictureBox71.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox71.TabIndex = 70;
-            this.pictureBox71.TabStop = false;
-            this.pictureBox71.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox71.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox71.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox72
-            // 
-            this.pictureBox72.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.BackgroundImage")));
-            this.pictureBox72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox72.Location = new System.Drawing.Point(68, 381);
-            this.pictureBox72.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox72.TabIndex = 71;
-            this.pictureBox72.TabStop = false;
-            this.pictureBox72.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox72.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox72.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox73
-            // 
-            this.pictureBox73.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.BackgroundImage")));
-            this.pictureBox73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox73.Location = new System.Drawing.Point(135, 381);
-            this.pictureBox73.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox73.TabIndex = 72;
-            this.pictureBox73.TabStop = false;
-            this.pictureBox73.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox73.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox73.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox74
-            // 
-            this.pictureBox74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.BackgroundImage")));
-            this.pictureBox74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox74.Location = new System.Drawing.Point(202, 381);
-            this.pictureBox74.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox74.TabIndex = 73;
-            this.pictureBox74.TabStop = false;
-            this.pictureBox74.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox74.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox74.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox75
-            // 
-            this.pictureBox75.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox75.BackgroundImage")));
-            this.pictureBox75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox75.Location = new System.Drawing.Point(269, 381);
-            this.pictureBox75.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox75.TabIndex = 74;
-            this.pictureBox75.TabStop = false;
-            this.pictureBox75.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox75.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox75.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox76
-            // 
-            this.pictureBox76.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox76.BackgroundImage")));
-            this.pictureBox76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox76.Location = new System.Drawing.Point(336, 381);
-            this.pictureBox76.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox76.TabIndex = 75;
-            this.pictureBox76.TabStop = false;
-            this.pictureBox76.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox76.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox76.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox77
-            // 
-            this.pictureBox77.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox77.BackgroundImage")));
-            this.pictureBox77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox77.Location = new System.Drawing.Point(403, 381);
-            this.pictureBox77.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox77.TabIndex = 76;
-            this.pictureBox77.TabStop = false;
-            this.pictureBox77.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox77.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox77.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox78
-            // 
-            this.pictureBox78.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox78.BackgroundImage")));
-            this.pictureBox78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox78.Location = new System.Drawing.Point(470, 381);
-            this.pictureBox78.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox78.Name = "pictureBox78";
-            this.pictureBox78.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox78.TabIndex = 77;
-            this.pictureBox78.TabStop = false;
-            this.pictureBox78.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox78.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox78.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox80.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox80.BackgroundImage")));
+            this.pictureBox80.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox80.Location = new System.Drawing.Point(604, 381);
+            this.pictureBox80.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox80.Name = "pictureBox80";
+            this.pictureBox80.Size = new System.Drawing.Size(71, 52);
+            this.pictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox80.TabIndex = 79;
+            this.pictureBox80.TabStop = false;
+            this.pictureBox80.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox80.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox80.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox79
             // 
@@ -1178,20 +1029,185 @@ namespace battleShip
             this.pictureBox79.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox79.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox80
+            // pictureBox78
             // 
-            this.pictureBox80.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox80.BackgroundImage")));
-            this.pictureBox80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox80.Location = new System.Drawing.Point(604, 381);
-            this.pictureBox80.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox80.Name = "pictureBox80";
-            this.pictureBox80.Size = new System.Drawing.Size(71, 52);
-            this.pictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox80.TabIndex = 79;
-            this.pictureBox80.TabStop = false;
-            this.pictureBox80.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox80.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox80.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox78.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox78.BackgroundImage")));
+            this.pictureBox78.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox78.Location = new System.Drawing.Point(470, 381);
+            this.pictureBox78.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox78.Name = "pictureBox78";
+            this.pictureBox78.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox78.TabIndex = 77;
+            this.pictureBox78.TabStop = false;
+            this.pictureBox78.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox78.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox78.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox77
+            // 
+            this.pictureBox77.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox77.BackgroundImage")));
+            this.pictureBox77.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox77.Location = new System.Drawing.Point(403, 381);
+            this.pictureBox77.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox77.Name = "pictureBox77";
+            this.pictureBox77.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox77.TabIndex = 76;
+            this.pictureBox77.TabStop = false;
+            this.pictureBox77.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox77.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox77.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox76
+            // 
+            this.pictureBox76.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox76.BackgroundImage")));
+            this.pictureBox76.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox76.Location = new System.Drawing.Point(336, 381);
+            this.pictureBox76.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox76.Name = "pictureBox76";
+            this.pictureBox76.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox76.TabIndex = 75;
+            this.pictureBox76.TabStop = false;
+            this.pictureBox76.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox76.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox76.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox75
+            // 
+            this.pictureBox75.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox75.BackgroundImage")));
+            this.pictureBox75.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox75.Location = new System.Drawing.Point(269, 381);
+            this.pictureBox75.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox75.Name = "pictureBox75";
+            this.pictureBox75.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox75.TabIndex = 74;
+            this.pictureBox75.TabStop = false;
+            this.pictureBox75.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox75.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox75.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox74
+            // 
+            this.pictureBox74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.BackgroundImage")));
+            this.pictureBox74.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox74.Location = new System.Drawing.Point(202, 381);
+            this.pictureBox74.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox74.Name = "pictureBox74";
+            this.pictureBox74.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox74.TabIndex = 73;
+            this.pictureBox74.TabStop = false;
+            this.pictureBox74.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox74.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox74.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Location = new System.Drawing.Point(202, 1);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(66, 51);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox4.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox73
+            // 
+            this.pictureBox73.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.BackgroundImage")));
+            this.pictureBox73.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox73.Location = new System.Drawing.Point(135, 381);
+            this.pictureBox73.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox73.Name = "pictureBox73";
+            this.pictureBox73.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox73.TabIndex = 72;
+            this.pictureBox73.TabStop = false;
+            this.pictureBox73.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox73.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox73.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Location = new System.Drawing.Point(135, 1);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(66, 51);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox3.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox72
+            // 
+            this.pictureBox72.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.BackgroundImage")));
+            this.pictureBox72.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox72.Location = new System.Drawing.Point(68, 381);
+            this.pictureBox72.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox72.Name = "pictureBox72";
+            this.pictureBox72.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox72.TabIndex = 71;
+            this.pictureBox72.TabStop = false;
+            this.pictureBox72.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox72.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox72.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(68, 1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(66, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox71
+            // 
+            this.pictureBox71.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox71.BackgroundImage")));
+            this.pictureBox71.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox71.Location = new System.Drawing.Point(1, 381);
+            this.pictureBox71.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox71.Name = "pictureBox71";
+            this.pictureBox71.Size = new System.Drawing.Size(66, 52);
+            this.pictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox71.TabIndex = 70;
+            this.pictureBox71.TabStop = false;
+            this.pictureBox71.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox71.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox71.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox70
             // 
@@ -1343,65 +1359,65 @@ namespace battleShip
             this.pictureBox61.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox61.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox51
+            // pictureBox60
             // 
-            this.pictureBox51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.BackgroundImage")));
-            this.pictureBox51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox51.Location = new System.Drawing.Point(1, 271);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox51.TabIndex = 50;
-            this.pictureBox51.TabStop = false;
-            this.pictureBox51.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox51.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox51.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.BackgroundImage")));
+            this.pictureBox60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox60.Location = new System.Drawing.Point(604, 271);
+            this.pictureBox60.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox60.Name = "pictureBox60";
+            this.pictureBox60.Size = new System.Drawing.Size(71, 54);
+            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox60.TabIndex = 59;
+            this.pictureBox60.TabStop = false;
+            this.pictureBox60.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox60.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox60.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox52
+            // pictureBox59
             // 
-            this.pictureBox52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.BackgroundImage")));
-            this.pictureBox52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox52.Location = new System.Drawing.Point(68, 271);
-            this.pictureBox52.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox52.TabIndex = 51;
-            this.pictureBox52.TabStop = false;
-            this.pictureBox52.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox52.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox52.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
+            this.pictureBox59.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox59.Location = new System.Drawing.Point(537, 271);
+            this.pictureBox59.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox59.Name = "pictureBox59";
+            this.pictureBox59.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox59.TabIndex = 58;
+            this.pictureBox59.TabStop = false;
+            this.pictureBox59.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox59.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox59.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox53
+            // pictureBox58
             // 
-            this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
-            this.pictureBox53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox53.Location = new System.Drawing.Point(135, 271);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox53.TabIndex = 52;
-            this.pictureBox53.TabStop = false;
-            this.pictureBox53.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox53.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox53.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
+            this.pictureBox58.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox58.Location = new System.Drawing.Point(470, 271);
+            this.pictureBox58.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox58.Name = "pictureBox58";
+            this.pictureBox58.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox58.TabIndex = 57;
+            this.pictureBox58.TabStop = false;
+            this.pictureBox58.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox58.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox58.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox54
+            // pictureBox57
             // 
-            this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
-            this.pictureBox54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox54.Location = new System.Drawing.Point(202, 271);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox54.TabIndex = 53;
-            this.pictureBox54.TabStop = false;
-            this.pictureBox54.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox54.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox54.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
+            this.pictureBox57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox57.Location = new System.Drawing.Point(403, 271);
+            this.pictureBox57.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox57.Name = "pictureBox57";
+            this.pictureBox57.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox57.TabIndex = 56;
+            this.pictureBox57.TabStop = false;
+            this.pictureBox57.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox57.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox57.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox56
             // 
@@ -1433,65 +1449,65 @@ namespace battleShip
             this.pictureBox55.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox55.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox58
+            // pictureBox54
             // 
-            this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
-            this.pictureBox58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox58.Location = new System.Drawing.Point(470, 271);
-            this.pictureBox58.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox58.TabIndex = 57;
-            this.pictureBox58.TabStop = false;
-            this.pictureBox58.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox58.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox58.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
+            this.pictureBox54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox54.Location = new System.Drawing.Point(202, 271);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox54.TabIndex = 53;
+            this.pictureBox54.TabStop = false;
+            this.pictureBox54.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox54.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox54.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox1
+            // pictureBox53
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
+            this.pictureBox53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox53.Location = new System.Drawing.Point(135, 271);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox53.TabIndex = 52;
+            this.pictureBox53.TabStop = false;
+            this.pictureBox53.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox53.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox53.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox59
+            // pictureBox52
             // 
-            this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
-            this.pictureBox59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox59.Location = new System.Drawing.Point(537, 271);
-            this.pictureBox59.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox59.TabIndex = 58;
-            this.pictureBox59.TabStop = false;
-            this.pictureBox59.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox59.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox59.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.BackgroundImage")));
+            this.pictureBox52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox52.Location = new System.Drawing.Point(68, 271);
+            this.pictureBox52.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox52.TabIndex = 51;
+            this.pictureBox52.TabStop = false;
+            this.pictureBox52.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox52.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox52.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox60
+            // pictureBox51
             // 
-            this.pictureBox60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.BackgroundImage")));
-            this.pictureBox60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox60.Location = new System.Drawing.Point(604, 271);
-            this.pictureBox60.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(71, 54);
-            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox60.TabIndex = 59;
-            this.pictureBox60.TabStop = false;
-            this.pictureBox60.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox60.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox60.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.BackgroundImage")));
+            this.pictureBox51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox51.Location = new System.Drawing.Point(1, 271);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox51.Name = "pictureBox51";
+            this.pictureBox51.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox51.TabIndex = 50;
+            this.pictureBox51.TabStop = false;
+            this.pictureBox51.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox51.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox51.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox50
             // 
@@ -1644,125 +1660,20 @@ namespace battleShip
             this.pictureBox41.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox41.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox31
+            // pictureBox40
             // 
-            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
-            this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox31.Location = new System.Drawing.Point(1, 163);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox31.TabIndex = 30;
-            this.pictureBox31.TabStop = false;
-            this.pictureBox31.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox31.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox31.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
-            this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox32.Location = new System.Drawing.Point(68, 163);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox32.TabIndex = 31;
-            this.pictureBox32.TabStop = false;
-            this.pictureBox32.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox32.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox32.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
-            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox33.Location = new System.Drawing.Point(135, 163);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 32;
-            this.pictureBox33.TabStop = false;
-            this.pictureBox33.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox33.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox33.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox34.BackgroundImage")));
-            this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox34.Location = new System.Drawing.Point(202, 163);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 33;
-            this.pictureBox34.TabStop = false;
-            this.pictureBox34.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox34.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox34.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox35.BackgroundImage")));
-            this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox35.Location = new System.Drawing.Point(269, 163);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox35.TabIndex = 34;
-            this.pictureBox35.TabStop = false;
-            this.pictureBox35.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox35.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox35.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox36.BackgroundImage")));
-            this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox36.Location = new System.Drawing.Point(336, 163);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox36.TabIndex = 35;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox36.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox36.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.BackgroundImage")));
-            this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox37.Location = new System.Drawing.Point(403, 163);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox37.TabIndex = 36;
-            this.pictureBox37.TabStop = false;
-            this.pictureBox37.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox37.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox37.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
-            this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox38.Location = new System.Drawing.Point(470, 163);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox38.TabIndex = 37;
-            this.pictureBox38.TabStop = false;
-            this.pictureBox38.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox38.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox38.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox40.BackgroundImage")));
+            this.pictureBox40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox40.Location = new System.Drawing.Point(604, 163);
+            this.pictureBox40.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(71, 54);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox40.TabIndex = 39;
+            this.pictureBox40.TabStop = false;
+            this.pictureBox40.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox40.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox40.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox39
             // 
@@ -1779,20 +1690,125 @@ namespace battleShip
             this.pictureBox39.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox39.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox40
+            // pictureBox38
             // 
-            this.pictureBox40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox40.BackgroundImage")));
-            this.pictureBox40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox40.Location = new System.Drawing.Point(604, 163);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(71, 54);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox40.TabIndex = 39;
-            this.pictureBox40.TabStop = false;
-            this.pictureBox40.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox40.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox40.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
+            this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox38.Location = new System.Drawing.Point(470, 163);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox38.TabIndex = 37;
+            this.pictureBox38.TabStop = false;
+            this.pictureBox38.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox38.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox38.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.BackgroundImage")));
+            this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox37.Location = new System.Drawing.Point(403, 163);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox37.TabIndex = 36;
+            this.pictureBox37.TabStop = false;
+            this.pictureBox37.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox37.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox37.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox36.BackgroundImage")));
+            this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox36.Location = new System.Drawing.Point(336, 163);
+            this.pictureBox36.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox36.TabIndex = 35;
+            this.pictureBox36.TabStop = false;
+            this.pictureBox36.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox36.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox36.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox35.BackgroundImage")));
+            this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox35.Location = new System.Drawing.Point(269, 163);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox35.TabIndex = 34;
+            this.pictureBox35.TabStop = false;
+            this.pictureBox35.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox35.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox35.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox34.BackgroundImage")));
+            this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox34.Location = new System.Drawing.Point(202, 163);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 33;
+            this.pictureBox34.TabStop = false;
+            this.pictureBox34.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox34.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox34.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
+            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox33.Location = new System.Drawing.Point(135, 163);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 32;
+            this.pictureBox33.TabStop = false;
+            this.pictureBox33.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox33.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox33.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox32.Location = new System.Drawing.Point(68, 163);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox32.TabIndex = 31;
+            this.pictureBox32.TabStop = false;
+            this.pictureBox32.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox32.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox32.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
+            this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox31.Location = new System.Drawing.Point(1, 163);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox31.TabIndex = 30;
+            this.pictureBox31.TabStop = false;
+            this.pictureBox31.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox31.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox31.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox30
             // 
@@ -1944,125 +1960,20 @@ namespace battleShip
             this.pictureBox21.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox21.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox11
+            // pictureBox20
             // 
-            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(1, 53);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox11.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox11.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Location = new System.Drawing.Point(68, 53);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox12.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox12.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Location = new System.Drawing.Point(135, 53);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox13.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox13.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.BackgroundImage")));
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(202, 53);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 13;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox14.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox14.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(269, 53);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 14;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox15.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox15.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.BackgroundImage")));
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(336, 53);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 15;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox16.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox16.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
-            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(403, 53);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 16;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox17.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox17.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
-            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox18.Location = new System.Drawing.Point(470, 53);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 17;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox18.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox18.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.BackgroundImage")));
+            this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox20.Location = new System.Drawing.Point(604, 53);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(71, 54);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox20.TabIndex = 19;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox20.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox20.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox19
             // 
@@ -2079,35 +1990,140 @@ namespace battleShip
             this.pictureBox19.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox19.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox20
+            // pictureBox18
             // 
-            this.pictureBox20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.BackgroundImage")));
-            this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox20.Location = new System.Drawing.Point(604, 53);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(71, 54);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 19;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox20.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox20.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
+            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox18.Location = new System.Drawing.Point(470, 53);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 17;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox18.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox18.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox57
+            // pictureBox17
             // 
-            this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
-            this.pictureBox57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox57.Location = new System.Drawing.Point(403, 271);
-            this.pictureBox57.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(66, 54);
-            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox57.TabIndex = 56;
-            this.pictureBox57.TabStop = false;
-            this.pictureBox57.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox57.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox57.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
+            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox17.Location = new System.Drawing.Point(403, 53);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 16;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox17.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox17.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.BackgroundImage")));
+            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox16.Location = new System.Drawing.Point(336, 53);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 15;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox16.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox16.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.BackgroundImage")));
+            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox15.Location = new System.Drawing.Point(269, 53);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 14;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox15.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox15.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.BackgroundImage")));
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox14.Location = new System.Drawing.Point(202, 53);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 13;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox14.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox14.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
+            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox13.Location = new System.Drawing.Point(135, 53);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 12;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox13.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox13.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox12.Location = new System.Drawing.Point(68, 53);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 11;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox12.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox12.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox11.Location = new System.Drawing.Point(1, 53);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 10;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox11.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox11.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox10.Location = new System.Drawing.Point(604, 1);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(71, 51);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.celda_Click);
+            this.pictureBox10.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox10.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
             // pictureBox9
             // 
@@ -2184,65 +2200,50 @@ namespace battleShip
             this.pictureBox5.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.pictureBox5.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
             // 
-            // pictureBox4
+            // btn_atacar
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(202, 1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(66, 51);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox4.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.btn_atacar.Enabled = false;
+            this.btn_atacar.Location = new System.Drawing.Point(796, 297);
+            this.btn_atacar.Name = "btn_atacar";
+            this.btn_atacar.Size = new System.Drawing.Size(72, 45);
+            this.btn_atacar.TabIndex = 28;
+            this.btn_atacar.Text = "Atacar";
+            this.btn_atacar.UseVisualStyleBackColor = true;
+            this.btn_atacar.Click += new System.EventHandler(this.btn_atacar_Click);
             // 
-            // pictureBox3
+            // lw_Barcos
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(135, 1);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(66, 51);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox3.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.lw_Barcos.BackColor = System.Drawing.Color.DarkGray;
+            this.lw_Barcos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.NombreBarco,
+            this.TamañoBarco});
+            this.lw_Barcos.FullRowSelect = true;
+            this.lw_Barcos.HideSelection = false;
+            this.lw_Barcos.Location = new System.Drawing.Point(788, 366);
+            this.lw_Barcos.MultiSelect = false;
+            this.lw_Barcos.Name = "lw_Barcos";
+            this.lw_Barcos.Size = new System.Drawing.Size(184, 254);
+            this.lw_Barcos.TabIndex = 32;
+            this.lw_Barcos.UseCompatibleStateImageBehavior = false;
             // 
-            // pictureBox2
+            // NombreBarco
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(68, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(66, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.NombreBarco.Text = "Nombre";
+            this.NombreBarco.Width = 115;
             // 
-            // pictureBox10
+            // TamañoBarco
             // 
-            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(604, 1);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(71, 51);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.celda_Click);
-            this.pictureBox10.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
-            this.pictureBox10.MouseLeave += new System.EventHandler(this.pictureBox100_MouseLeave);
+            this.TamañoBarco.Text = "Tamaño";
+            // 
+            // btn_rotar
+            // 
+            this.btn_rotar.Location = new System.Drawing.Point(873, 297);
+            this.btn_rotar.Name = "btn_rotar";
+            this.btn_rotar.Size = new System.Drawing.Size(72, 45);
+            this.btn_rotar.TabIndex = 33;
+            this.btn_rotar.Text = "Rotar";
+            this.btn_rotar.UseVisualStyleBackColor = true;
+            this.btn_rotar.Click += new System.EventHandler(this.btn_rotar_Click);
             // 
             // Form1
             // 
@@ -2286,16 +2287,16 @@ namespace battleShip
             this.panel_Jugador.ResumeLayout(false);
             this.panel_Jugador.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
@@ -2306,16 +2307,20 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
@@ -2326,16 +2331,16 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
@@ -2346,16 +2351,16 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -2366,26 +2371,22 @@ namespace battleShip
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
