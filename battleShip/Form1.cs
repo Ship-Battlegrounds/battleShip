@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using WMPLib;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Media;
 
 namespace battleShip {
     public partial class Form1 : Form
@@ -19,9 +20,9 @@ namespace battleShip {
 
         //Reproductores de sonido
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
-        WindowsMediaPlayer disparar = new WindowsMediaPlayer();
-        WindowsMediaPlayer acertar = new WindowsMediaPlayer();
-        WindowsMediaPlayer fallar = new WindowsMediaPlayer();
+        SoundPlayer disparar = new SoundPlayer();
+        SoundPlayer acertar = new SoundPlayer();
+        SoundPlayer fallar = new SoundPlayer();
 
         Jugador j1 = new Jugador("Ricardo");
         bool atacar;
@@ -36,11 +37,11 @@ namespace battleShip {
             crearTablero();
             crearBarcos();
             //Inicializar música
-            /*
-             mainMusic.URL = "mainWellerman.mp3";
+
+             mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
              mainMusic.settings.volume = 10;
              mainMusic.settings.setMode("loop", true);
-            */
+            
             
             //Establece el formato de la lista del Form1
             lw_Barcos.View = View.Details;
@@ -635,11 +636,13 @@ namespace battleShip {
         {
             if (barcos.Count == 0)
             {
+                mainMusic.controls.stop();
                 Form5 f5 = new Form5();
                 f5.Show();
             }
             if (j1.comprobarDerrota())
             {
+                mainMusic.controls.stop();
                 Form4 f4 = new Form4();
                 f4.Show();
             }
@@ -648,6 +651,7 @@ namespace battleShip {
         //Método que vuelve a mostrar el menu principal (Form2) al cerrar
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            mainMusic.close();
             Form2.ProveedorForm2.Form2.Show();
         }
     }

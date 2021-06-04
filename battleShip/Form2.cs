@@ -16,7 +16,7 @@ namespace battleShip {
 
         public Form2() {
             InitializeComponent();
-              mainMusic.URL = "mainWellerman.mp3";
+              mainMusic.URL = "Sound\\mainWellerman.mp3";
               mainMusic.settings.volume = 20;
               mainMusic.settings.setMode("loop", true);
 
