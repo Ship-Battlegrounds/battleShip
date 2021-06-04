@@ -27,6 +27,7 @@ namespace battleShip {
         Jugador j1 = new Jugador("Ricardo");
         bool atacar;
         bool isVertical = true;
+        float tiempo = 0.0f;
 
         List<Barco> barcos = new List<Barco> { };
 
@@ -111,7 +112,6 @@ namespace battleShip {
 
                     if (a.Tamaño == 0)
                     {
-                        MessageBox.Show("Se ha destruido un barco");
                         foreach (Control control in tableLayoutPanel1.Controls)
                         {
                             PictureBox picture = control as PictureBox;
@@ -211,6 +211,7 @@ namespace battleShip {
 
         private void btn_atacar_Click(object sender, EventArgs e)
         {
+            timer1.Start();
             atacar = true;
             foreach (Control control in tableLayoutPanel1.Controls)
             {
@@ -623,15 +624,21 @@ namespace battleShip {
             if (barcos.Count == 0)
             {
                 mainMusic.controls.stop();
-                Form5 f5 = new Form5();
+                Form5 f5 = new Form5(j1);
                 f5.Show();
             }
             if (j1.comprobarDerrota())
             {
                 mainMusic.controls.stop();
-                Form4 f4 = new Form4();
+                Form4 f4 = new Form4(j1);
                 f4.Show();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tiempo += 0.1f;
+            labelTiempo.Text = tiempo.ToString("N1");
         }
 
         //Método que vuelve a mostrar el menu principal (Form2) al cerrar

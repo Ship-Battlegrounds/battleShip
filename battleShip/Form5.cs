@@ -16,7 +16,7 @@ namespace battleShip
 
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
         
-        public Form5()
+        public Form5(Jugador j1)
         {
             InitializeComponent();
             mainMusic.URL = "Sound\\battlefield-3-victory-ost.mp3";

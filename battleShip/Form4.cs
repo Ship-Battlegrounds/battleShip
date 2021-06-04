@@ -12,7 +12,7 @@ namespace battleShip
 {
     public partial class Form4 : Form
     {
-        public Form4()
+        public Form4(Jugador j1)
         {
             InitializeComponent();
         }

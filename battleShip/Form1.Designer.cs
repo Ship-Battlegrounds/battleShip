@@ -29,6 +29,7 @@ namespace battleShip
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_y1 = new System.Windows.Forms.Label();
             this.lbl_y2 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@ namespace battleShip
             this.lbl_Tiros = new System.Windows.Forms.Label();
             this.lbl_Aciertos = new System.Windows.Forms.Label();
             this.panel_Stats = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbl_TotalFallos = new System.Windows.Forms.Label();
             this.lbl_TotalAciertos = new System.Windows.Forms.Label();
             this.lbl_TotalTiros = new System.Windows.Forms.Label();
@@ -168,6 +170,8 @@ namespace battleShip
             this.NombreBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TamañoBarco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btn_rotar = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelTiempo = new System.Windows.Forms.Label();
             this.panel_Stats.SuspendLayout();
             this.panel_Jugador.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -276,7 +280,7 @@ namespace battleShip
             // lbl_y1
             // 
             this.lbl_y1.AutoSize = true;
-            this.lbl_y1.Location = new System.Drawing.Point(106, 53);
+            this.lbl_y1.Location = new System.Drawing.Point(77, 27);
             this.lbl_y1.Name = "lbl_y1";
             this.lbl_y1.Size = new System.Drawing.Size(13, 13);
             this.lbl_y1.TabIndex = 1;
@@ -285,7 +289,7 @@ namespace battleShip
             // lbl_y2
             // 
             this.lbl_y2.AutoSize = true;
-            this.lbl_y2.Location = new System.Drawing.Point(181, 53);
+            this.lbl_y2.Location = new System.Drawing.Point(152, 27);
             this.lbl_y2.Name = "lbl_y2";
             this.lbl_y2.Size = new System.Drawing.Size(13, 13);
             this.lbl_y2.TabIndex = 2;
@@ -294,7 +298,7 @@ namespace battleShip
             // lbl_y3
             // 
             this.lbl_y3.AutoSize = true;
-            this.lbl_y3.Location = new System.Drawing.Point(247, 53);
+            this.lbl_y3.Location = new System.Drawing.Point(218, 27);
             this.lbl_y3.Name = "lbl_y3";
             this.lbl_y3.Size = new System.Drawing.Size(13, 13);
             this.lbl_y3.TabIndex = 3;
@@ -303,7 +307,7 @@ namespace battleShip
             // lbl_y4
             // 
             this.lbl_y4.AutoSize = true;
-            this.lbl_y4.Location = new System.Drawing.Point(316, 53);
+            this.lbl_y4.Location = new System.Drawing.Point(287, 27);
             this.lbl_y4.Name = "lbl_y4";
             this.lbl_y4.Size = new System.Drawing.Size(13, 13);
             this.lbl_y4.TabIndex = 4;
@@ -312,7 +316,7 @@ namespace battleShip
             // lbl_y5
             // 
             this.lbl_y5.AutoSize = true;
-            this.lbl_y5.Location = new System.Drawing.Point(383, 53);
+            this.lbl_y5.Location = new System.Drawing.Point(354, 27);
             this.lbl_y5.Name = "lbl_y5";
             this.lbl_y5.Size = new System.Drawing.Size(13, 13);
             this.lbl_y5.TabIndex = 5;
@@ -321,7 +325,7 @@ namespace battleShip
             // lbl_y6
             // 
             this.lbl_y6.AutoSize = true;
-            this.lbl_y6.Location = new System.Drawing.Point(450, 53);
+            this.lbl_y6.Location = new System.Drawing.Point(421, 27);
             this.lbl_y6.Name = "lbl_y6";
             this.lbl_y6.Size = new System.Drawing.Size(13, 13);
             this.lbl_y6.TabIndex = 6;
@@ -330,7 +334,7 @@ namespace battleShip
             // lbl_y7
             // 
             this.lbl_y7.AutoSize = true;
-            this.lbl_y7.Location = new System.Drawing.Point(518, 53);
+            this.lbl_y7.Location = new System.Drawing.Point(489, 27);
             this.lbl_y7.Name = "lbl_y7";
             this.lbl_y7.Size = new System.Drawing.Size(13, 13);
             this.lbl_y7.TabIndex = 7;
@@ -339,7 +343,7 @@ namespace battleShip
             // lbl_y8
             // 
             this.lbl_y8.AutoSize = true;
-            this.lbl_y8.Location = new System.Drawing.Point(585, 53);
+            this.lbl_y8.Location = new System.Drawing.Point(556, 27);
             this.lbl_y8.Name = "lbl_y8";
             this.lbl_y8.Size = new System.Drawing.Size(13, 13);
             this.lbl_y8.TabIndex = 8;
@@ -348,7 +352,7 @@ namespace battleShip
             // lbl_y9
             // 
             this.lbl_y9.AutoSize = true;
-            this.lbl_y9.Location = new System.Drawing.Point(652, 53);
+            this.lbl_y9.Location = new System.Drawing.Point(623, 27);
             this.lbl_y9.Name = "lbl_y9";
             this.lbl_y9.Size = new System.Drawing.Size(13, 13);
             this.lbl_y9.TabIndex = 9;
@@ -357,7 +361,7 @@ namespace battleShip
             // lbl_y10
             // 
             this.lbl_y10.AutoSize = true;
-            this.lbl_y10.Location = new System.Drawing.Point(717, 53);
+            this.lbl_y10.Location = new System.Drawing.Point(688, 27);
             this.lbl_y10.Name = "lbl_y10";
             this.lbl_y10.Size = new System.Drawing.Size(19, 13);
             this.lbl_y10.TabIndex = 10;
@@ -366,7 +370,7 @@ namespace battleShip
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(53, 92);
+            this.label11.Location = new System.Drawing.Point(24, 66);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 11;
@@ -375,7 +379,7 @@ namespace battleShip
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(53, 146);
+            this.label12.Location = new System.Drawing.Point(24, 120);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 13);
             this.label12.TabIndex = 12;
@@ -384,7 +388,7 @@ namespace battleShip
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(53, 205);
+            this.label13.Location = new System.Drawing.Point(24, 179);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(14, 13);
             this.label13.TabIndex = 13;
@@ -393,7 +397,7 @@ namespace battleShip
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(52, 267);
+            this.label14.Location = new System.Drawing.Point(23, 241);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 13);
             this.label14.TabIndex = 14;
@@ -402,7 +406,7 @@ namespace battleShip
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(52, 314);
+            this.label15.Location = new System.Drawing.Point(23, 288);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(14, 13);
             this.label15.TabIndex = 15;
@@ -411,7 +415,7 @@ namespace battleShip
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(52, 423);
+            this.label16.Location = new System.Drawing.Point(23, 397);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(15, 13);
             this.label16.TabIndex = 16;
@@ -420,7 +424,7 @@ namespace battleShip
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(52, 366);
+            this.label17.Location = new System.Drawing.Point(23, 340);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(13, 13);
             this.label17.TabIndex = 17;
@@ -429,7 +433,7 @@ namespace battleShip
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(50, 477);
+            this.label18.Location = new System.Drawing.Point(21, 451);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(15, 13);
             this.label18.TabIndex = 18;
@@ -438,7 +442,7 @@ namespace battleShip
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(52, 534);
+            this.label19.Location = new System.Drawing.Point(23, 508);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(10, 13);
             this.label19.TabIndex = 19;
@@ -447,7 +451,7 @@ namespace battleShip
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(50, 589);
+            this.label20.Location = new System.Drawing.Point(21, 563);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(12, 13);
             this.label20.TabIndex = 20;
@@ -465,7 +469,7 @@ namespace battleShip
             // lbl_Aciertos
             // 
             this.lbl_Aciertos.AutoSize = true;
-            this.lbl_Aciertos.Location = new System.Drawing.Point(17, 44);
+            this.lbl_Aciertos.Location = new System.Drawing.Point(17, 35);
             this.lbl_Aciertos.Name = "lbl_Aciertos";
             this.lbl_Aciertos.Size = new System.Drawing.Size(48, 13);
             this.lbl_Aciertos.TabIndex = 22;
@@ -475,46 +479,60 @@ namespace battleShip
             // 
             this.panel_Stats.BackColor = System.Drawing.Color.Silver;
             this.panel_Stats.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_Stats.Controls.Add(this.labelTiempo);
+            this.panel_Stats.Controls.Add(this.label1);
             this.panel_Stats.Controls.Add(this.lbl_TotalFallos);
             this.panel_Stats.Controls.Add(this.lbl_TotalAciertos);
             this.panel_Stats.Controls.Add(this.lbl_TotalTiros);
             this.panel_Stats.Controls.Add(this.lbl_Fallos);
             this.panel_Stats.Controls.Add(this.lbl_Tiros);
             this.panel_Stats.Controls.Add(this.lbl_Aciertos);
-            this.panel_Stats.Location = new System.Drawing.Point(796, 180);
+            this.panel_Stats.Location = new System.Drawing.Point(774, 105);
             this.panel_Stats.Name = "panel_Stats";
-            this.panel_Stats.Size = new System.Drawing.Size(149, 100);
+            this.panel_Stats.Size = new System.Drawing.Size(149, 115);
             this.panel_Stats.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Tiempo:";
             // 
             // lbl_TotalFallos
             // 
             this.lbl_TotalFallos.AutoSize = true;
-            this.lbl_TotalFallos.Location = new System.Drawing.Point(77, 71);
+            this.lbl_TotalFallos.Location = new System.Drawing.Point(106, 59);
             this.lbl_TotalFallos.Name = "lbl_TotalFallos";
-            this.lbl_TotalFallos.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalFallos.Size = new System.Drawing.Size(13, 13);
             this.lbl_TotalFallos.TabIndex = 26;
+            this.lbl_TotalFallos.Text = "0";
             // 
             // lbl_TotalAciertos
             // 
             this.lbl_TotalAciertos.AutoSize = true;
-            this.lbl_TotalAciertos.Location = new System.Drawing.Point(76, 44);
+            this.lbl_TotalAciertos.Location = new System.Drawing.Point(106, 35);
             this.lbl_TotalAciertos.Name = "lbl_TotalAciertos";
-            this.lbl_TotalAciertos.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalAciertos.Size = new System.Drawing.Size(13, 13);
             this.lbl_TotalAciertos.TabIndex = 25;
+            this.lbl_TotalAciertos.Text = "0";
             this.lbl_TotalAciertos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_TotalTiros
             // 
             this.lbl_TotalTiros.AutoSize = true;
-            this.lbl_TotalTiros.Location = new System.Drawing.Point(77, 11);
+            this.lbl_TotalTiros.Location = new System.Drawing.Point(106, 11);
             this.lbl_TotalTiros.Name = "lbl_TotalTiros";
-            this.lbl_TotalTiros.Size = new System.Drawing.Size(0, 13);
+            this.lbl_TotalTiros.Size = new System.Drawing.Size(13, 13);
             this.lbl_TotalTiros.TabIndex = 24;
+            this.lbl_TotalTiros.Text = "0";
             // 
             // lbl_Fallos
             // 
             this.lbl_Fallos.AutoSize = true;
-            this.lbl_Fallos.Location = new System.Drawing.Point(17, 71);
+            this.lbl_Fallos.Location = new System.Drawing.Point(17, 59);
             this.lbl_Fallos.Name = "lbl_Fallos";
             this.lbl_Fallos.Size = new System.Drawing.Size(37, 13);
             this.lbl_Fallos.TabIndex = 23;
@@ -528,9 +546,9 @@ namespace battleShip
             this.panel_Jugador.Controls.Add(this.label2);
             this.panel_Jugador.Controls.Add(this.label3);
             this.panel_Jugador.Controls.Add(this.lbl_Jugador);
-            this.panel_Jugador.Location = new System.Drawing.Point(796, 92);
+            this.panel_Jugador.Location = new System.Drawing.Point(774, 51);
             this.panel_Jugador.Name = "panel_Jugador";
-            this.panel_Jugador.Size = new System.Drawing.Size(149, 67);
+            this.panel_Jugador.Size = new System.Drawing.Size(149, 36);
             this.panel_Jugador.TabIndex = 27;
             // 
             // lbl_NombreJug
@@ -682,7 +700,7 @@ namespace battleShip
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 4, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(89, 76);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 50);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -2202,10 +2220,14 @@ namespace battleShip
             // 
             // btn_atacar
             // 
+            this.btn_atacar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_atacar.BackgroundImage")));
+            this.btn_atacar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_atacar.Enabled = false;
-            this.btn_atacar.Location = new System.Drawing.Point(796, 297);
+            this.btn_atacar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_atacar.ForeColor = System.Drawing.Color.White;
+            this.btn_atacar.Location = new System.Drawing.Point(774, 226);
             this.btn_atacar.Name = "btn_atacar";
-            this.btn_atacar.Size = new System.Drawing.Size(72, 45);
+            this.btn_atacar.Size = new System.Drawing.Size(149, 45);
             this.btn_atacar.TabIndex = 28;
             this.btn_atacar.Text = "Atacar";
             this.btn_atacar.UseVisualStyleBackColor = true;
@@ -2219,10 +2241,10 @@ namespace battleShip
             this.TamañoBarco});
             this.lw_Barcos.FullRowSelect = true;
             this.lw_Barcos.HideSelection = false;
-            this.lw_Barcos.Location = new System.Drawing.Point(788, 366);
+            this.lw_Barcos.Location = new System.Drawing.Point(774, 337);
             this.lw_Barcos.MultiSelect = false;
             this.lw_Barcos.Name = "lw_Barcos";
-            this.lw_Barcos.Size = new System.Drawing.Size(184, 254);
+            this.lw_Barcos.Size = new System.Drawing.Size(176, 242);
             this.lw_Barcos.TabIndex = 32;
             this.lw_Barcos.UseCompatibleStateImageBehavior = false;
             // 
@@ -2237,19 +2259,37 @@ namespace battleShip
             // 
             // btn_rotar
             // 
-            this.btn_rotar.Location = new System.Drawing.Point(873, 297);
+            this.btn_rotar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_rotar.BackgroundImage")));
+            this.btn_rotar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_rotar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_rotar.ForeColor = System.Drawing.Color.White;
+            this.btn_rotar.Location = new System.Drawing.Point(774, 273);
             this.btn_rotar.Name = "btn_rotar";
-            this.btn_rotar.Size = new System.Drawing.Size(72, 45);
+            this.btn_rotar.Size = new System.Drawing.Size(149, 45);
             this.btn_rotar.TabIndex = 33;
             this.btn_rotar.Text = "Rotar";
             this.btn_rotar.UseVisualStyleBackColor = true;
             this.btn_rotar.Click += new System.EventHandler(this.btn_rotar_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labelTiempo
+            // 
+            this.labelTiempo.AutoSize = true;
+            this.labelTiempo.Location = new System.Drawing.Point(106, 83);
+            this.labelTiempo.Name = "labelTiempo";
+            this.labelTiempo.Size = new System.Drawing.Size(22, 13);
+            this.labelTiempo.TabIndex = 28;
+            this.labelTiempo.Text = "0.0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 633);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(1011, 633);
             this.Controls.Add(this.btn_rotar);
             this.Controls.Add(this.lw_Barcos);
             this.Controls.Add(this.btn_atacar);
@@ -2532,6 +2572,9 @@ namespace battleShip
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTiempo;
     }
 }
 
