@@ -299,29 +299,34 @@ namespace battleShip {
                                     case 1:
 
                                         text = "./../../img/spritesBarcos/Fragata/fragata.png";
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         picture.Image = Image.FromFile(text);
                                         counTemp++;
                                         break;
                                     case 2:
 
                                         text = "./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png";
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         picture.Image = Image.FromFile(text);
                                         counTemp++;
                                         break;
                                     case 3:
 
                                         text = "./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png";
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         picture.Image = Image.FromFile(text);
                                         counTemp++;
                                         break;
                                     case 4:
 
                                         text = "./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png";
+                                        picture.SizeMode = PictureBoxSizeMode.StretchImage;
                                         picture.Image = Image.FromFile(text);
                                         counTemp++;
                                         break;
                                     default:
                                         Image img = Image.FromFile("../../img/barco.jpg");
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         picture.Image = img;
                                         break;
                                 }
@@ -357,6 +362,7 @@ namespace battleShip {
                                     case 1:
 
                                         Bitmap fragata = new Bitmap("./../../img/spritesBarcos/Fragata/fragata.png");
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         fragata.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                         picture.Image = fragata;
                                         counTemp++;
@@ -365,6 +371,7 @@ namespace battleShip {
                                     case 2:
 
                                         Bitmap submarino = new Bitmap("./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png");
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         submarino.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                         picture.Image = submarino;
                                         counTemp++;
@@ -372,6 +379,7 @@ namespace battleShip {
                                     case 3:
 
                                         Bitmap destructor = new Bitmap("./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png");
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         destructor.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                         picture.Image = destructor;
                                         counTemp++;
@@ -379,6 +387,7 @@ namespace battleShip {
                                     case 4:
 
                                         Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
+                                        picture.SizeMode = PictureBoxSizeMode.StretchImage;
                                         portaaviones.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                         picture.Image = portaaviones;
                                         counTemp++;
@@ -386,6 +395,7 @@ namespace battleShip {
                                     default:
 
                                         Image img = Image.FromFile("../../img/barco.jpg");
+                                        picture.SizeMode = PictureBoxSizeMode.Zoom;
                                         picture.Image = img;
                                         break;
                                 }
@@ -494,31 +504,36 @@ namespace battleShip {
                             {
                                 case 1:
                                     Bitmap fragata = new Bitmap("./../../img/spritesBarcos/Fragata/fragata.png");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     picture.Image = fragata;
                                     counTemp++;
                                     break;
 
                                 case 2:
                                     Bitmap submarino = new Bitmap("./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     picture.Image = submarino;
                                     counTemp++;
                                     break;
 
                                 case 3:
                                     Bitmap destructor = new Bitmap("./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     picture.Image = destructor;
                                     counTemp++;
                                     break;
 
                                 case 4:
                                     Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
+                                    picture.SizeMode = PictureBoxSizeMode.StretchImage;
                                     picture.Image = portaaviones;
                                     counTemp++;
                                     break;
 
                                 default:
                                     Image img = Image.FromFile("../../img/barco.jpg");
-                                    picture.Image = img;
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
+                                    picture.Image = img;                                 
                                     break;
                             }
                         }
@@ -548,6 +563,7 @@ namespace battleShip {
                             {
                                 case 1:
                                     Bitmap fragata = new Bitmap("./../../img/spritesBarcos/Fragata/fragata.png");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     fragata.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                     picture.Image = fragata;
                                     counTemp++;
@@ -555,6 +571,7 @@ namespace battleShip {
 
                                 case 2:
                                     Bitmap submarino = new Bitmap("./../../img/spritesBarcos/Destructor/destructor" + counTemp + ".png");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     submarino.RotateFlip(RotateFlipType.Rotate270FlipNone);
                                     picture.Image = submarino;
                                     counTemp++;
@@ -563,6 +580,7 @@ namespace battleShip {
                                 case 3:
                                     Bitmap destructor = new Bitmap("./../../img/spritesBarcos/Submarino/submarino" + counTemp + ".png");
                                     destructor.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     picture.Image = destructor;
                                     counTemp++;
                                     break;
@@ -570,12 +588,14 @@ namespace battleShip {
 
                                     Bitmap portaaviones = new Bitmap("./../../img/spritesBarcos/Portaaviones/portaaviones" + counTemp + ".png");
                                     portaaviones.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                                    picture.SizeMode = PictureBoxSizeMode.StretchImage;
                                     picture.Image = portaaviones;
                                     counTemp++;
                                     break;
 
                                 default:
                                     Image img = Image.FromFile("../../img/barco.jpg");
+                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
                                     picture.Image = img;
                                     break;
                             }
