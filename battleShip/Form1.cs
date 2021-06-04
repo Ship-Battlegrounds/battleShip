@@ -485,6 +485,13 @@ namespace battleShip {
             {
                 //Comprobar si se sale de la pantalla
                 if (valorY + tamaño > 11) return;
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+                    for (int i = 0; i < tamaño; i++) if (Convert.ToInt32(tagPicture[2]) == valorY + i && Convert.ToInt32(tagPicture[1]) == valorX && tagPicture[0] != "A") return;
+                }
+
 
                 foreach (Control control in tableLayoutPanel1.Controls)
                 {
@@ -545,6 +552,13 @@ namespace battleShip {
                 //Comprobar si cabe el barco
                 if (valorX + tamaño > 11) return;
                 
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    PictureBox picture = control as PictureBox;
+                    String[] tagPicture = picture.Tag.ToString().Split('#');
+                    for (int i = 0; i < tamaño; i++) if (Convert.ToInt32(tagPicture[2]) == valorY && Convert.ToInt32(tagPicture[1]) == valorX + i && tagPicture[0] != "A") return;
+                }
+
                 foreach (Control control in tableLayoutPanel1.Controls)
                 {
                     PictureBox picture = control as PictureBox;
