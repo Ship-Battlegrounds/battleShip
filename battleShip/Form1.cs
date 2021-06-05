@@ -848,5 +848,4 @@ namespace battleShip {
     }
 
 }
-    }
-}
+    
