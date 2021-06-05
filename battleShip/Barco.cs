@@ -10,6 +10,8 @@ namespace battleShip {
         private String[] coordenadas;
         private String name;
         private String img;
+        private int vidas;
+        private bool vertical;
 
         //Constructores
         public Barco (int size, String name,String imagen)
@@ -17,6 +19,7 @@ namespace battleShip {
             Tamaño = size;
             Name = name;
             Img = imagen;
+            vidas = size;
         }
 
         // Métodos
@@ -38,6 +41,7 @@ namespace battleShip {
         public string[] Coordenadas { get => coordenadas; set => coordenadas = value; }
         public string Name { get => name; set => name = value; }
         public string Img { get => img; set => img = value; }
-
+        public int Vidas { get => vidas; set => vidas = value; }
+        public bool Vertical { get => vertical; set => vertical = value; }
     }
 }
