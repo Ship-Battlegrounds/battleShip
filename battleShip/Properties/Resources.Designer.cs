@@ -123,6 +123,16 @@ namespace battleShip.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DERROTA {
+            get {
+                object obj = ResourceManager.GetObject("DERROTA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap explosion {
             get {
                 object obj = ResourceManager.GetObject("explosion", resourceCulture);
@@ -186,6 +196,16 @@ namespace battleShip.Properties {
         internal static System.Drawing.Bitmap menu_semitransparente {
             get {
                 object obj = ResourceManager.GetObject("menu_semitransparente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VICTORIA {
+            get {
+                object obj = ResourceManager.GetObject("VICTORIA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
