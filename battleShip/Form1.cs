@@ -784,6 +784,11 @@ namespace battleShip {
             labelTiempo.Text = tiempo.ToString("N1");
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         //Método que vuelve a mostrar el menu principal (Form2) al cerrar
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -813,5 +818,6 @@ namespace battleShip {
         {
             this.Cursor = default;
 
-        }    }
+        }
+    }
 }

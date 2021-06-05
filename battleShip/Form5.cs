@@ -28,5 +28,11 @@ namespace battleShip
         {
             this.BackgroundImage = Image.FromFile("./../../img/win.gif");
         }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

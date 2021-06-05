@@ -97,18 +97,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -123,9 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\barco.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\water.gif" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
@@ -157,6 +154,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\defeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\acertar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\win.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\menu_semitransparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\victory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\backgroundForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\instrucciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fondobarcos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
