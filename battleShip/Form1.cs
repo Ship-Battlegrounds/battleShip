@@ -15,9 +15,10 @@ namespace battleShip {
     public partial class Form1 : Form
     {
 
-        //Variable para pruebas
+        //Variables
         String text = "";
         List<PictureBox> picturesHover = new List<PictureBox> { };
+        PictureBox pictureChange = new PictureBox();
 
         //Reproductores de sonido
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
@@ -79,27 +80,34 @@ namespace battleShip {
             if (pictures == null) return;
             if (atacar)
             {
-                 this.Cursor = new Cursor("../../icons/hitmarker.ico");
-                timerCur.Start();
+                //Si le das demasiado rápido
+                if (timerDisparo.Enabled) return;
 
                 //Si ya hemos disparado en la celda
                 if (tagPicture[3] == "Dado")  return;
-                
+
+                this.Cursor = new Cursor("../../icons/hitmarker.ico");
+                timerCur.Start();
 
                 //Si hemos disparado al agua
                 if (tagPicture[0] == "A")
                 {
-                   
+                    timerDisparo.Interval = 1050;
+                    timerDisparo.Start();
                     j1.Tiros--;
                     j1.Fallos++;
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
                     pictures.Image = Image.FromFile("./../../img/miss.gif");
+                    pictureChange = pictures;
+                    timerExplosionAgua.Start();
                     pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
                     comprobarPartida();
                     return;
                 }
 
+                timerDisparo.Interval = 1400;
+                timerDisparo.Start();
                 //Si hemos llegado aqui, hemos disparado a un barco
                 int counTemp;
                 barcos.ForEach(a =>
@@ -109,7 +117,12 @@ namespace battleShip {
                         a.Vidas--;
                         pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
                         pictures.Image = Image.FromFile("./../../img/explosion.gif");
-                        //pictures.Image = Image.FromFile("./../../img/acertar.png");
+
+
+                        pictureChange = pictures;
+                        if (a.Vidas != 0 ) timerExplosion.Start();
+
+
                         j1.Aciertos++;
                         lbl_TotalAciertos.Text = j1.Aciertos.ToString();
                     }
@@ -864,6 +877,25 @@ namespace battleShip {
             timerCur.Stop();
             if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
 
+        }
+
+        private void timerExplosion_Tick(object sender, EventArgs e)
+        {
+            timerExplosion.Stop();
+            pictureChange.Image = Image.FromFile("./../../img/acertar.png");
+
+        }
+
+        private void timerExplosionAgua_Tick(object sender, EventArgs e)
+        {
+            timerExplosionAgua.Stop();
+            pictureChange.Image = Image.FromFile("./../../img/circle.png");
+
+        }
+
+        private void timerDisparo_Tick(object sender, EventArgs e)
+        {
+            timerDisparo.Stop();
         }
     }
 }
