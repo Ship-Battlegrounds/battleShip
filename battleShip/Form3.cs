@@ -15,15 +15,27 @@ namespace battleShip
         public Form3()
         {
             InitializeComponent();
-            label2.Text = "El juego consiste en hundir la flota del contrincante. Para ello, el primer jugador debe colocar su propia flota de forma estratégica y el segundo jugador debe de encontrar y hundir la flota contraria. ";
-            label3.Text = "El primer jugador deberá colocar en los cuadros los siguientes barcos en posición horizontal o vertical:  1 barco que ocupa 4 cuadrados.  2 barcos de tres cuadros  3 barcos de 2 cuadros  4 barcos de un solo cuadro";
-            label4.Text = "Los barcos pueden colocarse junto a los bordes de la cuadrícula o junto a otros barcos, pero sin llegar a tocarse.";
-            label5.Text = "Finalmente, gana el jugador que destruya todos los barcos antes de usar los 25 tiros.";
+            this.panel1.BackColor = Color.FromArgb(80,54,54,54);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            Color c = Color.FromArgb(1, 250, 200, 0);
+            btn.ForeColor = c;
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.ForeColor = Color.Silver;
+            this.Cursor = default;
         }
     }
 }

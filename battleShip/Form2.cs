@@ -45,7 +45,7 @@ namespace battleShip {
       
         private void btnInstrucciones_Click(object sender, EventArgs e) {
             Form3 f3 = new Form3();
-            f3.Show();
+            f3.ShowDialog();
         }
       
         private void btnSalir_Click(object sender, EventArgs e) {
