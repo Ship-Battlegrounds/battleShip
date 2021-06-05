@@ -812,6 +812,7 @@ namespace battleShip {
             Button btn = sender as Button;
             Color c = Color.FromArgb(1, 250, 200, 0);
             btn.ForeColor = c;
+            this.Cursor = Cursors.Hand;
         }
 
         private void btnMouseLeave(object sender, EventArgs e)
