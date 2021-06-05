@@ -271,11 +271,7 @@ namespace battleShip {
 
         private void asignarBarco(String nombre, int tamaño, int valorX, int valorY, int valuePicture)
         {
-           
-            
-            
-            //Sacar todas las posisciones de x que necesitamos
-            // valoresY.Add(tamaño);
+                       
             int counTemp = tamaño;
 
             if (isVertical)
@@ -502,6 +498,8 @@ namespace battleShip {
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e) //Muestra como quedará el barco en la ubicación del cursor
         {
+            if (atacar) this.Cursor = new Cursor("../../icons/hitmarker.ico");
+
             if (lw_Barcos.SelectedItems.Count == 0) return;
 
             PictureBox pictures = sender as PictureBox;            
@@ -660,6 +658,7 @@ namespace battleShip {
 
         private void pictureBox100_MouseLeave(object sender, EventArgs e)
         {
+            this.Cursor = default;
             bool modi = true;
             picturesHover.ForEach(a => {
                 String[] tagA = a.Tag.ToString().Split('#');
@@ -676,7 +675,7 @@ namespace battleShip {
             {
                 mainMusic.controls.stop();
                 Form5 f5 = new Form5();
-                f5.Show();
+                f5.ShowDialog();
             }
             if (j1.comprobarDerrota())
             {
@@ -691,6 +690,17 @@ namespace battleShip {
         {
             mainMusic.close();
             Form2.ProveedorForm2.Form2.Show();
+        }
+
+        private void tableLayoutPanel1_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = default;
+
         }
     }
 }
