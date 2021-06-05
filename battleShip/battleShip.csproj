@@ -147,9 +147,6 @@
     <None Include="img\instruccionesBarco.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\fondobarcos.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="img\boton.png" />
   </ItemGroup>
   <ItemGroup>
@@ -168,9 +165,6 @@
     <None Include="img\explosion.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\titulo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="img\win.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\fondobarcos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\DERROTA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\VICTORIA.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

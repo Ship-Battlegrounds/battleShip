@@ -286,6 +286,7 @@ namespace battleShip
             // lbl_y1
             // 
             this.lbl_y1.AutoSize = true;
+            this.lbl_y1.BackColor = System.Drawing.Color.Black;
             this.lbl_y1.Location = new System.Drawing.Point(68, 62);
             this.lbl_y1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y1.Name = "lbl_y1";
@@ -296,6 +297,7 @@ namespace battleShip
             // lbl_y2
             // 
             this.lbl_y2.AutoSize = true;
+            this.lbl_y2.BackColor = System.Drawing.Color.Black;
             this.lbl_y2.Location = new System.Drawing.Point(131, 62);
             this.lbl_y2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y2.Name = "lbl_y2";
@@ -306,6 +308,7 @@ namespace battleShip
             // lbl_y3
             // 
             this.lbl_y3.AutoSize = true;
+            this.lbl_y3.BackColor = System.Drawing.Color.Black;
             this.lbl_y3.Location = new System.Drawing.Point(186, 62);
             this.lbl_y3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y3.Name = "lbl_y3";
@@ -316,6 +319,7 @@ namespace battleShip
             // lbl_y4
             // 
             this.lbl_y4.AutoSize = true;
+            this.lbl_y4.BackColor = System.Drawing.Color.Black;
             this.lbl_y4.Location = new System.Drawing.Point(243, 62);
             this.lbl_y4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y4.Name = "lbl_y4";
@@ -326,6 +330,7 @@ namespace battleShip
             // lbl_y5
             // 
             this.lbl_y5.AutoSize = true;
+            this.lbl_y5.BackColor = System.Drawing.Color.Black;
             this.lbl_y5.Location = new System.Drawing.Point(299, 62);
             this.lbl_y5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y5.Name = "lbl_y5";
@@ -336,6 +341,7 @@ namespace battleShip
             // lbl_y6
             // 
             this.lbl_y6.AutoSize = true;
+            this.lbl_y6.BackColor = System.Drawing.Color.Black;
             this.lbl_y6.Location = new System.Drawing.Point(355, 62);
             this.lbl_y6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y6.Name = "lbl_y6";
@@ -346,6 +352,7 @@ namespace battleShip
             // lbl_y7
             // 
             this.lbl_y7.AutoSize = true;
+            this.lbl_y7.BackColor = System.Drawing.Color.Black;
             this.lbl_y7.Location = new System.Drawing.Point(411, 62);
             this.lbl_y7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y7.Name = "lbl_y7";
@@ -356,6 +363,7 @@ namespace battleShip
             // lbl_y8
             // 
             this.lbl_y8.AutoSize = true;
+            this.lbl_y8.BackColor = System.Drawing.Color.Black;
             this.lbl_y8.Location = new System.Drawing.Point(467, 62);
             this.lbl_y8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y8.Name = "lbl_y8";
@@ -366,6 +374,7 @@ namespace battleShip
             // lbl_y9
             // 
             this.lbl_y9.AutoSize = true;
+            this.lbl_y9.BackColor = System.Drawing.Color.Black;
             this.lbl_y9.Location = new System.Drawing.Point(523, 62);
             this.lbl_y9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y9.Name = "lbl_y9";
@@ -376,6 +385,7 @@ namespace battleShip
             // lbl_y10
             // 
             this.lbl_y10.AutoSize = true;
+            this.lbl_y10.BackColor = System.Drawing.Color.Black;
             this.lbl_y10.Location = new System.Drawing.Point(577, 62);
             this.lbl_y10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_y10.Name = "lbl_y10";
@@ -386,6 +396,7 @@ namespace battleShip
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(37, 89);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -396,6 +407,7 @@ namespace battleShip
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(37, 143);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -406,6 +418,7 @@ namespace battleShip
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(37, 202);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -416,6 +429,7 @@ namespace battleShip
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(36, 264);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
@@ -426,6 +440,7 @@ namespace battleShip
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(36, 311);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
@@ -436,6 +451,7 @@ namespace battleShip
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(36, 420);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -446,6 +462,7 @@ namespace battleShip
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(36, 363);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
@@ -456,6 +473,7 @@ namespace battleShip
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(34, 474);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -466,6 +484,7 @@ namespace battleShip
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(36, 531);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -476,6 +495,7 @@ namespace battleShip
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(34, 586);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -1595,7 +1615,7 @@ namespace battleShip
             // 
             // pictureBox50
             // 
-            this.pictureBox50.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox50.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox50.BackgroundImage")));
             this.pictureBox50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox50.Location = new System.Drawing.Point(505, 218);
@@ -2414,11 +2434,14 @@ namespace battleShip
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Silver;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "BattleShip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hundir la Flota";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);

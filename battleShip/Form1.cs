@@ -26,8 +26,13 @@ namespace battleShip {
         SoundPlayer acertar = new SoundPlayer();
         SoundPlayer fallar = new SoundPlayer();
 
-        Jugador j1 = new Jugador("Ricardo");
+        List<String> nombres = new List<string>() {"Fideito18", "Trevor Belmont", "Coronel Sanders", "The_Legend_27", "Ranbaudi", "Danzi", "Aleen", "Jeff", 
+                                                    "Samu", "Ricardo", "Kirito", "Reiner", "Boruto", "Umaru-chan", "Useless Goddess", "Ezio Auditore", "orson",
+                                                    "Jon Snow", "Colmillosauro", "Arthas", "Tyrion Lannister", "Mr. Robot", "Meliodas"};
+
+        Jugador j1;
         bool atacar;
+        bool cerradoVerificado;
         bool isVertical = true;
         float tiempo = 0.0f;
 
@@ -39,13 +44,21 @@ namespace battleShip {
             InitializeComponent();
             crearTablero();
             crearBarcos();
+
+            // Crear jugador
+
+            Random rand = new Random();
+            int numero = rand.Next(nombres.Count);
+            j1 = new Jugador(nombres[numero]);
+
             //Inicializar música
 
              mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
              mainMusic.settings.volume = 10;
              mainMusic.settings.setMode("loop", true);
-            
-            
+             cerradoVerificado = false;
+
+
             //Establece el formato de la lista del Form1
             lw_Barcos.View = View.Details;
 
@@ -775,22 +788,26 @@ namespace battleShip {
             picturesHover.Clear();
         }
 
-        //Comprueba si el jugador a ganado o perdido
+        //Comprueba si el jugador ha ganado o perdido
         private void comprobarPartida()
         {
             if (barcos.Count == 0)
             {
                 mainMusic.controls.stop();
-
-                Form5 f5 = new Form5(j1);
-                f5.ShowDialog();
-
+                timer1.Stop();
+                cerradoVerificado = true;
+                Form5 f5 = new Form5(j1, labelTiempo.Text);
+                f5.Show();
+                this.Close();
             }
             if (j1.comprobarDerrota())
             {
                 mainMusic.controls.stop();
-                Form4 f4 = new Form4(j1);
+                timer1.Stop();
+                cerradoVerificado = true;
+                Form4 f4 = new Form4(j1, labelTiempo.Text);
                 f4.Show();
+                this.Close();
             }
         }
 
@@ -803,8 +820,11 @@ namespace battleShip {
         //Método que vuelve a mostrar el menu principal (Form2) al cerrar
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            mainMusic.close();
-            Form2.ProveedorForm2.Form2.Show();
+            if (!cerradoVerificado)
+            {
+                mainMusic.close();
+                Form2.ProveedorForm2.Form2.Show();
+            }
         }
 
         private void btnMouseEnter(object sender, EventArgs e)
@@ -820,10 +840,6 @@ namespace battleShip {
             Button btn = sender as Button;
             btn.ForeColor = Color.Silver;
         }
-
-     
-        
-       
 
         public void resetear()
         {
@@ -873,6 +889,7 @@ namespace battleShip {
         {
             this.Cursor = default;
         }
+
         private void timer2_Tick(object sender, EventArgs e)
         {
             timerCur.Stop();
