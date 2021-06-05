@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,12 +16,13 @@ namespace battleShip
     {
 
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
-        
+        SoundPlayer sfx = new SoundPlayer();
+
         public Form5(Jugador j1, String tiempo)
         {
             InitializeComponent();
-            mainMusic.URL = "Sound\\battlefield-3-victory-ost.mp3";
-            mainMusic.settings.volume = 20;
+            mainMusic.URL = "Sound\\bf3-win.mp3";
+            mainMusic.settings.volume = 8;
             mainMusic.settings.setMode("loop", true);
 
             //Carga datos de la partida
@@ -36,6 +38,8 @@ namespace battleShip
             Button btn = sender as Button;
             Color c = Color.FromArgb(1, 250, 200, 0);
             btn.ForeColor = c;
+            sfx.SoundLocation = "Sound\\Effects\\CURSOL_SELECT.wav";
+            sfx.Play();
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)

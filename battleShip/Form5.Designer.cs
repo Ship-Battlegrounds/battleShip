@@ -58,7 +58,7 @@ namespace battleShip
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(309, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 19);
+            this.label1.Size = new System.Drawing.Size(188, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "Has ganado. Felicidades.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@ namespace battleShip
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(403, 543);
+            this.button2.Location = new System.Drawing.Point(409, 543);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(173, 54);
@@ -88,7 +88,7 @@ namespace battleShip
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(205, 543);
+            this.button1.Location = new System.Drawing.Point(194, 543);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 54);
@@ -118,10 +118,10 @@ namespace battleShip
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(274, 160);
+            this.panel1.Location = new System.Drawing.Point(255, 160);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 359);
+            this.panel1.Size = new System.Drawing.Size(278, 359);
             this.panel1.TabIndex = 4;
             // 
             // label12
@@ -129,7 +129,7 @@ namespace battleShip
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(149, 218);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 19);
+            this.label12.Size = new System.Drawing.Size(60, 20);
             this.label12.TabIndex = 21;
             this.label12.Text = "label12";
             // 
@@ -138,7 +138,7 @@ namespace battleShip
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(149, 188);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 19);
+            this.label11.Size = new System.Drawing.Size(60, 20);
             this.label11.TabIndex = 20;
             this.label11.Text = "label11";
             // 
@@ -147,7 +147,7 @@ namespace battleShip
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(149, 159);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 19);
+            this.label10.Size = new System.Drawing.Size(60, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "label10";
             // 
@@ -156,7 +156,7 @@ namespace battleShip
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(149, 130);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 19);
+            this.label9.Size = new System.Drawing.Size(51, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "label9";
             // 
@@ -165,7 +165,7 @@ namespace battleShip
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(149, 100);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 19);
+            this.label8.Size = new System.Drawing.Size(51, 20);
             this.label8.TabIndex = 17;
             this.label8.Text = "label8";
             // 
@@ -174,7 +174,7 @@ namespace battleShip
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 100);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 19);
+            this.label7.Size = new System.Drawing.Size(68, 20);
             this.label7.TabIndex = 16;
             this.label7.Text = "Capitán:";
             // 
@@ -183,7 +183,7 @@ namespace battleShip
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(5, 218);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 19);
+            this.label6.Size = new System.Drawing.Size(140, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Tiempo de partida:";
             // 
@@ -192,7 +192,7 @@ namespace battleShip
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(5, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 19);
+            this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 14;
             this.label5.Text = "Fallos:";
             // 
@@ -201,7 +201,7 @@ namespace battleShip
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(5, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 19);
+            this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 13;
             this.label4.Text = "Aciertos:";
             // 
@@ -210,7 +210,7 @@ namespace battleShip
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(5, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 19);
+            this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Tiros de sobra:";
             // 
@@ -219,7 +219,7 @@ namespace battleShip
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(43, 41);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 19);
+            this.label13.Size = new System.Drawing.Size(173, 20);
             this.label13.TabIndex = 11;
             this.label13.Text = "Resumen de la partida:";
             // 
@@ -230,7 +230,7 @@ namespace battleShip
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(-1, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 19);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 0;
             // 
             // pictureBox1
@@ -246,7 +246,7 @@ namespace battleShip
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::battleShip.Properties.Resources.victory;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -256,7 +256,7 @@ namespace battleShip
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

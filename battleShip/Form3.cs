@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,8 @@ namespace battleShip
 {
     public partial class Form3 : Form
     {
+        SoundPlayer sfx = new SoundPlayer();
+
         public Form3()
         {
             InitializeComponent();
@@ -24,6 +27,18 @@ namespace battleShip
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            sfx.SoundLocation = "Sound\\Effects\\CURSOL_SELECT.wav";
+            sfx.Play();
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = default;
         }
     }
 }
