@@ -67,6 +67,5 @@ namespace battleShip {
             }
             private static Form2 _form2;
         }
-
     }
 }

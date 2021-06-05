@@ -39,8 +39,11 @@ namespace battleShip
             // 
             // btnJugar
             // 
-            this.btnJugar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnJugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnJugar.BackColor = System.Drawing.Color.Transparent;
+            this.btnJugar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnJugar.BackgroundImage")));
+            this.btnJugar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnJugar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnJugar.ForeColor = System.Drawing.Color.White;
             this.btnJugar.Location = new System.Drawing.Point(579, 237);
             this.btnJugar.Name = "btnJugar";
             this.btnJugar.Size = new System.Drawing.Size(209, 63);
@@ -51,27 +54,38 @@ namespace battleShip
             // 
             // btnInstrucciones
             // 
+            this.btnInstrucciones.BackColor = System.Drawing.Color.Transparent;
+            this.btnInstrucciones.BackgroundImage = global::battleShip.Properties.Resources.boton;
+            this.btnInstrucciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInstrucciones.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInstrucciones.ForeColor = System.Drawing.Color.White;
             this.btnInstrucciones.Location = new System.Drawing.Point(579, 306);
             this.btnInstrucciones.Name = "btnInstrucciones";
             this.btnInstrucciones.Size = new System.Drawing.Size(209, 63);
             this.btnInstrucciones.TabIndex = 2;
             this.btnInstrucciones.Text = "Instrucciones";
-            this.btnInstrucciones.UseVisualStyleBackColor = true;
+            this.btnInstrucciones.UseVisualStyleBackColor = false;
             this.btnInstrucciones.Click += new System.EventHandler(this.btnInstrucciones_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.BackgroundImage = global::battleShip.Properties.Resources.boton;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(579, 375);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(209, 63);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::battleShip.Properties.Resources.fondobarcos;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -94,6 +108,7 @@ namespace battleShip
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartBattleShip";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
