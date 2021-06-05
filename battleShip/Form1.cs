@@ -25,7 +25,11 @@ namespace battleShip {
         SoundPlayer acertar = new SoundPlayer();
         SoundPlayer fallar = new SoundPlayer();
 
-        Jugador j1 = new Jugador("Ricardo");
+        List<String> nombres = new List<string>() {"Fideito18", "Trevor Belmont", "Coronel Sanders", "The_Legend_27", "Ranbaudi", "Danzi", "Aleen", "Jeff", 
+                                                    "Samu", "Ricardo", "Kirito", "Reiner", "Boruto", "Umaru-chan", "Useless Goddess", "Ezio Auditore", "orson",
+                                                    "Jon Snow", "Colmillosauro", "Arthas", "Tyrion Lannister", "Mr. Robot", "Meliodas"};
+
+        Jugador j1;
         bool atacar;
         bool isVertical = true;
         float tiempo = 0.0f;
@@ -38,6 +42,13 @@ namespace battleShip {
             InitializeComponent();
             crearTablero();
             crearBarcos();
+
+            // Crear jugador
+
+            Random rand = new Random();
+            int numero = rand.Next(nombres.Count);
+            j1 = new Jugador(nombres[numero]);
+
             //Inicializar música
 
              mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
@@ -762,7 +773,7 @@ namespace battleShip {
             picturesHover.Clear();
         }
 
-        //Comprueba si el jugador a ganado o perdido
+        //Comprueba si el jugador ha ganado o perdido
         private void comprobarPartida()
         {
             if (barcos.Count == 0)
@@ -785,11 +796,6 @@ namespace battleShip {
         {
             tiempo += 0.1f;
             labelTiempo.Text = tiempo.ToString("N1");
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-
         }
 
         //Método que vuelve a mostrar el menu principal (Form2) al cerrar
@@ -870,6 +876,6 @@ namespace battleShip {
             if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
 
         }
-    }    }
+    }
 }
     

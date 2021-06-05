@@ -2315,6 +2315,11 @@ namespace battleShip
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timerCur
+            // 
+            this.timerCur.Interval = 500;
+            this.timerCur.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // btn_rotar
             // 
             this.btn_rotar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_rotar.BackgroundImage")));
@@ -2350,11 +2355,8 @@ namespace battleShip
             this.btn_atacar.MouseEnter += new System.EventHandler(this.btnMouseEnter);
             this.btn_atacar.MouseLeave += new System.EventHandler(this.btnMouseLeave);
             // 
-            // timerCur
             // timer2
             // 
-            this.timerCur.Interval = 500;
-            this.timerCur.Tick += new System.EventHandler(this.timer2_Tick);
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
@@ -2392,7 +2394,6 @@ namespace battleShip
             this.Controls.Add(this.lbl_y1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Bernard MT Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Silver;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
