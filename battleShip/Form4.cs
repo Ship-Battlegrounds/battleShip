@@ -59,5 +59,11 @@ namespace battleShip
             Form2.ProveedorForm2.Form2.Show();
             this.Close();
         }
+
+        private void Form4_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            mainMusic.controls.stop();
+            Form2.ProveedorForm2.Form2.mainMusic.controls.play();
+        }
     }
 }

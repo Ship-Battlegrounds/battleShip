@@ -398,7 +398,10 @@ namespace battleShip {
                 for (int i = 0; i < tamaño; i++) valoresY.Add(valorY + i);
 
                 //Comprobar si cabe el barco
-                if (!comprobarSiCabeElBarco(valoresY, valorX, valorY)) return;
+                if (!comprobarSiCabeElBarco(valoresY, valorX, valorY)) {
+                    this.Cursor = Cursors.No;
+                    return;
+                };
 
                 //Sonido colocación
                 sfx.SoundLocation = "Sound\\Effects\\colocar.wav";
@@ -649,7 +652,10 @@ namespace battleShip {
             if (isVertical)
             {
                 //Comprobar si se sale de la pantalla
-                if (valorY + tamaño > 11) return;
+                if (valorY + tamaño > 11) {
+                    this.Cursor = Cursors.No;
+                    return;
+                };
                
                 foreach (Control control in tableLayoutPanel1.Controls.Cast<Control>()
                                                                 .OrderBy(c => Int32.Parse(c.Name.Substring(10))))
@@ -672,7 +678,10 @@ namespace battleShip {
                     String[] tagA = a.Tag.ToString().Split('#');
                     if (tagA[0] != "A") cabe = false;
                 });
-                if (!cabe) return;
+                if (!cabe) {
+                    this.Cursor = Cursors.No;
+                    return;
+                }
 
                 picturesHover.ForEach(a =>
                 {
@@ -718,7 +727,10 @@ namespace battleShip {
             {
 
                 //Comprobar si se sale de la pantalla
-                if (valorX + tamaño > 11) return;
+                if (valorX + tamaño > 11) {
+                    this.Cursor = Cursors.No;
+                    return;
+                  };
 
                 foreach (Control control in tableLayoutPanel1.Controls.Cast<Control>()
                                                                 .OrderBy(c => Int32.Parse(c.Name.Substring(10))))
@@ -741,7 +753,10 @@ namespace battleShip {
                     String[] tagA = a.Tag.ToString().Split('#');
                     if (tagA[0] != "A") cabe = false;
                 });
-                if (!cabe) return;
+                if (!cabe) {
+                    this.Cursor = Cursors.No;
+                    return;
+                }
 
                 picturesHover.ForEach(a =>
                 {
@@ -836,7 +851,8 @@ namespace battleShip {
         {
             if (!cerradoVerificado)
             {
-                mainMusic.close();
+                mainMusic.controls.stop();
+                Form2.ProveedorForm2.Form2.mainMusic.controls.play();
                 Form2.ProveedorForm2.Form2.Show();
             }
         }

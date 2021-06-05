@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace battleShip {
     public partial class Form2 : Form {
-        WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
+        public WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
         SoundPlayer sfx = new SoundPlayer();
 
         public Form2() {
