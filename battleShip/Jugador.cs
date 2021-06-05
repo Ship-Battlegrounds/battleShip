@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace battleShip {
-    class Jugador {
+    public class Jugador {
         private String nombre;
         private int tiros = 25;
         private int aciertos = 0;
@@ -24,8 +24,6 @@ namespace battleShip {
             if (tiros == 0) return true;
             return false;
         }
-
-
 
         // Setters & Getters
 
