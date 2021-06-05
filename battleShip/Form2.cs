@@ -67,5 +67,18 @@ namespace battleShip {
             }
             private static Form2 _form2;
         }
+
+        private void btnMouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            Color c = Color.FromArgb(1,250,200,0);
+            btn.ForeColor = c;
+        }
+
+        private void btnMouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.ForeColor = Color.Silver;
+        }
     }
 }

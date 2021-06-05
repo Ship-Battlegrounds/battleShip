@@ -65,6 +65,7 @@ namespace battleShip {
             lbl_TotalTiros.Text = j1.Tiros.ToString();
             lbl_TotalAciertos.Text = j1.Aciertos.ToString();
             lbl_TotalFallos.Text = j1.Fallos.ToString();
+            label4.Text = j1.Nombre;
         }
 
         private void celda_Click(object sender, EventArgs e)
@@ -698,6 +699,19 @@ namespace battleShip {
         {
             mainMusic.close();
             Form2.ProveedorForm2.Form2.Show();
+        }
+
+        private void btnMouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            Color c = Color.FromArgb(1, 250, 200, 0);
+            btn.ForeColor = c;
+        }
+
+        private void btnMouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.ForeColor = Color.Silver;
         }
     }
 }
