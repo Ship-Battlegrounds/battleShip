@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WMPLib;
-
+using System.Media;
 using System.Windows.Forms;
+
 
 namespace battleShip {
     public partial class Form2 : Form {
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
+        SoundPlayer sfx = new SoundPlayer();
 
         public Form2() {
             InitializeComponent();
               mainMusic.URL = "Sound\\mainWellerman.mp3";
-              mainMusic.settings.volume = 20;
+              mainMusic.settings.volume = 8;
               mainMusic.settings.setMode("loop", true);
 
             //Aplicar cursor
@@ -73,6 +75,8 @@ namespace battleShip {
             Button btn = sender as Button;
             Color c = Color.FromArgb(1,250,200,0);
             btn.ForeColor = c;
+            sfx.SoundLocation = "Sound\\Effects\\CURSOL_SELECT.wav";
+            sfx.Play();
             this.Cursor = Cursors.Hand;
 
         }

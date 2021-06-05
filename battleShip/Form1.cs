@@ -21,10 +21,9 @@ namespace battleShip {
         PictureBox pictureChange = new PictureBox();
 
         //Reproductores de sonido
+        SoundPlayer sfx = new SoundPlayer();
         WindowsMediaPlayer mainMusic = new WindowsMediaPlayer();
-        SoundPlayer disparar = new SoundPlayer();
-        SoundPlayer acertar = new SoundPlayer();
-        SoundPlayer fallar = new SoundPlayer();
+       
 
         List<String> nombres = new List<string>() {"Fideito18", "Trevor Belmont", "Coronel Sanders", "The_Legend_27", "Ranbaudi", "Danzi", "Aleen", "Jeff", 
                                                     "Samu", "Ricardo", "Kirito", "Reiner", "Boruto", "Umaru-chan", "Useless Goddess", "Ezio Auditore", "orson",
@@ -54,7 +53,7 @@ namespace battleShip {
             //Inicializar música
 
              mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
-             mainMusic.settings.volume = 10;
+             mainMusic.settings.volume = 8;
              mainMusic.settings.setMode("loop", true);
              cerradoVerificado = false;
 
@@ -97,7 +96,11 @@ namespace battleShip {
                 if (timerDisparo.Enabled) return;
 
                 //Si ya hemos disparado en la celda
-                if (tagPicture[3] == "Dado")  return;
+                if (tagPicture[3] == "Dado") {
+                    sfx.SoundLocation = "Sound\\Effects\\yaDado.wav";
+                    sfx.Play();
+                    return;
+                };
 
                 this.Cursor = new Cursor("../../icons/hitmarker.ico");
                 timerCur.Start();
@@ -105,6 +108,8 @@ namespace battleShip {
                 //Si hemos disparado al agua
                 if (tagPicture[0] == "A")
                 {
+                    sfx.SoundLocation = "Sound\\Effects\\darAgua.wav";
+                    sfx.Play();
                     timerDisparo.Interval = 1050;
                     timerDisparo.Start();
                     j1.Tiros--;
@@ -121,7 +126,13 @@ namespace battleShip {
 
                 timerDisparo.Interval = 1400;
                 timerDisparo.Start();
+
                 //Si hemos llegado aqui, hemos disparado a un barco
+                
+                //Sonido de disparo
+                sfx.SoundLocation = "Sound\\Effects\\explosion.wav";
+                sfx.Play();
+
                 int counTemp;
                 barcos.ForEach(a =>
                 {
@@ -280,7 +291,6 @@ namespace battleShip {
                 {
                     btn_atacar.Enabled = true;
                     btn_rotar.Enabled = false;
-                    lw_Barcos.Enabled = false;
                 }
             }
         }
@@ -389,6 +399,10 @@ namespace battleShip {
 
                 //Comprobar si cabe el barco
                 if (!comprobarSiCabeElBarco(valoresY, valorX, valorY)) return;
+
+                //Sonido colocación
+                sfx.SoundLocation = "Sound\\Effects\\colocar.wav";
+                sfx.Play();
 
                 foreach (Control control in tableLayoutPanel1.Controls.Cast<Control>()
                                                                 .OrderBy(c => Int32.Parse(c.Name.Substring(10))))
@@ -832,6 +846,9 @@ namespace battleShip {
             Button btn = sender as Button;
             Color c = Color.FromArgb(1, 250, 200, 0);
             btn.ForeColor = c;
+            sfx.SoundLocation = "Sound\\Effects\\CURSOL_SELECT.wav";
+            sfx.Play();
+            this.Cursor = Cursors.Hand;
         }
 
         private void btnMouseLeave(object sender, EventArgs e)
