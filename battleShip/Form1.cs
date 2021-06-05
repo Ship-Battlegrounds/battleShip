@@ -79,12 +79,12 @@ namespace battleShip {
             if (pictures == null) return;
             if (atacar)
             {
+                 this.Cursor = new Cursor("../../icons/hitmarker.ico");
+                timerCur.Start();
+
                 //Si ya hemos disparado en la celda
-                if (tagPicture[3] == "Dado")
-                {
-                    MessageBox.Show("Ahí ya has disparado. Casilla no válida.");
-                    return;
-                }
+                if (tagPicture[3] == "Dado")  return;
+                
 
                 //Si hemos disparado al agua
                 if (tagPicture[0] == "A")
@@ -219,6 +219,7 @@ namespace battleShip {
                         }
                     }
                 });
+                //this.Cursor = new Cursor("../../icons/mira.ico");
                 barcos.Remove(barcoAEliminar);
                 comprobarPartida();
             }
@@ -852,6 +853,18 @@ namespace battleShip {
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+            this.Cursor = default;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timerCur.Stop();
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
+            
         }
     }
 
