@@ -591,7 +591,7 @@ namespace battleShip {
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e) //Muestra como quedará el barco en la ubicación del cursor
         {
-            if (atacar) this.Cursor = new Cursor("../../icons/hitmarker.ico");
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
 
             if (lw_Barcos.SelectedItems.Count == 0) return;
 
@@ -844,7 +844,15 @@ namespace battleShip {
             mainMusic.settings.setMode("loop", true);
         }
 
+        private void tableLayoutPanel1_MouseEnter(object sender, EventArgs e)
+        {
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
+        }
 
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 
 }
