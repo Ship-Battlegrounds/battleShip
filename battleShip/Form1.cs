@@ -92,6 +92,7 @@ namespace battleShip {
                     j1.Fallos++;
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
+                    pictures.Image = Image.FromFile("./../../img/miss.gif");
                     pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
                     comprobarPartida();
                     return;
@@ -280,6 +281,7 @@ namespace battleShip {
                     //Pasamos a la siguiente celda del eje X
                     x++;
                 }
+                pictures.Image = null;
             }
         }
 
@@ -788,5 +790,42 @@ namespace battleShip {
             this.Cursor = default;
 
         }
+
+
+        public void resetear()
+        {
+            //Poner la partida de zero
+            barcos.Clear();
+            lw_Barcos.Items.Clear();
+
+            isVertical = true;
+            atacar = false;
+            btn_rotar.Enabled = true;
+            btn_atacar.Enabled = true;
+
+            //Volver a crear los elementos
+            crearTablero();
+            crearBarcos();
+            barcos.ForEach(a =>
+            {
+                ListViewItem LVItem = new ListViewItem(a.Name);
+                lw_Barcos.Items.Add(LVItem);
+                LVItem.SubItems.Add(a.Tamaño.ToString());
+            });
+          
+            lbl_NombreJug.Text = j1.Nombre;
+            lbl_TotalTiros.Text = j1.Tiros.ToString();
+            lbl_TotalAciertos.Text = j1.Aciertos.ToString();
+            lbl_TotalFallos.Text = j1.Fallos.ToString();
+
+
+            lw_Barcos.Items[0].Selected = true;
+            
+            mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
+            mainMusic.settings.volume = 10;
+            mainMusic.settings.setMode("loop", true);
+        }
+
+       
     }
 }
