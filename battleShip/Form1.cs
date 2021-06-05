@@ -79,12 +79,12 @@ namespace battleShip {
             if (pictures == null) return;
             if (atacar)
             {
+                 this.Cursor = new Cursor("../../icons/hitmarker.ico");
+                timerCur.Start();
+
                 //Si ya hemos disparado en la celda
-                if (tagPicture[3] == "Dado")
-                {
-                    MessageBox.Show("Ahí ya has disparado. Casilla no válida.");
-                    return;
-                }
+                if (tagPicture[3] == "Dado")  return;
+                
 
                 //Si hemos disparado al agua
                 if (tagPicture[0] == "A")
@@ -94,6 +94,7 @@ namespace battleShip {
                     j1.Fallos++;
                     lbl_TotalFallos.Text = j1.Fallos.ToString();
                     lbl_TotalTiros.Text = j1.Tiros.ToString();
+                    pictures.Image = Image.FromFile("./../../img/miss.gif");
                     pictures.Tag = tagPicture[0] + "#" + tagPicture[1] + "#" + tagPicture[2] + "#" + "Dado";
                     comprobarPartida();
                     return;
@@ -218,6 +219,7 @@ namespace battleShip {
                         }
                     }
                 });
+                //this.Cursor = new Cursor("../../icons/mira.ico");
                 barcos.Remove(barcoAEliminar);
                 comprobarPartida();
             }
@@ -284,6 +286,7 @@ namespace battleShip {
                     //Pasamos a la siguiente celda del eje X
                     x++;
                 }
+                pictures.Image = null;
             }
         }
 
@@ -589,7 +592,7 @@ namespace battleShip {
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e) //Muestra como quedará el barco en la ubicación del cursor
         {
-            if (atacar) this.Cursor = new Cursor("../../icons/hitmarker.ico");
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
 
             if (lw_Barcos.SelectedItems.Count == 0) return;
 
@@ -809,15 +812,64 @@ namespace battleShip {
             btn.ForeColor = Color.Silver;
         }
 
+     
+        
+       
+
+        public void resetear()
+        {
+            //Poner la partida de zero
+            barcos.Clear();
+            lw_Barcos.Items.Clear();
+
+            isVertical = true;
+            atacar = false;
+            btn_rotar.Enabled = true;
+            btn_atacar.Enabled = true;
+
+            //Volver a crear los elementos
+            crearTablero();
+            crearBarcos();
+            barcos.ForEach(a =>
+            {
+                ListViewItem LVItem = new ListViewItem(a.Name);
+                lw_Barcos.Items.Add(LVItem);
+                LVItem.SubItems.Add(a.Tamaño.ToString());
+            });
+
+            lbl_NombreJug.Text = j1.Nombre;
+            lbl_TotalTiros.Text = j1.Tiros.ToString();
+            lbl_TotalAciertos.Text = j1.Aciertos.ToString();
+            lbl_TotalFallos.Text = j1.Fallos.ToString();
+
+
+            lw_Barcos.Items[0].Selected = true;
+
+            mainMusic.URL = "Sound\\battlefield-1942-ost.mp3";
+            mainMusic.settings.volume = 10;
+            mainMusic.settings.setMode("loop", true);
+        }
+
         private void tableLayoutPanel1_MouseEnter(object sender, EventArgs e)
         {
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
 
         }
 
-        private void tableLayoutPanel1_MouseLeave(object sender, EventArgs e)
+        private void Form1_MouseEnter(object sender, EventArgs e)
         {
             this.Cursor = default;
+        }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timerCur.Stop();
+            if (atacar) this.Cursor = new Cursor("../../icons/mira.ico");
 
         }
-    }
+    }    }
 }
+    
