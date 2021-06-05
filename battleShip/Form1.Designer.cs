@@ -175,6 +175,9 @@ namespace battleShip
             this.btn_rotar = new System.Windows.Forms.Button();
             this.btn_atacar = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timerExplosion = new System.Windows.Forms.Timer(this.components);
+            this.timerExplosionAgua = new System.Windows.Forms.Timer(this.components);
+            this.timerDisparo = new System.Windows.Forms.Timer(this.components);
             this.panel_Stats.SuspendLayout();
             this.panel_Jugador.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -2379,6 +2382,21 @@ namespace battleShip
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // timerExplosion
+            // 
+            this.timerExplosion.Interval = 1400;
+            this.timerExplosion.Tick += new System.EventHandler(this.timerExplosion_Tick);
+            // 
+            // timerExplosionAgua
+            // 
+            this.timerExplosionAgua.Interval = 1050;
+            this.timerExplosionAgua.Tick += new System.EventHandler(this.timerExplosionAgua_Tick);
+            // 
+            // timerDisparo
+            // 
+            this.timerDisparo.Interval = 1400;
+            this.timerDisparo.Tick += new System.EventHandler(this.timerDisparo_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2683,6 +2701,9 @@ namespace battleShip
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer timerCur;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timerExplosion;
+        private System.Windows.Forms.Timer timerExplosionAgua;
+        private System.Windows.Forms.Timer timerDisparo;
     }
 }
 
