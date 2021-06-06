@@ -68,7 +68,7 @@ namespace battleShip
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(256, 162);
+            this.panel1.Location = new System.Drawing.Point(261, 162);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(272, 359);
@@ -180,7 +180,7 @@ namespace battleShip
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(184, 545);
+            this.button1.Location = new System.Drawing.Point(193, 545);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 54);
@@ -198,10 +198,10 @@ namespace battleShip
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(417, 545);
+            this.button2.Location = new System.Drawing.Point(413, 545);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 54);
+            this.button2.Size = new System.Drawing.Size(180, 54);
             this.button2.TabIndex = 2;
             this.button2.Text = "Volver al menú";
             this.button2.UseVisualStyleBackColor = false;

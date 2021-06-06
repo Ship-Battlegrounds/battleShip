@@ -33,11 +33,11 @@ namespace battleShip
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,9 +49,9 @@ namespace battleShip
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(329, 391);
+            this.button1.Location = new System.Drawing.Point(365, 423);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 47);
             this.button1.TabIndex = 2;
@@ -81,61 +81,57 @@ namespace battleShip
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(175, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(597, 257);
+            this.panel1.Size = new System.Drawing.Size(663, 290);
             this.panel1.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(3, 224);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(640, 39);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "- El segundo jugador debe destruir todos los barcos antes de que se agoten sus ti" +
+    "ros. Si destruye todo los barcos, gana el segundo jugador, al contrario, gana el" +
+    " primero.";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 154);
+            this.label8.Location = new System.Drawing.Point(4, 169);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(560, 16);
+            this.label8.Size = new System.Drawing.Size(639, 36);
             this.label8.TabIndex = 3;
             this.label8.Text = "- Los barcos pueden colocarse junto a los bordes de la cuadrícula o junto a otros" +
     " barcos, pero sin llegar a tocarse.";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 104);
+            this.label7.Location = new System.Drawing.Point(3, 100);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(574, 32);
+            this.label7.Size = new System.Drawing.Size(640, 48);
             this.label7.TabIndex = 2;
             this.label7.Text = resources.GetString("label7.Text");
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(4, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(565, 32);
+            this.label6.Size = new System.Drawing.Size(639, 32);
             this.label6.TabIndex = 1;
             this.label6.Text = resources.GetString("label6.Text");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reglas:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 191);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(581, 32);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "- El segundo jugador debe destruir todos los barcos antes de que se agoten sus ti" +
-    "ros. Si destruye todo los barcos, gana \r\nel segundo jugador, al contrario, gana " +
-    "el primero.";
             // 
             // Form3
             // 
@@ -143,7 +139,7 @@ namespace battleShip
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::battleShip.Properties.Resources.instruccionesBarco;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(858, 491);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);

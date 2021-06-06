@@ -932,6 +932,7 @@ namespace battleShip {
         private void timerExplosion_Tick(object sender, EventArgs e)
         {
             timerExplosion.Stop();
+            pictureChange.SizeMode = PictureBoxSizeMode.Zoom;
             pictureChange.Image = Image.FromFile("./../../img/acertar.png");
 
         }

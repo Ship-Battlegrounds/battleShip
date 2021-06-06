@@ -935,16 +935,11 @@
 </value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>- El primer jugador deberá colocar en los cuadros los siguientes barcos en posición horizontal o vertical: 1 barco que
-ocupa 4 cuadrados, 2 barcos de tres cuadros, 3 barcos de 2 cuadros, 4 barcos de un solo cuadro.</value>
+    <value>- El primer jugador deberá colocar en los cuadros los siguientes barcos en posición horizontal o vertical: 1 barco que ocupa 4 cuadrados, 2 barcos de tres cuadros, 3 barcos de 2 cuadros, 4 barcos de un solo cuadro.</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>- El juego consiste en hundir la flota del contrincante. Para ello, el primer jugador debe colocar su propia flota de 
-forma estratégica y el segundo jugador debe de encontrar y hundir la flota contraria.</value>
+    <value>- El juego consiste en hundir la flota del contrincante. Para ello, el primer jugador debe colocar su propia flota de forma estratégica y el segundo jugador debe de encontrar y hundir la flota contraria.</value>
   </data>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAA

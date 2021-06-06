@@ -73,7 +73,7 @@ namespace battleShip
             this.button2.Location = new System.Drawing.Point(409, 543);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 54);
+            this.button2.Size = new System.Drawing.Size(180, 54);
             this.button2.TabIndex = 6;
             this.button2.Text = "Volver al menú";
             this.button2.UseVisualStyleBackColor = false;

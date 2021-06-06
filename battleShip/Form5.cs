@@ -50,6 +50,7 @@ namespace battleShip
 
         private void button1_Click(object sender, EventArgs e)
         {
+            mainMusic.controls.stop();
             Form1 f1 = new Form1();
             f1.Show();
             this.Close();
@@ -58,13 +59,13 @@ namespace battleShip
         private void button2_Click(object sender, EventArgs e)
         {
             Form2.ProveedorForm2.Form2.Show();
+            Form2.ProveedorForm2.Form2.mainMusic.controls.play();
             this.Close();
         }
 
         private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
             mainMusic.controls.stop();
-            Form2.ProveedorForm2.Form2.mainMusic.controls.play();
         }
     }
 }
